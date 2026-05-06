@@ -1,0 +1,9 @@
+{
+  "module_id": "antibiotikaval_slutenvard_ava_ima_sv_001",
+  "type": "clinical_module",
+  "title": "Antibiotikaval vid samhällsförvärvade infektioner hos vuxna i slutenvård",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Infektion",
+  "specialty": ["Infektion"],
+  "status": "ready_for_import"
+}

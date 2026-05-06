@@ -1,0 +1,9 @@
+{
+  "module_id": "hhs_ava_ima_sv_001",
+  "type": "clinical_module",
+  "title": "Hyperglykemiskt hyperosmolärt syndrom",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Endokrinologi",
+  "specialty": ["Endokrinologi"],
+  "status": "ready_for_import"
+}

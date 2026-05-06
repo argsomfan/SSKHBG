@@ -1,0 +1,9 @@
+{
+  "module_id": "hud_mjukdelsinfektioner_ava_ima_sv_001",
+  "type": "clinical_module",
+  "title": "Hud- och mjukdelsinfektioner",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Infektion",
+  "specialty": ["Infektion"],
+  "status": "ready_for_import"
+}

@@ -1,0 +1,109 @@
+{
+  "module_id": "hypokalemi_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Hypokalemi",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Njurmedicin",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+    "Njurmedicin"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "Hypokalemi kan ge muskelsvaghet och livshotande arytmier. EKG och kaliumsubstitution måste bedömas tidigt.",
+  "source_note": "Arbetsfil för SSKHBG.",
+  "tags": [
+    "hypokalemi",
+    "lågt kalium",
+    "EKG",
+    "arytmi",
+    "kaliumsubstitution",
+    "elektrolyter"
+  ],
+  "search_terms": [
+    "hypokalemi",
+    "lågt kalium",
+    "EKG hypokalemi",
+    "kaliumsubstitution",
+    "arytmi kalium"
+  ],
+  "summary": {
+    "ingress": "Hypokalemi innebär sänkt kalium i blodet och kan ge neuromuskulära symtom, EKG-förändringar och ökad risk för arytmier.",
+    "goals": [
+      "Identifiera hypokalemi tidigt",
+      "Bedöma EKG-förändringar och arytmirisk",
+      "Påbörja säker kaliumsubstitution",
+      "Identifiera bakomliggande orsak"
+    ]
+  },
+  "definition": [
+    "Hypokalemi definieras som sänkt kalium i blodet, ofta under 3,5 mmol/L, med ökad klinisk risk vid lägre nivåer."
+  ],
+  "symtom": [
+    "Muskelsvaghet",
+    "Trötthet",
+    "Kramper",
+    "Förstoppning",
+    "Arytmikänsla"
+  ],
+  "status": [
+    "Svaghet",
+    "Eventuell muskelsmärta",
+    "Arytmier",
+    "EKG-förändringar",
+    "Eventuellt påverkat allmäntillstånd"
+  ],
+  "diagnostik": [
+    "Blodprov kalium",
+    "Blodgas",
+    "EKG",
+    "Magnesium",
+    "Kreatinin",
+    "Övriga elektrolyter"
+  ],
+  "behandling": [
+    "Peroral kaliumsubstitution vid mild hypokalemi",
+    "Intravenös kaliumsubstitution vid uttalad hypokalemi eller oförmåga till peroral behandling",
+    "Korrigera samtidigt magnesium om lågt",
+    "Behandla bakomliggande orsak",
+    "Se över diuretika och andra kaliumsänkande läkemedel"
+  ],
+  "omvardnad": [
+    "Kontinuerlig EKG-övervakning vid svårare hypokalemi",
+    "Säkra infart vid behov av intravenös substitution",
+    "Observera infusionstakt och lokal irritation",
+    "Informera patienten om symtom att rapportera"
+  ],
+  "overvakning": [
+    "EKG",
+    "Puls",
+    "Blodtryck",
+    "Kaliumvärden",
+    "Magnesium",
+    "Kliniska symtom"
+  ],
+  "komplikationer": [
+    "Arytmier",
+    "Ventrikulära extraslag",
+    "Torsades de pointes",
+    "Muskelsvaghet",
+    "Respiratorisk muskelsvaghet vid svår hypokalemi"
+  ],
+  "eskalering": [
+    "Kalium <2,5 mmol/L",
+    "EKG-förändringar",
+    "Arytmier",
+    "Tilltagande muskelsvaghet",
+    "Otillräcklig effekt av substitution"
+  ],
+  "referenser": [
+    "Akut internmedicin",
+    "Akutkompendiet"
+  ]
+}

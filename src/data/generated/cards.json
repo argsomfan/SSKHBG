@@ -1,0 +1,2693 @@
+[
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "A-HLR används vid hjärtstopp och bygger på snabb identifiering, HLR, defibrillering, läkemedel och behandling av reversibla orsaker.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera hjärtstopp direkt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Starta HLR utan dröjsmål",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Defibrillera chockbara rytmer tidigt",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Ge läkemedel enligt algoritm",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera och behandla 4H/4T",
+    "extra_json": null,
+    "sort_order": 6
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Uppnå ROSC och säkra fortsatt vård",
+    "extra_json": null,
+    "sort_order": 7
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "HLR-cykel",
+    "body": "2 minuter",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "Kompressioner",
+    "body": "30:2 tills avancerad luftväg",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "Defibrillering",
+    "body": "Vid VF/VT enligt algoritm",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "Adrenalin",
+    "body": "Enligt A-HLR-algoritm",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "Amiodaron",
+    "body": "Vid refraktär VF/VT enligt algoritm",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 1",
+    "body": "Larma hjärtstopp / kalla på hjälp",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 2",
+    "body": "Starta HLR direkt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 3",
+    "body": "Koppla defibrillator/monitor så snart som möjligt",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 4",
+    "body": "Identifiera rytm",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 5",
+    "body": "Följ chockbar eller icke-chockbar algoritm",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 6",
+    "body": "Säkra luftväg och ventilation",
+    "extra_json": null,
+    "sort_order": 6
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 7",
+    "body": "Etablera infart",
+    "extra_json": null,
+    "sort_order": 7
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 8",
+    "body": "Tänk 4H/4T tidigt",
+    "extra_json": null,
+    "sort_order": 8
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "DKA är akut insulinbrist med ketonbildning, metabol acidos och ofta hyperglykemi. Tillståndet kräver snabb vätske- och insulinbehandling samt tät uppföljning av kalium och syra-basstatus.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera DKA snabbt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Starta vätska och insulin enligt ordination",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Följa kalium, glukos och blodgas tätt",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera utlösande orsak och behov av högre vårdnivå",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "Hyperkalemi innebär förhöjt kalium i blodet och kan påverka hjärtats retledningssystem med risk för arytmier.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera hyperkalemi snabbt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Bedöma EKG-förändringar",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Initiera akut behandling vid behov",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera bakomliggande orsak",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "Hypoglykemi innebär för lågt blodglukos och kan ge autonoma symtom, neuroglykopena symtom och i svåra fall medvetslöshet.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera hypoglykemi snabbt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Kontrollera blodglukos tidigt",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Ge snabb glukosbehandling",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Följa kliniskt svar och förhindra recidiv",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "Hypokalemi innebär sänkt kalium i blodet och kan ge neuromuskulära symtom, EKG-förändringar och ökad risk för arytmier.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera hypokalemi tidigt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Bedöma EKG-förändringar och arytmirisk",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Påbörja säker kaliumsubstitution",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera bakomliggande orsak",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "KOL-exacerbation är en akut försämring med ökad dyspné, ofta hosta och ökad slemproduktion, ibland med hyperkapni och behov av NIV.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera svårighetsgrad tidigt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Behandla hypoxi utan att förvärra CO2-retention",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Starta inhalationer och övrig behandling tidigt",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera behov av NIV",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "Lungemboli är ett akut tillstånd där trombmaterial obstruerar lungkärl och kan ge hypoxi, dyspné och cirkulatorisk påverkan.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera allvarlighetsgrad",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Säkra ABCDE",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Påbörja utredning snabbt",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera patienter med cirkulatorisk instabilitet",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "NIV används främst vid hyperkapnisk ventilationssvikt och kan minska andningsarbete, förbättra gasutbyte och förebygga intubation.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera rätt patient för NIV",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Starta rätt trycknivåer",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Följa blodgas tidigt",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera NIV-failure i tid",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "Pneumoni är en infektion i lungparenkymet som kan ge feber, hosta, dyspné och hypoxi.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera hypoxi tidigt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Bedöma om patienten är sepsispåverkad",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Starta behandling och övervakning",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "Respiratorisk svikt innebär att gasutbytet inte längre är tillräckligt och kan ge hypoxi, hyperkapni eller båda delarna samtidigt.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera typ av andningssvikt tidigt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Säkra ABCDE",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Ta blodgas tidigt",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Starta rätt andningsstöd och behandla orsaken",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "Sepsis är ett allvarligt medicinskt tillstånd med organpåverkan orsakat av ett dysreglerat systemiskt svar på infektion. Tidig behandling räddar liv.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera sepsis tidigt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Starta antibiotika och vätska inom 1 timme",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Ta blodgas med laktat och odlingar tidigt",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Följa vitalparametrar och timdiures tätt",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Hitta infektionsfokus och bedöma vårdnivå",
+    "extra_json": null,
+    "sort_order": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "Varningstecken",
+    "body": "SBT <90, AF >30, SaO2 <90",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "Prover tidigt",
+    "body": "Blodgas med laktat, blododling 2+2, urinodling",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "Tidsmål",
+    "body": "Antibiotika och vätska inom 1 timme",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "quick_facts",
+    "block_type": "bullet",
+    "title": "Timdiuresmål",
+    "body": "Minst 0,5 ml/kg/h",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 1",
+    "body": "ABCDE-bedömning direkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 2",
+    "body": "Syrgas vid behov",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 3",
+    "body": "Sätt två perifera infarter",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 4",
+    "body": "Ta blodprover, blodgas med laktat och blododling 2+2",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 5",
+    "body": "Ta urinodling och övriga odlingar utifrån fokus",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 6",
+    "body": "Starta Ringer-Acetat enligt klinik och ordination",
+    "extra_json": null,
+    "sort_order": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 7",
+    "body": "Ge antibiotika utan dröjsmål",
+    "extra_json": null,
+    "sort_order": 7
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 8",
+    "body": "Sätt KAD vid behov och följ timdiures",
+    "extra_json": null,
+    "sort_order": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 9",
+    "body": "Kontakta infektionsjour tidigt",
+    "extra_json": null,
+    "sort_order": 9
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "section_key": "initial_handlaggning",
+    "block_type": "step",
+    "title": "Steg 10",
+    "body": "Överväg IVA/IMA vid utebliven snabb förbättring",
+    "extra_json": null,
+    "sort_order": 10
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "text",
+    "title": null,
+    "body": "Septisk chock är en svår form av sepsis med kvarstående cirkulatorisk påverkan trots vätskebehandling och ofta behov av vasopressor.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera chock snabbt",
+    "extra_json": null,
+    "sort_order": 2
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Säkra ABCDE och behandling inom minuter",
+    "extra_json": null,
+    "sort_order": 3
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Starta vätska och antibiotika omedelbart",
+    "extra_json": null,
+    "sort_order": 4
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "section_key": "summary",
+    "block_type": "bullet",
+    "title": null,
+    "body": "Identifiera behov av vasopressor och högre vårdnivå",
+    "extra_json": null,
+    "sort_order": 5
+  },
+  {
+    "module_slug": "acetylcystein",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Paracetamolintoxikation",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "acetylcystein",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Glutation-prekursor → detoxifierar NAPQI i levern",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "acetylcystein",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Steg 1: 150 mg/kg; Steg 2: 50 mg/kg; Steg 3: 100 mg/kg\nSpädning: Steg 1: 200 ml Glukos 50 mg/ml; Steg 2: 500 ml Glukos 50 mg/ml; Steg 3: 1000 ml Glukos 50 mg/ml",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "acetylcystein",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: 1 h / 4 h / 16 h\nAdministreringstid: Totalt 21 h (standardregim)\nAnvändningstid: Starta omedelbart vid misstanke, även vid oklar intagstid; kan förlängas vid ↑ALAT/INR",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "acetylcystein",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Illamående, kräkning, flush, urtikaria, bronkospasm, hypotension\nKliniska kommentarer: Anafylaktoida reaktioner vanligast i steg 1 → pausa/sänk hastighet vid reaktion\nÖvervakningsnivå: AVA / IMA vid reaktion/instabil\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Hyperglykemi; DKA/HHS; perioperativ glukoskontroll",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Insulinreceptor-agonist → ↑ glukosupptag, ↓ hepatisk glukosproduktion; ↑ K+ intracellulärt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: iv infusion: 0,05–0,1 IE/kg/h (titrera); sc: individuellt\nSpädning: Infusion: 50 IE i 50 ml NaCl 9 mg/ml (=1 IE/ml)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion / sc inj\nInfusionstid: Kontinuerlig (vid infusion)\nAdministreringstid: Enligt ordination\nAnvändningstid: Akut eller kontinuerligt enligt ordination",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hypoglykemi, hypokalemi\nKliniska kommentarer: Kontrollera K+ före/under; glukosinfusion ofta parallellt när P-glukos sjunker\nÖvervakningsnivå: AVA / IMA vid DKA/HHS/instabil\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "adrenalin",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Anafylaxi; hjärtstopp; chock",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "adrenalin",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "α1 vasokonstriktion; β1 ↑HF/kontraktilitet; β2 bronkdilatation",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "adrenalin",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Anafylaxi im: 0,3–0,5 mg; Hjärtstopp iv: 1 mg var 3–5 min; Inf: 0,01–0,3 µg/kg/min\nSpädning: Infusion: 1 mg i 100 ml NaCl (=10 µg/ml)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "adrenalin",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: im / iv bolus / iv infusion\nInfusionstid: Kontinuerlig (inf)\nAdministreringstid: Akut / titreras\nAnvändningstid: Akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "adrenalin",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Takykardi, arytmier, tremor, hypertoni/hypotension\nKliniska kommentarer: Telemetri vid iv; förstahandsval vid anafylaxi\nÖvervakningsnivå: IMA (inf) / AVA (im)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "amiodaron",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "VT/VF; förmaksflimmer/-fladder",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "amiodaron",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "K+-kanalblockad → förlänger refraktärperiod",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "amiodaron",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Akut iv: 300 mg bolus; infusion: 900 mg/24 h\nSpädning: Späds i Glukos 50 mg/ml (ej NaCl)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "amiodaron",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv bolus/infusion\nInfusionstid: Bolus + kontinuerlig\nAdministreringstid: Enligt ordination\nAnvändningstid: Akut (iv)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "amiodaron",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hypotension, bradykardi, QT-förlängning\nKliniska kommentarer: Risk flebit → central infart vid längre infusion; telemetri\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "atropin",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Symtomgivande bradykardi; organofosfatförgiftning",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "atropin",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Muskarinreceptor-antagonist → ↑HF",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "atropin",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 0,5 mg iv, upprepa till max 3 mg\nSpädning: Ospädd",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "atropin",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv bolus\nInfusionstid: Snabb\nAdministreringstid: Akut\nAnvändningstid: Akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "atropin",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Takykardi, muntorrhet, urinretention, konfusion\nKliniska kommentarer: Ineffektiv vid infranodala block; telemetri vid instabil\nÖvervakningsnivå: AVA / IMA vid instabil\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Anafylaxi (tillägg); astma/KOL-exacerbation; cerebralt ödem",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Antiinflammatorisk, immunhämmande",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 4–8 mg iv (kan upprepas)\nSpädning: Ospädd eller i NaCl",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj\nInfusionstid: Långsam inj\nAdministreringstid: Minuter\nAnvändningstid: Korttidsbruk akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hyperglykemi, psykisk påverkan, vätskeretention\nKliniska kommentarer: Ej akutverkande vid anafylaxi; ges som tillägg efter adrenalin\nÖvervakningsnivå: AVA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Hyperkalemi (membranstabilisering); hypokalcemi; Ca-blockerintox",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Stabiliserar myokardcellmembran (akut)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 10 ml 100 mg/ml iv, kan upprepas vid behov\nSpädning: Ospädd eller späds i NaCl",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj/inf\nInfusionstid: 5–10 min\nAdministreringstid: Akut\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Bradykardi/arytmier, extravasation\nKliniska kommentarer: Ge ej i samma infart som bikarbonat; EKG-övervakning\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "diazepam",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Kramper/status epilepticus; alkoholabstinens; akut ångest",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "diazepam",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Potentierar GABA-A → CNS-depression",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "diazepam",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 5–10 mg iv, kan upprepas\nSpädning: Ospädd",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "diazepam",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj\nInfusionstid: Långsam (2–5 min)\nAdministreringstid: Akut\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "diazepam",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Andningsdepression, sedering, hypotension\nKliniska kommentarer: Risk andningspåverkan; antidot flumazenil med försiktighet\nÖvervakningsnivå: AVA / IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "digoxin",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Förmaksflimmer (frekvenskontroll); hjärtsvikt (selektivt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "digoxin",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Hämmar Na+/K+-ATPase → ↑Ca2+; ↑ vagustonus",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "digoxin",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: iv laddning: 0,5 mg → 0,25 mg x1–2; underhåll: 0,125–0,25 mg/dygn\nSpädning: Späds i NaCl",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "digoxin",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj/inf, po\nInfusionstid: ≥30 min (iv)\nAdministreringstid: Långsam insättning\nAnvändningstid: Långtidsbehandling",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "digoxin",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Bradykardi, AV-block, illamående, synstörningar\nKliniska kommentarer: Smalt terapeutiskt intervall; kontroll S-digoxin, K+, njurfunktion\nÖvervakningsnivå: AVA / IMA vid intox\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Sedering (IVA/IMA/AVA)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "α2-agonism → ↓ sympatikustonus; sedering med liten andningsdepression",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 0,2–1,4 µg/kg/h (titrera)\nSpädning: Färdig lösning eller späds i NaCl enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: Kontinuerlig\nAdministreringstid: Enligt ordination\nAnvändningstid: Kort–medel",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Bradykardi, hypotension, muntorrhet\nKliniska kommentarer: Undvik laddningsdos hos instabil; telemetri/BT-kontroller\nÖvervakningsnivå: IMA (ibland AVA)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Epilepsi; status epilepticus (iv)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "↑ GABA, Na+-kanalpåverkan (antiepileptisk effekt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: iv laddning: 20–30 mg/kg; underhåll enligt ordination\nSpädning: Späds i NaCl eller Glukos",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion, po\nInfusionstid: Enligt ord (titrerad)\nAdministreringstid: Akut/underhåll\nAnvändningstid: Kort–lång",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Illamående, leverpåverkan, trombocytopeni\nKliniska kommentarer: Kontrollera ALAT/PK/INR, trombocyter; kontra vid grav leversjukdom\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "esomeprazol",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "GI-blödning; ulcusprofylax; GERD",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "esomeprazol",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Irreversibel hämning av H+/K+-ATPase → ↓ syrasekretion",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "esomeprazol",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Bolus: 40 mg iv; Infusion (blödning): 8 mg/h (indikationsstyrt)\nSpädning: Späds/bereds enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "esomeprazol",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj/inf, po\nInfusionstid: Bolus/infusion (24–72 h)\nAdministreringstid: Enligt ordination\nAnvändningstid: Kort–lång",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "esomeprazol",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Huvudvärk, diarré, hypomagnesemi (lång sikt)\nKliniska kommentarer: Infusion vid pågående blödning; övergå till po när möjligt\nÖvervakningsnivå: AVA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "flumazenil",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Reversering av BZD-sedering",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "flumazenil",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Kompetitiv antagonist på GABA-A (BZD-sätet)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "flumazenil",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 0,2 mg iv var 1–2 min, max 1 mg (titrera)\nSpädning: Ospädd",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "flumazenil",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv bolus\nInfusionstid: Snabb/titrerad\nAdministreringstid: Akut\nAnvändningstid: Kort; risk för re-sedering",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "flumazenil",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Kramper, ångest, arytmier\nKliniska kommentarer: Risk kramper vid BZD-beroende/blandintox; övervaka pga kort duration\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "furosemid",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Lungödem; hjärtsvikt; vätskeöverskott",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "furosemid",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Hämmar Na+/K+/2Cl- i Henles slynga → kraftig diures",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "furosemid",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 20–40 mg iv, kan upprepas/titreras\nSpädning: Ospädd eller i NaCl",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "furosemid",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj/inf\nInfusionstid: Långsam iv\nAdministreringstid: Akut/vid behov\nAnvändningstid: Kort–lång",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "furosemid",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hypokalemi, hypotension, njurpåverkan, ototoxicitet (snabb hög dos)\nKliniska kommentarer: Kontrollera K+/krea; ototoxicitet vid snabb injektion\nÖvervakningsnivå: AVA / IMA vid instabil\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glukos",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Hypoglykemi; energitillförsel",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glukos",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Höjer P-glukos",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glukos",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Hypoglykemi: 100–200 ml Glukos 100 mg/ml iv (titrera efter effekt)\nSpädning: Färdig lösning",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glukos",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: Snabb (enl klinik)\nAdministreringstid: Akut\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glukos",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hyperglykemi, flebit\nKliniska kommentarer: Följ P-glukos; ge tiamin före glukos vid Wernicke-risk\nÖvervakningsnivå: AVA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Bradykardi; sekretminskning",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Muskarinreceptor-antagonist perifert",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 0,2–0,4 mg iv (titrera)\nSpädning: Ospädd",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj\nInfusionstid: Snabb/kontrollerad\nAdministreringstid: Akut\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Takykardi, muntorrhet, urinretention\nKliniska kommentarer: Passerar ej BBB → mindre CNS-påverkan än atropin\nÖvervakningsnivå: AVA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Variceblödning; hepatorenalt syndrom",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Splanchnisk vasokonstriktion → ↓ portaltryck",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 1–2 mg iv var 4–6 h (indikationsstyrt)\nSpädning: Ospädd (enl produkt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj\nInfusionstid: Långsam\nAdministreringstid: Akut/kur\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Ischemi, hyponatremi, buksmärta\nKliniska kommentarer: Monitorera Na+, perifer/intestinal ischemi-risk\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "isoprenalin",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Symtomgivande bradykardi; AV-block (temporärt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "isoprenalin",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "β1/β2-stimulering → ↑ HF, viss vasodilatation",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "isoprenalin",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 0,01–0,1 µg/kg/min (titrera)\nSpädning: Späds enligt lokal rutin (ofta NaCl)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "isoprenalin",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: Kontinuerlig\nAdministreringstid: Titreras\nAnvändningstid: Kort (brygga)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "isoprenalin",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Takykardi, arytmier, hypotension\nKliniska kommentarer: Temporär brygga till pacemaker; telemetri\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levetiracetam",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Epilepsi; status epilepticus",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levetiracetam",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Binder SV2A → ↓ neurotransmittorfrisättning",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levetiracetam",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: iv laddning: 1–3 g (indikationsstyrt)\nSpädning: Späds i NaCl/Glukos",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levetiracetam",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion, po\nInfusionstid: 15 min\nAdministreringstid: Akut/underhåll\nAnvändningstid: Kort–lång",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levetiracetam",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Trötthet, irritabilitet\nKliniska kommentarer: Få interaktioner; dosjustera vid njursvikt\nÖvervakningsnivå: AVA / IMA (status/instabil)\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levosimendan",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Akut svår hjärtsvikt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levosimendan",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Ca-sensitisering + K-kanalöppning → ↑ kontraktilitet, vasodilatation",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levosimendan",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: 0,05–0,2 µg/kg/min (ofta utan bolus)\nSpädning: Späds/bereds enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levosimendan",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: Kontinuerlig (ofta 24 h)\nAdministreringstid: Enligt schema\nAnvändningstid: Kort (men lång effekt via metabolit)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levosimendan",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hypotension, takykardi\nKliniska kommentarer: Kräver tät monitorering; långverkande metabolit\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "midazolam",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Sedering (procedur/AVA/IMA); kramper/status; ångest/agitation",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "midazolam",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Potentierar GABA-A → sedering, anxiolys, amnesi",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "midazolam",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: iv bolus: 1–2 mg långsamt, upprepa; infusion: 0,02–0,2 mg/kg/h (titrera)\nSpädning: Ospädd eller späds i NaCl/Glukos enligt lokal rutin",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "midazolam",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv bolus/infusion; buccalt/nasalt (kramper)\nInfusionstid: Bolus långsamt; infusion kontinuerlig\nAdministreringstid: Akut/infusion\nAnvändningstid: Kort–medel",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "midazolam",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Andningsdepression, hypotension, paradoxal agitation\nKliniska kommentarer: Ökad risk med opioider; antidot flumazenil (försiktighet)\nÖvervakningsnivå: AVA / IMA (infusion/instabil)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Järnbristanemi när po ej funkar/ej tolereras eller behov av snabb järntillförsel",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Tillför järn → återställer Hb och järndepåer",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Max per infusion: ≤20 mg Fe/kg; Max per bolus: ≤500 mg (högst 3 ggr/vecka)\nSpädning: Bolus: outspätt eller max +20 ml NaCl; Infusion: NaCl (≥1 mg Fe/ml; ≤500 ml)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv bolus/iv infusion\nInfusionstid: ≤1000 mg: >15 min; >1000 mg: ≥30 min\nAdministreringstid: Enstaka/veckovis tills behov uppnått\nAnvändningstid: Kur",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Överkänslighet/anafylaxi, hypotension, illamående, flush\nKliniska kommentarer: Observation minst 30 min efter dos; kräver anafylaxiberedskap\nÖvervakningsnivå: AVA (stabil) / IMA (risk/instabil)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "morfin-inj",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Svåra smärttillstånd",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "morfin-inj",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "μ-agonist → analgesi, sedering, andningsdepression",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "morfin-inj",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: sc/im: 10–15 mg 1–3 ggr/dygn; iv: ges långsamt, dos individualiseras/titreras\nSpädning: Enl. lokal rutin; kan ges i infusion/PCA enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "morfin-inj",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: sc/im/iv långsam; infusion (tillsats)\nInfusionstid: Långsam titrering\nAdministreringstid: Akut/vid behov\nAnvändningstid: Akut/fortlöpande",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "morfin-inj",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Andningsdepression, hypotension, illamående, obstipation, urinretention\nKliniska kommentarer: Dosreduktion hos äldre/njur/lever; naloxon vid andningsdepression\nÖvervakningsnivå: AVA (stabil) / IMA (iv/instabil)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "naloxon",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Opioidbetingad CNS-/andningsdepression; misstänkt opioidöverdos",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "naloxon",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Kompetitiv μ-antagonist",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "naloxon",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Titrera iv: 0,1–0,2 mg, upprepa 0,1 mg var 2 min till adekvat andning; alt 0,4–2 mg iv/im\nSpädning: Infusion: späd i NaCl 0,9% eller Glukos 5% (ex 2 mg/500 ml = 4 µg/ml)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "naloxon",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv/im; iv infusion\nInfusionstid: Kontinuerlig vid infusion\nAdministreringstid: Akut/titrerad\nAnvändningstid: Kort; risk re-sedering",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "naloxon",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Abstinens, agitation, illamående, arytmier\nKliniska kommentarer: Kortare duration än många opioider → övervaka och upprepa vid behov\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Behandlingskrävande metabol acidos; vissa intox; hjärtstillestånd (indikationsstyrt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "↑ HCO3− → buffrar H+ (risk överalkalisering)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Dos efter syra-bas: (HCO3-deficit)×0,3×vikt = mmol; ge initialt ca hälften → ny kontroll\nSpädning: Färdig infusionslösning; tillsatser av andra lm ej tillrådligt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv\nInfusionstid: Kontrollerad tillförsel\nAdministreringstid: Titreras\nAnvändningstid: Akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hypernatremi, hyperosmolalitet, hypokalemi, överalkalisering\nKliniska kommentarer: Syra-bas-kontroll efter 100–300 ml; risk hypervolemi vid hjärt-/njursvikt\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Angina/ACS; lungödem; hypertensiv svikt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Venös>arteriell dilatation → ↓ preload, ↓ O2-behov",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Start 0,2–0,5 µg/kg/min, titrera efter BT/symtom\nSpädning: Outspädd i sprutpump eller späd i G5/G10/NaCl 0,9% (enl produkt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: Kontinuerlig\nAdministreringstid: Titreras\nAnvändningstid: Akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Huvudvärk, flush, hypotension, takykardi\nKliniska kommentarer: PVC adsorberar nitro → använd PE-sprutor/slangar; undvik andra tillsatser i lösningen\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Allvarlig blödning/akut op vid warfarin (AVK)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Tillför faktorer II, VII, IX, X → snabb INR-sänkning",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: INR 2–<4: 25 IE/kg; INR 4–6: 35 IE/kg; INR>6: 50 IE/kg (IE=Faktor IX-enheter)\nSpädning: Bereds med medföljande vätska (slutkonc ca 25 IE/ml)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj/inf\nInfusionstid: Kontrollerad enligt produkt\nAdministreringstid: Engång/rep vid behov\nAnvändningstid: Akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Tromboembolism, överkänslighet\nKliniska kommentarer: Ofta tillsammans med vitamin K; telemetri/BT efter klinik\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ondansetron",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Illamående/kräkning (PONV/CINV)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ondansetron",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Blockerar 5-HT3 → antiemetisk effekt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ondansetron",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Vanligt: 8 mg iv (indikations- och riskstyrt; maxdos enligt FASS)\nSpädning: Ofta ospädd för iv inj; infusion vid högre doser enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ondansetron",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj/inf, po\nInfusionstid: Långsam inj / infusion enl produkt\nAdministreringstid: Akut/upprepas\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ondansetron",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Huvudvärk, förstoppning, QT-förlängning\nKliniska kommentarer: Var extra strikt vid QT-risk och elektrolytrubbningar\nÖvervakningsnivå: AVA / IMA (vid QT-risk/iv)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Svår smärta",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "μ-agonist → analgesi",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: iv bolus: späd till 1 mg/ml; ge 1–10 mg långsamt (1–2 min), titrera. Infusion enligt ordination\nSpädning: Späd till 1 mg/ml i NaCl 0,9% eller Glukos 5% (enl produkt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv bolus/infusion\nInfusionstid: Kontrollerad\nAdministreringstid: Akut/infusion\nAnvändningstid: Akut/fortlöpande",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Andningsdepression, hypotension, illamående, sedering\nKliniska kommentarer: Titrera smått; synergism med benzo/andra sedativa\nÖvervakningsnivå: IMA (iv titrering/infusion)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Smärta/feber när po ej lämpligt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Central COX-hämning (funktionellt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Viktbaserad enligt FASS (t.ex. >50 kg ofta 1 g per dos)\nSpädning: Färdig lösning",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: Enl produkt\nAdministreringstid: Enl dosintervall\nAnvändningstid: Kort–medel",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hypotension (ibland), levertoxicitet vid överdos\nKliniska kommentarer: Följ FASS-tabell strikt (vikt, riskfaktorer)\nÖvervakningsnivå: AVA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Illamående (selektivt); gastropares",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "D2-blockad + prokinetik",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Vuxendos enligt FASS (indikationsstyrt); inj ska användas kortvarigt\nSpädning: Ofta ospädd (enl produkt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj (långsam) / infusion\nInfusionstid: Långsam\nAdministreringstid: Kort\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Akatisi/EPS, sedering, diarré\nKliniska kommentarer: Undvik vid EPS-risk; respektera intervall mellan doser\nÖvervakningsnivå: AVA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "COVID-19 enligt indikation",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Hämmar viralt RNA-polymeras",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Behandlingsregim enligt produkt/indikationsstyrt\nSpädning: Rekonstitution + spädning enligt produkt (beredningsavsnitt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: 30–120 min\nAdministreringstid: Daglig kur (enl regim)\nAnvändningstid: Kur",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Infusionsreaktioner, leverpåverkan\nKliniska kommentarer: Kontrollera leverprover; längre infusion kan minska reaktioner\nÖvervakningsnivå: AVA / IMA (beroende på status)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "SVT/supraventrikulär takyarytmi; frekvenskontroll (indikationsstyrt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "↓ AV-överledning, ↓ HF/kontraktilitet",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Upp till 5 mg iv (1–2 mg/min), kan upprepas var 5 min; total ofta 10–15 mg, max 20 mg\nSpädning: Outspädd (enl produkt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj\nInfusionstid: Kontrollerad\nAdministreringstid: Akut\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Bradykardi, hypotension, AV-block, bronkospasm\nKliniska kommentarer: Telemetri; kontra vid kardiogen chock m.m.\nÖvervakningsnivå: AVA / IMA (vid instabil)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Adrenal kris; chock/anafylaxi (tillägg) m.m.",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Antiinflammatorisk; steroidersättning vid brist",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Indikationsstyrt (ex 100 mg iv vid adrenal kris)\nSpädning: Bereds enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv/im\nInfusionstid: Enl ord\nAdministreringstid: Akut/kur\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hyperglykemi, vätskeretention\nKliniska kommentarer: Vid anafylaxi: tillägg efter adrenalin\nÖvervakningsnivå: AVA / IMA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Svåra akuta inflammatoriska tillstånd (indikationsstyrt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Potent antiinflammatorisk",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Dosen individanpassas enligt FASS/SmPC (indikationsstyrt)\nSpädning: Bereds enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv/im\nInfusionstid: ≤250 mg: ≥5 min; >250 mg: ≥30 min\nAdministreringstid: Enl ord\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hyperglykemi, psykiska effekter, vätskeretention\nKliniska kommentarer: Lägg ev lokal PM-dos separat om önskat\nÖvervakningsnivå: AVA / IMA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Hypertensiv kris (även graviditetsrelaterad)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "↓ SVR + ↓ HF",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Infusion: start 20 mg/h, dubbla var 30 min upp till 160 mg/h (indikationsstyrt)\nSpädning: För infusion: 200 mg späds till 200 ml (=1 mg/ml)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj/infusion\nInfusionstid: Kontinuerlig\nAdministreringstid: Titreras\nAnvändningstid: Akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hypotension, bradykardi, bronkospasm\nKliniska kommentarer: Täta BT-kontroller och telemetri\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Blödning/hyperfibrinolys (indikationsstyrt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Hämmar plasminogen→plasmin → minskad fibrinolys",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Ex: 500–1000 mg iv långsamt, kan upprepas enligt indikation; dosjustera vid njursvikt\nSpädning: Ofta ospädd; kan ges som infusion enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj/inf\nInfusionstid: Långsamt (≈1 ml/min) / infusion\nAdministreringstid: Akut/kur\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Illamående, hypotension (för snabb), trombosrisk (selektivt)\nKliniska kommentarer: Sänk hastighet; njurjustera\nÖvervakningsnivå: AVA / IMA (beroende på blödning)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Wernicke-risk; malnutrition; alkohol",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Kofaktor i kolhydratmetabolism",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Indikationsstyrt; vid långsam iv ges spädd över 30 min (enl produkt)\nSpädning: Späd 50–250 ml NaCl 0,9% eller Glukos 5%",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv (långsam) / im\nInfusionstid: 30 min (långsam iv)\nAdministreringstid: Enl ord\nAnvändningstid: Kort/kur",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Överkänslighet/anafylaxi (sällsynt)\nKliniska kommentarer: Ge gärna före glukos vid misstänkt Wernicke/malnutrition\nÖvervakningsnivå: AVA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "AVK-orsakad blödning/hög INR; vitamin K-brist",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Återställer vitamin K-beroende faktorsyntes (II, VII, IX, X)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Doser indikationsstyrda enligt FASS; vid svår blödning ofta tillsammans med PCC\nSpädning: Enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv inj / po\nInfusionstid: Långsam iv\nAdministreringstid: Akut/upprepning\nAnvändningstid: Akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Flush, hypotension vid för snabb iv\nKliniska kommentarer: Vid svår blödning: PCC + vitamin K; följ INR och klinik\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Hyperkalcemi (malignitetsassoc.) m.m. (indikationsstyrt)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Hämmar osteoklaster → ↓ Ca-frisättning",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Hyperkalcemi: 4 mg engångsdos (indikationsstyrt)\nSpädning: Färdigspädd 4 mg/100 ml eller enligt produkt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv infusion\nInfusionstid: Enl produkt\nAdministreringstid: Engång\nAnvändningstid: Kur/akut",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Feber, myalgi, hypokalcemi, njurpåverkan\nKliniska kommentarer: Kontrollera krea, Ca/Mg/P; hydrering viktigt\nÖvervakningsnivå: AVA / IMA (beroende på status)\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Smärta (mild–måttlig); feber; postop / NPO / illamående",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Central COX-hämning (funktionellt) → analgetisk och antipyretisk effekt",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: ≥50 kg: 1 g iv x4 (max 4 g/dygn). <50 kg: 15 mg/kg x4 (max 60 mg/kg/dygn, ≤3 g)\nSpädning: Klar att ge – ingen spädning krävs",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: Intravenös infusion\nInfusionstid: 15 min\nAdministreringstid: Minst 4–6 h mellan doser\nAnvändningstid: Kort–medellång",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Hypotension vid snabb infusion; leverpåverkan vid överdos\nKliniska kommentarer: Basanalgetika. Kontrollera total dygnsdos från alla administrationsvägar (risk för dold paracetamol). Dosreduktion vid leversjukdom/alkohol, undernäring. Njursvikt: oftast ingen justering men förläng intervall vid svår svikt.\nÖvervakningsnivå: AVA\nHögrisk: Nej",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "section_key": "indikation",
+    "block_type": "text",
+    "title": "Indikation",
+    "body": "Akut symtomatisk hypokalcemi",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "section_key": "farmakologi",
+    "block_type": "text",
+    "title": "Farmakodynamik",
+    "body": "Tillför Ca2+ → återställer serumkalcium; stabiliserar neuromuskulär och kardiell retbarhet",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "section_key": "dosering",
+    "block_type": "drug_card",
+    "title": null,
+    "body": "Dosering: Vuxna: startdos 10 ml (= 2,23 mmol kalcium). Kan upprepas vid behov; dosjustera efter S-Ca och klinik.\nSpädning: Klar lösning. Kan ges outspädd iv. (Vid infusion: följ lokalt PM för ev. spädning.)",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "section_key": "administrering",
+    "block_type": "text",
+    "title": null,
+    "body": "Administreringssätt: iv injektion / iv infusion\nInfusionstid: Ges långsamt. Max hastighet vuxna: 2 ml/min (≈0,45 mmol Ca/min).\nAdministreringstid: Akut, upprepning vid behov\nAnvändningstid: Kort",
+    "extra_json": null,
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "section_key": "observandum",
+    "block_type": "nursing",
+    "title": null,
+    "body": "Biverkningar: Bradykardi, arytmier, hypotoni/vasodilatation, rodnad, illamående/kräkning; extravasation → vävnadsnekros\nKliniska kommentarer: Patient i liggande; övervaka puls/EKG under administrering. Undvik extravasation. Kontra iv vid hjärtglykosider (undantag livshotande hypokalcemi).\nÖvervakningsnivå: IMA\nHögrisk: Ja",
+    "extra_json": null,
+    "sort_order": 1
+  }
+]

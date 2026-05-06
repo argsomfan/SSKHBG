@@ -1,0 +1,143 @@
+{
+  "module_id": "a_hlr_pm_ava_ima_auto_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "A-HLR – PM (AVA/IMA)",
+  "category": "Okänd",
+  "summary": {
+    "ingress": "A-HLR – PM (AVA/IMA) – importerat från Word."
+  },
+  "definition": [
+    "Hjärtstopp = upphörd cirkulation",
+    "Ingen normal andning och ingen puls",
+    "Kräver omedelbar A-HLR",
+    "Tidig behandling avgör överlevnad"
+  ],
+  "orsaker_och_riskfaktorer": [
+    "Hjärtinfarkt (vanligaste orsaken)",
+    "Arytmier",
+    "Hypoxi",
+    "Hypovolemi",
+    "Elektrolytrubbningar (hyper-/hypokalemi)",
+    "Tromboembolism",
+    "Läkemedel/toxiner",
+    "Hypotermi"
+  ],
+  "symtom": [
+    "Medvetslöshet",
+    "Ingen normal andning (agonal/gasping)",
+    "Ingen palpabel puls",
+    "Cyanos"
+  ],
+  "status": [
+    "Medvetslös patient",
+    "Ingen normal andning",
+    "ingen palpabel puls",
+    "Vid monitor:",
+    "VF/V",
+    "Asystoli",
+    "PEA",
+    "Pupiller (kan vara vida)",
+    "Cyanos"
+  ],
+  "diagnostik": [
+    "Klinisk diagnos",
+    "EKG/monitor:",
+    "VF (ventrikelflimmer)",
+    "VT utan puls",
+    "Asystoli",
+    "PEA"
+  ],
+  "behandling": [
+    "Initial handläggning",
+    "Larma hjärtstopp",
+    "Starta HLR direkt (30:2)",
+    "Koppla defibrillator",
+    "Ge syrgas",
+    "Etablera infart",
+    "Chockbar rytm (VF / VT)",
+    "Defibrillera",
+    "Fortsätt HLR 2 min",
+    "Adrenalin efter 3:e stöt",
+    "Amiodaron efter 3:e stöt",
+    "Upprepa cykler",
+    "Icke-chockbar rytm (PEA / Asystoli)",
+    "Starta HLR",
+    "Ge Adrenalin direkt",
+    "Fortsätt HLR 2 min",
+    "Utvärdera rytm",
+    "Behandla bakomliggande orsak",
+    "Läkemedel",
+    "Adrenalin:",
+    "Ges enligt algoritm",
+    "Dokumentera tid och dos",
+    "Amiodaron:",
+    "Vid refraktär VF/VT",
+    "Dokumentera tid och dos"
+  ],
+  "omvardnad": [
+    "Tät övervakning",
+    "Neurologisk bedömning",
+    "Dokumentation"
+  ],
+  "overvakning": [
+    "EKG/rytm",
+    "Puls",
+    "Saturation",
+    "Blodtryck (vid ROSC)",
+    "Kapnografi (om tillgängligt)"
+  ],
+  "komplikationer": [
+    "Hypoxisk hjärnskada",
+    "Revbensfrakturer",
+    "Aspiration",
+    "Recidiv av hjärtstopp"
+  ],
+  "eskalering": [
+    "IVA vid ROSC",
+    "Kontakta bakjour/akutläkare",
+    "Transport till högre vårdnivå",
+    "Dokumentation",
+    "Tid för hjärtstopp",
+    "Start av HLR",
+    "Rytmer",
+    "Antal defibrilleringar",
+    "Läkemedel och tider",
+    "ROSC",
+    "Misstänkt orsak"
+  ],
+  "praktiska_punkter": [
+    "HLR ska startas omedelbart",
+    "Defibrillering ska inte fördröjas",
+    "Tänk alltid 4H/4T",
+    "Växla kompressioner var 2 min",
+    "Tydlig teamstruktur är avgörande",
+    "4H:",
+    "Hypoxi",
+    "Hypovolemi",
+    "Hypo-/hyperkalemi",
+    "Hypotermi",
+    "4T:",
+    "Trombos (hjärta/lunga)",
+    "Tamponad",
+    "Tryckpneumothorax",
+    "Toxiner",
+    "ROSC (återkomst av cirkulation)",
+    "Mål:",
+    "Stabil cirkulation",
+    "God syresättning",
+    "Identifiera orsak",
+    "Åtgärder:",
+    "ABCDE",
+    "Blodgas",
+    "EKG",
+    "Vätska/vasopressor vid behov",
+    "Overväg IVA"
+  ],
+  "referenser": [
+    "HLR-rådet",
+    "Lokalt A-HLR-PM",
+    "Akut internmedicin"
+  ]
+}

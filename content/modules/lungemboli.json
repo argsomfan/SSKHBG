@@ -1,0 +1,103 @@
+{
+  "module_id": "lungemboli_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Lungemboli",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Tromboembolism",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+    "Tromboembolism"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "Misstänkt lungemboli kan snabbt bli livshotande vid cirkulatorisk påverkan.",
+  "source_note": "Arbetsfil för SSKHBG.",
+  "tags": [
+    "lungemboli",
+    "dyspné",
+    "hypoxi",
+    "takykardi",
+    "LE"
+  ],
+  "search_terms": [
+    "lungemboli",
+    "LE",
+    "dyspné",
+    "plötslig hypoxi"
+  ],
+  "summary": {
+    "ingress": "Lungemboli är ett akut tillstånd där trombmaterial obstruerar lungkärl och kan ge hypoxi, dyspné och cirkulatorisk påverkan.",
+    "goals": [
+      "Identifiera allvarlighetsgrad",
+      "Säkra ABCDE",
+      "Påbörja utredning snabbt",
+      "Identifiera patienter med cirkulatorisk instabilitet"
+    ]
+  },
+  "definition": [
+    "Obstruktion i lungartär eller dess grenar, oftast orsakad av venös tromboembolism."
+  ],
+  "symtom": [
+    "Plötslig dyspné",
+    "Bröstsmärta",
+    "Takykardi",
+    "Hypoxi",
+    "Svimning eller presynkope"
+  ],
+  "status": [
+    "Takypné",
+    "Takykardi",
+    "Sänkt saturation",
+    "Oro",
+    "Eventuell hypotension"
+  ],
+  "diagnostik": [
+    "Blodgas",
+    "EKG",
+    "D-dimer enligt läkarbedömning",
+    "CT lungartärer",
+    "Ultraljud ben vid misstänkt DVT"
+  ],
+  "behandling": [
+    "Syrgas vid hypoxi",
+    "Antikoagulantia enligt ordination",
+    "Övervakning",
+    "Trombolys eller annan avancerad behandling vid instabil patient"
+  ],
+  "omvardnad": [
+    "Lugnt bemötande",
+    "Höjd huvudända vid behov",
+    "Tät övervakning av andning och cirkulation",
+    "Förbered transport till radiologi vid behov"
+  ],
+  "overvakning": [
+    "AF",
+    "SpO2",
+    "Puls",
+    "Blodtryck",
+    "Medvetandegrad"
+  ],
+  "komplikationer": [
+    "Akut högerkammarsvikt",
+    "Cirkulatorisk kollaps",
+    "Hypoxi",
+    "Död"
+  ],
+  "eskalering": [
+    "Hypotension",
+    "Tilltagande hypoxi",
+    "Synkope",
+    "Tecken till chock",
+    "Misstänkt massiv lungemboli"
+  ],
+  "referenser": [
+    "Akut internmedicin",
+    "Akutkompendiet"
+  ]
+}

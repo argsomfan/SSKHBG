@@ -1,0 +1,213 @@
+{
+  "module_id": "ahlr_ava_ima_sv_001",
+  "type": "clinical_module",
+  "title": "A-HLR",
+  "subtitle": "Avancerad hjärt-lungräddning på AVA/IMA",
+  "category": "Kardiologi",
+  "specialty": ["Kardiologi"],
+  "status": "ready_for_import",
+
+  "summary": {
+    "ingress": "A-HLR används vid hjärtstopp och bygger på snabb identifiering, HLR, defibrillering, läkemedel och behandling av reversibla orsaker.",
+    "goals": [
+      "Identifiera hjärtstopp direkt",
+      "Starta HLR utan dröjsmål",
+      "Defibrillera chockbara rytmer tidigt",
+      "Ge läkemedel enligt algoritm",
+      "Identifiera och behandla 4H/4T",
+      "Uppnå ROSC och säkra fortsatt vård"
+    ]
+  },
+
+  "quick_facts": [
+    {
+      "label": "HLR-cykel",
+      "value": "2 minuter"
+    },
+    {
+      "label": "Kompressioner",
+      "value": "30:2 tills avancerad luftväg"
+    },
+    {
+      "label": "Defibrillering",
+      "value": "Vid VF/VT enligt algoritm"
+    },
+    {
+      "label": "Adrenalin",
+      "value": "Enligt A-HLR-algoritm"
+    },
+    {
+      "label": "Amiodaron",
+      "value": "Vid refraktär VF/VT enligt algoritm"
+    }
+  ],
+
+  "activation_criteria": [
+    "Misstänkt hjärtstopp",
+    "Ingen normal andning",
+    "Ingen palpabel cirkulation enligt klinisk bedömning",
+    "Medvetslös patient med hjärtstopp"
+  ],
+
+  "immediate_actions": [
+    "Larma hjärtstopp / kalla på hjälp",
+    "Starta HLR direkt",
+    "Koppla defibrillator/monitor så snart som möjligt",
+    "Identifiera rytm",
+    "Följ chockbar eller icke-chockbar algoritm",
+    "Säkra luftväg och ventilation",
+    "Etablera infart",
+    "Tänk 4H/4T tidigt"
+  ],
+
+  "algorithm": {
+    "title": "A-HLR algoritm",
+    "steps": [
+      "Bekräfta hjärtstopp och larma",
+      "Starta HLR omedelbart",
+      "Koppla defibrillator och bedöm rytm",
+      "Vid chockbar rytm: defibrillera och fortsätt HLR",
+      "Vid icke-chockbar rytm: fortsätt HLR och ge läkemedel enligt algoritm",
+      "Utvärdera rytm varannan minut",
+      "Behandla reversibla orsaker kontinuerligt",
+      "Vid ROSC: gå över till postresusciteringsvård"
+    ]
+  },
+
+  "rhythms": [
+    {
+      "title": "Chockbar rytm",
+      "items": [
+        "Ventrikelflimmer (VF)",
+        "Pulslös ventrikeltakykardi (pVT)"
+      ]
+    },
+    {
+      "title": "Icke-chockbar rytm",
+      "items": [
+        "Asystoli",
+        "Pulslös elektrisk aktivitet (PEA)"
+      ]
+    }
+  ],
+
+  "medications": [
+    {
+      "name": "Adrenalin",
+      "dose": "",
+      "indication": "Hjärtstopp enligt A-HLR-algoritm",
+      "timing": "",
+      "nursing_notes": [
+        "Dokumentera given dos och tid",
+        "Följ algoritm och teamledarens ordination"
+      ]
+    },
+    {
+      "name": "Amiodaron",
+      "dose": "",
+      "indication": "Refraktär VF/VT enligt A-HLR-algoritm",
+      "timing": "",
+      "nursing_notes": [
+        "Ges enligt algoritm vid chockbar rytm",
+        "Dokumentera given dos och tid"
+      ]
+    }
+  ],
+
+  "airway_and_breathing": {
+    "title": "Luftväg och ventilation",
+    "items": [
+      "Säkra fri luftväg",
+      "Ventilera med rubens blåsa och syrgas",
+      "Överväg avancerad luftväg enligt teamets kompetens",
+      "Bekräfta ventilation och bröstkorgsrörelser",
+      "Undvik onödiga avbrott i kompressioner"
+    ]
+  },
+
+  "reversible_causes": {
+    "title": "4H / 4T",
+    "items": [
+      "Hypoxi",
+      "Hypovolemi",
+      "Hypo-/hyperkalemi eller annan metabol rubbning",
+      "Hypotermi",
+      "Trombos koronart",
+      "Trombos pulmonellt",
+      "Tamponad",
+      "Tryckpneumothorax",
+      "Toxiner"
+    ]
+  },
+
+  "rosc": {
+    "title": "ROSC",
+    "goals": [
+      "Säkra ABCDE efter återkomst av cirkulation",
+      "Optimera syresättning och ventilation",
+      "Stabilisera cirkulation",
+      "Identifiera bakomliggande orsak",
+      "Planera fortsatt vårdnivå"
+    ],
+    "actions": [
+      "Kontrollera blodtryck, puls, saturation och medvetandegrad",
+      "Ta blodgas och relevanta prover",
+      "Överväg EKG och riktad diagnostik",
+      "Förbered överrapportering till högre vårdnivå vid behov"
+    ],
+    "nursing_focus": [
+      "Tät övervakning",
+      "Dokumentation av förloppet",
+      "Fortsatt observation av neurologi och cirkulation"
+    ]
+  },
+
+  "team_roles": [
+    {
+      "title": "Teamroller",
+      "items": [
+        "Teamledare",
+        "Kompressioner",
+        "Luftväg/ventilation",
+        "Defibrillator/monitor",
+        "Läkemedel/infarter",
+        "Dokumentation/tidtagning"
+      ]
+    }
+  ],
+
+  "monitoring": [
+    "Rytm",
+    "Defibrillatorstatus",
+    "Kompressionskvalitet",
+    "Ventilation",
+    "Tider för läkemedel och stötar",
+    "Tecken till ROSC"
+  ],
+
+  "complications": [
+    "Utebliven ROSC",
+    "Recidiv av hjärtstopp",
+    "Aspirationsrisk",
+    "Hypoxi",
+    "Trauma relaterat till HLR"
+  ],
+
+  "documentation": [
+    "Tid för hjärtstopp om känt",
+    "Tid för larm",
+    "Start av HLR",
+    "Rytmer under förloppet",
+    "Antal stötar",
+    "Läkemedel och tider",
+    "ROSC-tid om uppnådd",
+    "Misstänkt orsak",
+    "Överrapportering"
+  ],
+
+  "references": [
+    "HLR-rådet",
+    "Lokalt A-HLR-PM",
+    "Akutkompendiet"
+  ]
+}

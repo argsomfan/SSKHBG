@@ -1,0 +1,125 @@
+{
+  "module_id": "dka_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "DKA",
+  "subtitle": "Diabetesketoacidos – akut handläggning på AVA/IMA",
+  "category": "Endokrinologi",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+    "Endokrinologi"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "DKA är ett potentiellt livshotande tillstånd. Vätska, insulin, elektrolyter och tät monitorering måste startas snabbt.",
+  "source_note": "Bygger på 1177 för vårdpersonal, AKO Skåne och svenska behandlingsöversikter för DKA hos vuxna.",
+  "tags": [
+    "DKA",
+    "diabetesketoacidos",
+    "ketoner",
+    "hyperglykemi",
+    "metabol acidos",
+    "insulin"
+  ],
+  "search_terms": [
+    "DKA",
+    "diabetesketoacidos",
+    "ketoner över 3",
+    "pH under 7,3",
+    "insulininfusion",
+    "euglykem ketoacidos"
+  ],
+  "summary": {
+    "ingress": "DKA är akut insulinbrist med ketonbildning, metabol acidos och ofta hyperglykemi. Tillståndet kräver snabb vätske- och insulinbehandling samt tät uppföljning av kalium och syra-basstatus.",
+    "goals": [
+      "Identifiera DKA snabbt",
+      "Starta vätska och insulin enligt ordination",
+      "Följa kalium, glukos och blodgas tätt",
+      "Identifiera utlösande orsak och behov av högre vårdnivå"
+    ]
+  },
+  "definition": [
+    "DKA innebär insulinbrist med ketonemi/ketos och metabol acidos. Typiskt ses B-keton >3 mmol/L och pH <7,3, oftast tillsammans med hyperglykemi."
+  ],
+  "symtom": [
+    "Törst",
+    "Polyuri",
+    "Illamående",
+    "Kräkningar",
+    "Buksmärta",
+    "Trötthet",
+    "Dyspné/Kussmaulandning",
+    "Acetonlukt",
+    "Konfusion"
+  ],
+  "status": [
+    "Dehydrering",
+    "Takykardi",
+    "Takypné",
+    "Djupandning",
+    "Hypotension",
+    "Påverkat allmäntillstånd",
+    "Eventuell sänkt medvetandegrad"
+  ],
+  "diagnostik": [
+    "Kapillärt eller venöst glukos",
+    "Blodgas med pH och bikarbonat",
+    "Blodketoner",
+    "Elektrolyter inklusive kalium",
+    "Kreatinin",
+    "Blodstatus och CRP",
+    "EKG",
+    "Övrig utredning utifrån misstänkt utlösande orsak"
+  ],
+  "behandling": [
+    "Starta intravenös vätska enligt ordination",
+    "Starta insulinbehandling enligt ordination/protokoll",
+    "Följ och korrigera kalium noggrant",
+    "Tillägg av glukosinfusion när plasmaglukos sjunker enligt protokoll",
+    "Behandla utlösande orsak, till exempel infektion"
+  ],
+  "omvardnad": [
+    "Säkra infarter tidigt",
+    "Tät kontroll av vitalparametrar",
+    "Noggrann vätskebalans",
+    "Följ urinproduktion",
+    "Lämna inte påverkad patient utan tät uppföljning"
+  ],
+  "overvakning": [
+    "P-glukos upprepade gånger",
+    "Blodgas",
+    "Blodketoner",
+    "Kalium",
+    "Puls",
+    "Blodtryck",
+    "AF",
+    "SpO2",
+    "Medvetandegrad"
+  ],
+  "komplikationer": [
+    "Hypokalemi under behandling",
+    "Arytmier",
+    "Chock",
+    "Njurpåverkan",
+    "Medvetandesänkning",
+    "Recidiv om orsaken inte behandlas"
+  ],
+  "eskalering": [
+    "pH sjunker ytterligare",
+    "Kvarstående eller tilltagande cirkulatorisk påverkan",
+    "Sänkt medvetandegrad",
+    "Svår kaliumrubbning",
+    "Otillräcklig effekt av initial behandling",
+    "Misstanke om behov av IVA"
+  ],
+  "referenser": [
+    "1177 för vårdpersonal",
+    "AKO Skåne",
+    "Svenska behandlingsöversikter för DKA"
+  ]
+}

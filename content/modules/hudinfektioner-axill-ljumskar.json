@@ -1,0 +1,162 @@
+{
+  "slug": "hudinfektioner-axill-ljumskar",
+  "title": "Hudinfektioner i axill och ljumskar",
+  "category": "Dermatologi / Infektion",
+  "summary": [
+    "Axill- eller ljumskknöl är oftast furunkel, abscess eller hidradenitis suppurativa (HS).",
+    "Engångsepisod talar mer för furunkel eller abscess.",
+    "Recidiverande djupa noduli i typiska lokaler talar för HS.",
+    "Fluktuation talar för abscess och kan kräva incision och dränage.",
+    "Feber, cellulit, snabb progress eller allmänpåverkan kräver eskalerad handläggning."
+  ],
+  "tags": [
+    "axill",
+    "ljumske",
+    "abscess",
+    "furunkel",
+    "follikulit",
+    "hidradenitis suppurativa",
+    "hs",
+    "hudinfektion"
+  ],
+  "related_diagnoses": [
+    "cellulit",
+    "sepsis",
+    "diabetes",
+    "immunosuppression"
+  ],
+  "related_modules": [
+    "sepsis",
+    "smarta",
+    "sarantvard",
+    "antibiotika-principer"
+  ],
+  "sections": [
+    {
+      "title": "Definition",
+      "content": [
+        "Hudförändringar i axill och ljumskar utgörs ofta av inflammation i hårfolliklar, djupare hudinfektion eller kronisk inflammatorisk sjukdom.",
+        "Vanligaste differentialdiagnoserna i kliniken är follikulit/furunkel, abscess och hidradenitis suppurativa (HS)."
+      ]
+    },
+    {
+      "title": "Snabböversikt",
+      "content": [
+        "Enstaka akut ömmande lesion utan tidigare episoder talar för furunkel.",
+        "Fluktuerande, ömmande resistens talar för abscess.",
+        "Recidiverande noduli i axill/ljumskar med ärr eller fistlar talar för HS.",
+        "Feber, cellulit eller allmänpåverkan kräver antibiotikaställningstagande och högre vårdnivåbedömning.",
+        "Undvik rakning och friktion tills läkning skett."
+      ]
+    },
+    {
+      "title": "Klinisk differentiering",
+      "content": [
+        "Follikulit/furunkel: akut debut, enstaka lesion, lokal ömhet, ofta kopplat till hårsäck.",
+        "Abscess: fluktuerande svullnad, tydligare rodnad, mer uttalad smärta, eventuell spontandränage.",
+        "HS: återkommande djupa noduli/abscesser i typiska lokaler, ibland sekretion, ärr och fistelgångar."
+      ]
+    },
+    {
+      "title": "HS – vad talar för diagnosen?",
+      "content": [
+        "Typiska lesioner: smärtsamma djupa noduli, abscesser, fistlar eller ärr.",
+        "Typiska lokaler: axiller, ljumskar, perineum, glutealt och inframammärt.",
+        "Recidiv: minst 2 episoder inom 6 månader talar tydligt för HS."
+      ]
+    },
+    {
+      "title": "Akut bedömning",
+      "content": [
+        "Bedöm feber, allmänpåverkan, smärtgrad, snabb progress och tecken till cellulit.",
+        "Bedöm om lesionen är fluktuerande.",
+        "Fråga om tidigare liknande episoder i samma område.",
+        "Fråga om rakning, friktion, svettning, diabetes, rökning och immunosuppression."
+      ]
+    },
+    {
+      "title": "Status",
+      "content": [
+        "Inspektera rodnad, svullnad, sekretion, öppningar, ärr och eventuell fistelbildning.",
+        "Palpera för ömhet, induration och fluktuation.",
+        "Bedöm utbredning utanför primär lesion och misstanke om cellulit."
+      ]
+    },
+    {
+      "title": "Initial handläggning",
+      "content": [
+        "Mild lokal förändring utan allmänpåverkan: lokalbehandling och egenvårdsråd.",
+        "Fluktuerande lesion: överväg abscess och behov av incision/dränage.",
+        "Recidiverande förändringar i typiska lokaler: tänk HS och planera uppföljning.",
+        "Vid feber, cellulit, snabb försämring eller riskpatient: odling vid sekretion och antibiotikaställningstagande."
+      ]
+    },
+    {
+      "title": "Behandling – furunkel/follikulit",
+      "content": [
+        "Daglig rengöring, gärna med klorhexidintvätt om huden tolererar detta.",
+        "Varma kompresser flera gånger dagligen kan främja spontan dränering.",
+        "Undvik rakning, tryck och friktion över området.",
+        "Antibiotika behövs oftast inte vid liten lokal förändring utan spridning."
+      ]
+    },
+    {
+      "title": "Behandling – abscess",
+      "content": [
+        "Incision och dränage är förstahandsåtgärd vid tydlig abscess.",
+        "Antibiotika övervägs vid samtidig cellulit, feber, allmänpåverkan eller riskfaktorer.",
+        "Smärtlindra och planera omläggning/uppföljning efter dränage."
+      ]
+    },
+    {
+      "title": "Behandling – misstänkt HS",
+      "content": [
+        "Minska friktion och undvik rakning i aktivt område.",
+        "Antiseptisk tvätt kan användas som stödjande åtgärd.",
+        "Lokalt klindamycin kan vara aktuellt vid mild sjukdom enligt ordination.",
+        "Vid återkommande eller mer utbredd sjukdom krävs läkarbedömning för systemisk behandling och eventuell hudremiss."
+      ]
+    },
+    {
+      "title": "Omvårdnadsåtgärder",
+      "content": [
+        "Observera smärta, rodnad, sekretion och tilltagande svullnad.",
+        "Informera patienten om att inte klämma eller manipulera lesionen.",
+        "Stöd god hudhygien och torra hudveck.",
+        "Informera om att återkommande förändringar i samma område bör följas upp för att utesluta HS.",
+        "Dokumentera storlek, lokalisation, eventuell sekretion, feber och patientens smärtupplevelse."
+      ]
+    },
+    {
+      "title": "När eskalera",
+      "content": [
+        "Feber eller allmänpåverkan.",
+        "Snabb progress eller spridande rodnad.",
+        "Kraftig smärta eller uttalad svullnad.",
+        "Misstänkt cellulit eller sepsis.",
+        "Recidiverande lesioner med ärr eller fistelmisstanke."
+      ]
+    },
+    {
+      "title": "Differentialdiagnoser",
+      "content": [
+        "Follikulit",
+        "Furunkel",
+        "Abscess",
+        "Cellulit",
+        "Hidradenitis suppurativa",
+        "Epidermal cysta"
+      ]
+    },
+    {
+      "title": "Snabb algoritm",
+      "content": [
+        "Axill/ljumske + ömmande knöl.",
+        "Engångsepisod utan fluktuation: sannolikt furunkel/follikulit.",
+        "Fluktuation eller tydlig varansamling: sannolikt abscess.",
+        "Recidiv i typisk lokal med ärr/fistlar: misstänk HS.",
+        "Feber, cellulit eller allmänpåverkan: eskalera."
+      ]
+    }
+  ]
+}

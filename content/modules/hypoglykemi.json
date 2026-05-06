@@ -1,0 +1,113 @@
+{
+  "module_id": "hypoglykemi_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Hypoglykemi",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Endokrinologi",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+    "Endokrinologi"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "Hypoglykemi kan snabbt ge kramper, medvetandepåverkan och koma. Kontrollera glukos tidigt vid oklar påverkan.",
+  "source_note": "Bygger på 1177 för vårdpersonal, Vårdhandboken och Internetmedicin.",
+  "tags": [
+    "hypoglykemi",
+    "lågt blodsocker",
+    "glukos",
+    "glukagon",
+    "diabetes",
+    "insulin"
+  ],
+  "search_terms": [
+    "hypoglykemi",
+    "lågt blodsocker",
+    "glukos iv",
+    "glukagon",
+    "insulinkänning"
+  ],
+  "summary": {
+    "ingress": "Hypoglykemi innebär för lågt blodglukos och kan ge autonoma symtom, neuroglykopena symtom och i svåra fall medvetslöshet.",
+    "goals": [
+      "Identifiera hypoglykemi snabbt",
+      "Kontrollera blodglukos tidigt",
+      "Ge snabb glukosbehandling",
+      "Följa kliniskt svar och förhindra recidiv"
+    ]
+  },
+  "definition": [
+    "Hypoglykemi innebär lågt blodglukos. Kliniskt betydelsefull hypoglykemi hos vuxna ses ofta vid P-glukos under cirka 3 mmol/L."
+  ],
+  "symtom": [
+    "Svettning",
+    "Tremor",
+    "Hjärtklappning",
+    "Hunger",
+    "Oro",
+    "Konfusion",
+    "Sluddrigt tal",
+    "Trötthet",
+    "Kramper",
+    "Medvetslöshet"
+  ],
+  "status": [
+    "Kallsvettig patient",
+    "Påverkat medvetande",
+    "Neurologiska bortfallsliknande symtom",
+    "Eventuellt kramper",
+    "Takykardi"
+  ],
+  "diagnostik": [
+    "Kapillärt eller venöst glukos direkt",
+    "ABCDE-bedömning",
+    "Överväg EKG och övriga prover utifrån klinik",
+    "Utvärdera sannolik bakomliggande orsak"
+  ],
+  "behandling": [
+    "Vaken patient: ge snabbt resorberbara kolhydrater per os",
+    "Upprepa glukoskontroll och ge mer vid behov",
+    "Ge därefter mer långverkande kolhydrat när patienten förbättrats",
+    "Medvetandepåverkad patient: ge intravenös glukos enligt ordination",
+    "Överväg glukagon när iv-infart saknas enligt ordination eller lokal rutin"
+  ],
+  "omvardnad": [
+    "Lämna inte påverkad patient ensam",
+    "Säkra fri luftväg och skydda patienten vid sänkt medvetande",
+    "Observera sväljningsförmåga innan peroral behandling",
+    "Informera patienten om att symtomen kan återkomma"
+  ],
+  "overvakning": [
+    "Blodglukos upprepade gånger",
+    "Puls",
+    "Blodtryck",
+    "Andningsfrekvens",
+    "SpO2",
+    "Medvetandegrad"
+  ],
+  "komplikationer": [
+    "Kramper",
+    "Medvetslöshet",
+    "Aspirationsrisk",
+    "Recidiverande hypoglykemi",
+    "Trauma vid fall"
+  ],
+  "eskalering": [
+    "Sjunkande medvetandegrad",
+    "Ingen förbättring efter initial behandling",
+    "Återkommande hypoglykemi",
+    "Kramper",
+    "Misstanke om långverkande insulin eller sulfonylurea"
+  ],
+  "referenser": [
+    "1177 för vårdpersonal",
+    "Vårdhandboken",
+    "Internetmedicin"
+  ]
+}

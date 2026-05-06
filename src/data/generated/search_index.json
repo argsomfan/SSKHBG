@@ -1,0 +1,1632 @@
+[
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "term": "A-HLR",
+    "weight": 10
+  },
+  {
+    "module_slug": "antibiotikadosering_njurfunktion_ava_ima_sv_001",
+    "term": "Antibiotikadosering vid nedsatt njurfunktion",
+    "weight": 10
+  },
+  {
+    "module_slug": "antibiotikaval_slutenvard_ava_ima_sv_001",
+    "term": "Antibiotikaval vid samhällsförvärvade infektioner hos vuxna i slutenvård",
+    "weight": 10
+  },
+  {
+    "module_slug": "bakteriell_meningit_ava_ima_sv_001",
+    "term": "Bakteriell meningit",
+    "weight": 10
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "DKA",
+    "weight": 10
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "DKA",
+    "weight": 8
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "diabetesketoacidos",
+    "weight": 8
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "ketoner över 3",
+    "weight": 8
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "pH under 7,3",
+    "weight": 8
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "insulininfusion",
+    "weight": 8
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "euglykem ketoacidos",
+    "weight": 8
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "DKA",
+    "weight": 6
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "diabetesketoacidos",
+    "weight": 6
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "ketoner",
+    "weight": 6
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "hyperglykemi",
+    "weight": 6
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "metabol acidos",
+    "weight": 6
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "term": "insulin",
+    "weight": 6
+  },
+  {
+    "module_slug": "hhs_ava_ima_sv_001",
+    "term": "Hyperglykemiskt hyperosmolärt syndrom",
+    "weight": 10
+  },
+  {
+    "module_slug": "hogt_blodsocker_akuten_ava_ima_sv_001",
+    "term": "Högt blodsocker på akuten",
+    "weight": 10
+  },
+  {
+    "module_slug": "hud_mjukdelsinfektioner_ava_ima_sv_001",
+    "term": "Hud- och mjukdelsinfektioner",
+    "weight": 10
+  },
+  {
+    "module_slug": "hyperglykemi_ava_ima_sv_001",
+    "term": "Hyperglykemi",
+    "weight": 10
+  },
+  {
+    "module_slug": "hyperglykemi_kortison_ava_ima_sv_001",
+    "term": "Hyperglykemi orsakad av kortisontillförsel",
+    "weight": 10
+  },
+  {
+    "module_slug": "hyperkalcemi_ava_ima_sv_001",
+    "term": "Hyperkalcemi",
+    "weight": 10
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "Hyperkalemi",
+    "weight": 10
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "hyperkalemi",
+    "weight": 8
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "högt kalium",
+    "weight": 8
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "EKG hyperkalemi",
+    "weight": 8
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "kalciumglukonat",
+    "weight": 8
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "insulin glukos",
+    "weight": 8
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "hyperkalemi",
+    "weight": 6
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "kalium",
+    "weight": 6
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "arytmi",
+    "weight": 6
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "EKG",
+    "weight": 6
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "kalciumglukonat",
+    "weight": 6
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "term": "insulin",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypernatremi_ava_ima_sv_001",
+    "term": "Hypernatremi",
+    "weight": 10
+  },
+  {
+    "module_slug": "hypertyreos_ava_ima_sv_001",
+    "term": "Hypertyreos",
+    "weight": 10
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "Hypoglykemi",
+    "weight": 10
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "hypoglykemi",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "lågt blodsocker",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "glukos iv",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "glukagon",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "insulinkänning",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "hypoglykemi",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "lågt blodsocker",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "glukos",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "glukagon",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "diabetes",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "term": "insulin",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypoglykemiskt_koma_ava_ima_sv_001",
+    "term": "Hypoglykemiskt koma",
+    "weight": 10
+  },
+  {
+    "module_slug": "hypokalcemi_ava_ima_sv_001",
+    "term": "Hypokalcemi",
+    "weight": 10
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "Hypokalemi",
+    "weight": 10
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "hypokalemi",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "lågt kalium",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "EKG hypokalemi",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "kaliumsubstitution",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "arytmi kalium",
+    "weight": 8
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "hypokalemi",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "lågt kalium",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "EKG",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "arytmi",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "kaliumsubstitution",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "term": "elektrolyter",
+    "weight": 6
+  },
+  {
+    "module_slug": "hypokortisolism_ava_ima_sv_001",
+    "term": "Hypokortisolism",
+    "weight": 10
+  },
+  {
+    "module_slug": "hyponatremi_ava_ima_sv_001",
+    "term": "Hyponatremi",
+    "weight": 10
+  },
+  {
+    "module_slug": "hypotyreos_myxodema_ava_ima_sv_001",
+    "term": "Hypotyreos / Myxödemkoma",
+    "weight": 10
+  },
+  {
+    "module_slug": "insulin_vid_behov_ava_ima_sv_001",
+    "term": "Insulin vid behov",
+    "weight": 10
+  },
+  {
+    "module_slug": "insulinpump_subcutan_ava_ima_sv_001",
+    "term": "Insulinpump (subcutan)",
+    "weight": 10
+  },
+  {
+    "module_slug": "iv_insulinbehandling_ava_ima_sv_001",
+    "term": "Intravenös insulinbehandling",
+    "weight": 10
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "KOL-exacerbation",
+    "weight": 10
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "KOL exacerbation",
+    "weight": 8
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "KOL försämring",
+    "weight": 8
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "hyperkapni",
+    "weight": 8
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "NIV",
+    "weight": 8
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "BiPAP",
+    "weight": 8
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "KOL",
+    "weight": 6
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "KOL-exacerbation",
+    "weight": 6
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "hyperkapni",
+    "weight": 6
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "NIV",
+    "weight": 6
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "term": "respiratorisk svikt",
+    "weight": 6
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "Lungemboli",
+    "weight": 10
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "lungemboli",
+    "weight": 8
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "LE",
+    "weight": 8
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "dyspné",
+    "weight": 8
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "plötslig hypoxi",
+    "weight": 8
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "lungemboli",
+    "weight": 6
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "dyspné",
+    "weight": 6
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "hypoxi",
+    "weight": 6
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "takykardi",
+    "weight": 6
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "term": "LE",
+    "weight": 6
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "NIV",
+    "weight": 10
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "NIV",
+    "weight": 8
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "BiPAP",
+    "weight": 8
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "CPAP",
+    "weight": 8
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "hyperkapni",
+    "weight": 8
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "pH under 7.35",
+    "weight": 8
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "respiratorisk acidos",
+    "weight": 8
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "NIV",
+    "weight": 6
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "BiPAP",
+    "weight": 6
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "CPAP",
+    "weight": 6
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "hyperkapni",
+    "weight": 6
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "hypoventilation",
+    "weight": 6
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "term": "KOL",
+    "weight": 6
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "Pneumoni",
+    "weight": 10
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "pneumoni",
+    "weight": 8
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "samhällsförvärvad pneumoni",
+    "weight": 8
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "hypoxi",
+    "weight": 8
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "lunginflammation",
+    "weight": 8
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "pneumoni",
+    "weight": 6
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "hypoxi",
+    "weight": 6
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "infektion",
+    "weight": 6
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "sepsis",
+    "weight": 6
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "term": "antibiotika",
+    "weight": 6
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "Respiratorisk svikt",
+    "weight": 10
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "respiratorisk svikt",
+    "weight": 8
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "andningssvikt",
+    "weight": 8
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "hypoxisk svikt",
+    "weight": 8
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "hyperkapnisk svikt",
+    "weight": 8
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "blodgas",
+    "weight": 8
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "NIV",
+    "weight": 8
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "respiratorisk svikt",
+    "weight": 6
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "hypoxi",
+    "weight": 6
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "hyperkapni",
+    "weight": 6
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "blodgas",
+    "weight": 6
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "NIV",
+    "weight": 6
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "term": "andningssvikt",
+    "weight": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "Sepsis",
+    "weight": 10
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "sepsis",
+    "weight": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "septisk chock",
+    "weight": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "laktat",
+    "weight": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "blododling",
+    "weight": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "b 90 30 90",
+    "weight": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "antibiotika inom 1 timme",
+    "weight": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "ringer sepsis",
+    "weight": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "timdiures sepsis",
+    "weight": 8
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "sepsis",
+    "weight": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "septisk chock",
+    "weight": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "laktat",
+    "weight": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "blododling",
+    "weight": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "antibiotika",
+    "weight": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "ringer",
+    "weight": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "timdiures",
+    "weight": 6
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "term": "infektion",
+    "weight": 6
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "Septisk chock",
+    "weight": 10
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "septisk chock",
+    "weight": 8
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "sepsis hypotension",
+    "weight": 8
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "laktat",
+    "weight": 8
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "vasopressor",
+    "weight": 8
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "noradrenalin",
+    "weight": 8
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "chock",
+    "weight": 8
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "septisk chock",
+    "weight": 6
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "sepsis",
+    "weight": 6
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "hypotension",
+    "weight": 6
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "laktat",
+    "weight": 6
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "noradrenalin",
+    "weight": 6
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "term": "vasopressor",
+    "weight": 6
+  },
+  {
+    "module_slug": "urinvagsinfektion_ava_ima_sv_001",
+    "term": "Urinvägsinfektion",
+    "weight": 10
+  },
+  {
+    "module_slug": "uttalad_hypertoni_ava_ima_sv_001",
+    "term": "Uttalad hypertoni",
+    "weight": 10
+  },
+  {
+    "module_slug": "acetylcystein",
+    "term": "Acetylcystein",
+    "weight": 8
+  },
+  {
+    "module_slug": "acetylcystein",
+    "term": "Antidot, mukolytikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "acetylcystein",
+    "term": "Paracetamolintoxikation",
+    "weight": 8
+  },
+  {
+    "module_slug": "acetylcystein",
+    "term": "AVA / IMA vid reaktion/instabil",
+    "weight": 8
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "term": "Actrapid (insulin human)",
+    "weight": 8
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "term": "Snabbverkande insulin",
+    "weight": 8
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "term": "Hyperglykemi; DKA/HHS; perioperativ glukoskontroll",
+    "weight": 8
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "term": "AVA / IMA vid DKA/HHS/instabil",
+    "weight": 8
+  },
+  {
+    "module_slug": "adrenalin",
+    "term": "Adrenalin",
+    "weight": 8
+  },
+  {
+    "module_slug": "adrenalin",
+    "term": "Katekolamin, vasopressor, bronkdilatator",
+    "weight": 8
+  },
+  {
+    "module_slug": "adrenalin",
+    "term": "Anafylaxi; hjärtstopp; chock",
+    "weight": 8
+  },
+  {
+    "module_slug": "adrenalin",
+    "term": "IMA (inf) / AVA (im)",
+    "weight": 8
+  },
+  {
+    "module_slug": "amiodaron",
+    "term": "Amiodaron",
+    "weight": 8
+  },
+  {
+    "module_slug": "amiodaron",
+    "term": "Antiarytmikum klass III",
+    "weight": 8
+  },
+  {
+    "module_slug": "amiodaron",
+    "term": "VT/VF; förmaksflimmer/-fladder",
+    "weight": 8
+  },
+  {
+    "module_slug": "amiodaron",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "atropin",
+    "term": "Atropin",
+    "weight": 8
+  },
+  {
+    "module_slug": "atropin",
+    "term": "Antikolinergikum (parasympatolytikum)",
+    "weight": 8
+  },
+  {
+    "module_slug": "atropin",
+    "term": "Symtomgivande bradykardi; organofosfatförgiftning",
+    "weight": 8
+  },
+  {
+    "module_slug": "atropin",
+    "term": "AVA / IMA vid instabil",
+    "weight": 8
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "term": "Betapred (betametason)",
+    "weight": 8
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "term": "Glukokortikoid",
+    "weight": 8
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "term": "Anafylaxi (tillägg); astma/KOL-exacerbation; cerebralt ödem",
+    "weight": 8
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "term": "AVA",
+    "weight": 8
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "term": "Kalciumglukonat",
+    "weight": 8
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "term": "Elektrolyt",
+    "weight": 8
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "term": "Hyperkalemi (membranstabilisering); hypokalcemi; Ca-blockerintox",
+    "weight": 8
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "diazepam",
+    "term": "Diazepam",
+    "weight": 8
+  },
+  {
+    "module_slug": "diazepam",
+    "term": "Bensodiazepin",
+    "weight": 8
+  },
+  {
+    "module_slug": "diazepam",
+    "term": "Kramper/status epilepticus; alkoholabstinens; akut ångest",
+    "weight": 8
+  },
+  {
+    "module_slug": "diazepam",
+    "term": "AVA / IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "digoxin",
+    "term": "Digoxin",
+    "weight": 8
+  },
+  {
+    "module_slug": "digoxin",
+    "term": "Hjärtsglykosid",
+    "weight": 8
+  },
+  {
+    "module_slug": "digoxin",
+    "term": "Förmaksflimmer (frekvenskontroll); hjärtsvikt (selektivt)",
+    "weight": 8
+  },
+  {
+    "module_slug": "digoxin",
+    "term": "AVA / IMA vid intox",
+    "weight": 8
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "term": "Dexmedetomidin",
+    "weight": 8
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "term": "Selektiv α2-agonist, sedativum",
+    "weight": 8
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "term": "Sedering (IVA/IMA/AVA)",
+    "weight": 8
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "term": "IMA (ibland AVA)",
+    "weight": 8
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "term": "Ergenyl (valproat)",
+    "weight": 8
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "term": "Antiepileptikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "term": "Epilepsi; status epilepticus (iv)",
+    "weight": 8
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "esomeprazol",
+    "term": "Esomeprazol",
+    "weight": 8
+  },
+  {
+    "module_slug": "esomeprazol",
+    "term": "Protonpumpshämmare (PPI)",
+    "weight": 8
+  },
+  {
+    "module_slug": "esomeprazol",
+    "term": "GI-blödning; ulcusprofylax; GERD",
+    "weight": 8
+  },
+  {
+    "module_slug": "esomeprazol",
+    "term": "AVA",
+    "weight": 8
+  },
+  {
+    "module_slug": "flumazenil",
+    "term": "Flumazenil",
+    "weight": 8
+  },
+  {
+    "module_slug": "flumazenil",
+    "term": "Bensodiazepin-antagonist",
+    "weight": 8
+  },
+  {
+    "module_slug": "flumazenil",
+    "term": "Reversering av BZD-sedering",
+    "weight": 8
+  },
+  {
+    "module_slug": "flumazenil",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "furosemid",
+    "term": "Furosemid",
+    "weight": 8
+  },
+  {
+    "module_slug": "furosemid",
+    "term": "Loopdiuretikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "furosemid",
+    "term": "Lungödem; hjärtsvikt; vätskeöverskott",
+    "weight": 8
+  },
+  {
+    "module_slug": "furosemid",
+    "term": "AVA / IMA vid instabil",
+    "weight": 8
+  },
+  {
+    "module_slug": "glukos",
+    "term": "Glukos",
+    "weight": 8
+  },
+  {
+    "module_slug": "glukos",
+    "term": "Kolhydrat/energikälla",
+    "weight": 8
+  },
+  {
+    "module_slug": "glukos",
+    "term": "Hypoglykemi; energitillförsel",
+    "weight": 8
+  },
+  {
+    "module_slug": "glukos",
+    "term": "AVA",
+    "weight": 8
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "term": "Glykopyrronmonium",
+    "weight": 8
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "term": "Antikolinergikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "term": "Bradykardi; sekretminskning",
+    "weight": 8
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "term": "AVA",
+    "weight": 8
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "term": "Glypressin (terlipressin)",
+    "weight": 8
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "term": "Vasopressinanalog",
+    "weight": 8
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "term": "Variceblödning; hepatorenalt syndrom",
+    "weight": 8
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "isoprenalin",
+    "term": "Isoprenalin",
+    "weight": 8
+  },
+  {
+    "module_slug": "isoprenalin",
+    "term": "β-agonist",
+    "weight": 8
+  },
+  {
+    "module_slug": "isoprenalin",
+    "term": "Symtomgivande bradykardi; AV-block (temporärt)",
+    "weight": 8
+  },
+  {
+    "module_slug": "isoprenalin",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "levetiracetam",
+    "term": "Levetiracetam",
+    "weight": 8
+  },
+  {
+    "module_slug": "levetiracetam",
+    "term": "Antiepileptikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "levetiracetam",
+    "term": "Epilepsi; status epilepticus",
+    "weight": 8
+  },
+  {
+    "module_slug": "levetiracetam",
+    "term": "AVA / IMA (status/instabil)",
+    "weight": 8
+  },
+  {
+    "module_slug": "levosimendan",
+    "term": "Levosimendan",
+    "weight": 8
+  },
+  {
+    "module_slug": "levosimendan",
+    "term": "Inodilator",
+    "weight": 8
+  },
+  {
+    "module_slug": "levosimendan",
+    "term": "Akut svår hjärtsvikt",
+    "weight": 8
+  },
+  {
+    "module_slug": "levosimendan",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "midazolam",
+    "term": "Midazolam",
+    "weight": 8
+  },
+  {
+    "module_slug": "midazolam",
+    "term": "Bensodiazepin, sedativum",
+    "weight": 8
+  },
+  {
+    "module_slug": "midazolam",
+    "term": "Sedering (procedur/AVA/IMA); kramper/status; ångest/agitation",
+    "weight": 8
+  },
+  {
+    "module_slug": "midazolam",
+    "term": "AVA / IMA (infusion/instabil)",
+    "weight": 8
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "term": "Monofer (järn(III)isomaltos)",
+    "weight": 8
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "term": "Parenteralt järn (Fe3+)",
+    "weight": 8
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "term": "Järnbristanemi när po ej funkar/ej tolereras eller behov av snabb järntillförsel",
+    "weight": 8
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "term": "AVA (stabil) / IMA (risk/instabil)",
+    "weight": 8
+  },
+  {
+    "module_slug": "morfin-inj",
+    "term": "Morfin (inj)",
+    "weight": 8
+  },
+  {
+    "module_slug": "morfin-inj",
+    "term": "Opioidanalgetikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "morfin-inj",
+    "term": "Svåra smärttillstånd",
+    "weight": 8
+  },
+  {
+    "module_slug": "morfin-inj",
+    "term": "AVA (stabil) / IMA (iv/instabil)",
+    "weight": 8
+  },
+  {
+    "module_slug": "naloxon",
+    "term": "Naloxon",
+    "weight": 8
+  },
+  {
+    "module_slug": "naloxon",
+    "term": "Opioidantagonist",
+    "weight": 8
+  },
+  {
+    "module_slug": "naloxon",
+    "term": "Opioidbetingad CNS-/andningsdepression; misstänkt opioidöverdos",
+    "weight": 8
+  },
+  {
+    "module_slug": "naloxon",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "term": "Natriumbikarbonat",
+    "weight": 8
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "term": "Buffert/alkaliserande",
+    "weight": 8
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "term": "Behandlingskrävande metabol acidos; vissa intox; hjärtstillestånd (indikationsstyrt)",
+    "weight": 8
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "term": "Nitroglycerin",
+    "weight": 8
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "term": "Nitrat/vasodilatator",
+    "weight": 8
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "term": "Angina/ACS; lungödem; hypertensiv svikt",
+    "weight": 8
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "term": "Ocplex (PCC)",
+    "weight": 8
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "term": "Koagulationsfaktor-koncentrat (PCC)",
+    "weight": 8
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "term": "Allvarlig blödning/akut op vid warfarin (AVK)",
+    "weight": 8
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "ondansetron",
+    "term": "Ondansetron",
+    "weight": 8
+  },
+  {
+    "module_slug": "ondansetron",
+    "term": "Antiemetikum (5-HT3-antagonist)",
+    "weight": 8
+  },
+  {
+    "module_slug": "ondansetron",
+    "term": "Illamående/kräkning (PONV/CINV)",
+    "weight": 8
+  },
+  {
+    "module_slug": "ondansetron",
+    "term": "AVA / IMA (vid QT-risk/iv)",
+    "weight": 8
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "term": "Oxycodon (inj/inf)",
+    "weight": 8
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "term": "Opioidanalgetikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "term": "Svår smärta",
+    "weight": 8
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "term": "IMA (iv titrering/infusion)",
+    "weight": 8
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "term": "Paracetamol (iv 10 mg/ml)",
+    "weight": 8
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "term": "Analgetikum/antipyretikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "term": "Smärta/feber när po ej lämpligt",
+    "weight": 8
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "term": "AVA",
+    "weight": 8
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "term": "Primperan (metoklopramid)",
+    "weight": 8
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "term": "Antiemetikum/prokinetikum (D2-antagonist)",
+    "weight": 8
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "term": "Illamående (selektivt); gastropares",
+    "weight": 8
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "term": "AVA",
+    "weight": 8
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "term": "Remdesivir (Veklury)",
+    "weight": 8
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "term": "Antiviralt (nukleotidanalog)",
+    "weight": 8
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "term": "COVID-19 enligt indikation",
+    "weight": 8
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "term": "AVA / IMA (beroende på status)",
+    "weight": 8
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "term": "Seloken (metoprolol inj)",
+    "weight": 8
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "term": "β1-blockerare",
+    "weight": 8
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "term": "SVT/supraventrikulär takyarytmi; frekvenskontroll (indikationsstyrt)",
+    "weight": 8
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "term": "AVA / IMA (vid instabil)",
+    "weight": 8
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "term": "Solu-Cortef (hydrokortison)",
+    "weight": 8
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "term": "Glukokortikoid",
+    "weight": 8
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "term": "Adrenal kris; chock/anafylaxi (tillägg) m.m.",
+    "weight": 8
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "term": "AVA / IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "term": "Solu-Medrol (metylprednisolon)",
+    "weight": 8
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "term": "Glukokortikoid",
+    "weight": 8
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "term": "Svåra akuta inflammatoriska tillstånd (indikationsstyrt)",
+    "weight": 8
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "term": "AVA / IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "term": "Trandate (labetalol)",
+    "weight": 8
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "term": "α/β-blockerare",
+    "weight": 8
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "term": "Hypertensiv kris (även graviditetsrelaterad)",
+    "weight": 8
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "term": "Tranexamsyra",
+    "weight": 8
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "term": "Antifibrinolytikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "term": "Blödning/hyperfibrinolys (indikationsstyrt)",
+    "weight": 8
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "term": "AVA / IMA (beroende på blödning)",
+    "weight": 8
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "term": "Tiamin (vitamin B1)",
+    "weight": 8
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "term": "Vitamin",
+    "weight": 8
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "term": "Wernicke-risk; malnutrition; alkohol",
+    "weight": 8
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "term": "AVA",
+    "weight": 8
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "term": "Konakion (vitamin K1)",
+    "weight": 8
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "term": "Antidot/koagulationsvitamin",
+    "weight": 8
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "term": "AVK-orsakad blödning/hög INR; vitamin K-brist",
+    "weight": 8
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "term": "IMA",
+    "weight": 8
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "term": "Zoledronsyra",
+    "weight": 8
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "term": "Bisfosfonat",
+    "weight": 8
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "term": "Hyperkalcemi (malignitetsassoc.) m.m. (indikationsstyrt)",
+    "weight": 8
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "term": "AVA / IMA (beroende på status)",
+    "weight": 8
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "term": "Perfalgan® (paracetamol 10 mg/ml)",
+    "weight": 8
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "term": "Analgetikum / antipyretikum",
+    "weight": 8
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "term": "Smärta (mild–måttlig); feber; postop / NPO / illamående",
+    "weight": 8
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "term": "AVA",
+    "weight": 8
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "term": "Zeltacin (kalciumglukonat 100 mg/ml)",
+    "weight": 8
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "term": "Elektrolyt (kalciumglukonat)",
+    "weight": 8
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "term": "Akut symtomatisk hypokalcemi",
+    "weight": 8
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "term": "IMA",
+    "weight": 8
+  }
+]

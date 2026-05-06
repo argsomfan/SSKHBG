@@ -1,0 +1,111 @@
+{
+  "module_id": "respiratorisk_svikt_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Respiratorisk svikt",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Ventilation",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+  "Ventilation"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "Respiratorisk svikt kan snabbt försämras. Följ andningsarbete, saturation, blodgas och vakenhet tätt.",
+  "source_note": "Arbetsfil för SSKHBG.",
+  "tags": [
+    "respiratorisk svikt",
+    "hypoxi",
+    "hyperkapni",
+    "blodgas",
+    "NIV",
+    "andningssvikt"
+  ],
+  "search_terms": [
+    "respiratorisk svikt",
+    "andningssvikt",
+    "hypoxisk svikt",
+    "hyperkapnisk svikt",
+    "blodgas",
+    "NIV"
+  ],
+  "summary": {
+    "ingress": "Respiratorisk svikt innebär att gasutbytet inte längre är tillräckligt och kan ge hypoxi, hyperkapni eller båda delarna samtidigt.",
+    "goals": [
+      "Identifiera typ av andningssvikt tidigt",
+      "Säkra ABCDE",
+      "Ta blodgas tidigt",
+      "Starta rätt andningsstöd och behandla orsaken"
+    ]
+  },
+  "definition": [
+    "Respiratorisk svikt innebär otillräckligt gasutbyte med hypoxemi, hyperkapni eller kombination av båda."
+  ],
+  "symtom": [
+    "Dyspné",
+    "Takypné",
+    "Oro",
+    "Trötthet",
+    "Konfusion",
+    "Cyanos"
+  ],
+  "status": [
+    "Ökat andningsarbete",
+    "Indragningar",
+    "Hög eller låg andningsfrekvens",
+    "Sänkt saturation",
+    "Påverkad vakenhet"
+  ],
+  "diagnostik": [
+    "ABCDE-bedömning",
+    "Blodgas",
+    "Saturation",
+    "Rtg pulm",
+    "EKG",
+    "Lab utifrån misstänkt orsak"
+  ],
+  "behandling": [
+    "Syrgas vid hypoxi",
+    "NIV vid hyperkapnisk svikt när indicerat",
+    "Överväg högre vårdnivå vid svår påverkan",
+    "Behandla bakomliggande orsak"
+  ],
+  "omvardnad": [
+    "Höjd huvudända",
+    "Lugnt bemötande",
+    "Tät andningsobservation",
+    "Kontinuerlig uppföljning av effekt av given behandling"
+  ],
+  "overvakning": [
+    "AF",
+    "SpO2",
+    "Puls",
+    "Blodtryck",
+    "Blodgas",
+    "Vakenhet"
+  ],
+  "komplikationer": [
+    "Hypoxi",
+    "Hyperkapni",
+    "Respiratorisk acidos",
+    "Behov av intubation",
+    "Cirkulatorisk påverkan"
+  ],
+  "eskalering": [
+    "Sjunkande saturation trots behandling",
+    "Stigande pCO2",
+    "Sjunkande pH",
+    "Tilltagande trötthet",
+    "Sjunkande medvetandegrad",
+    "Otillräcklig effekt av initial behandling"
+  ],
+  "referenser": [
+    "Akut internmedicin",
+    "Akutkompendiet"
+  ]
+}

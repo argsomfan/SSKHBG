@@ -1,0 +1,9 @@
+{
+  "module_id": "hyperglykemi_kortison_ava_ima_sv_001",
+  "type": "clinical_module",
+  "title": "Hyperglykemi orsakad av kortisontillförsel",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Endokrinologi",
+  "specialty": ["Endokrinologi"],
+  "status": "ready_for_import"
+}

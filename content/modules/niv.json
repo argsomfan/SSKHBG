@@ -1,0 +1,108 @@
+{
+  "module_id": "niv_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "NIV",
+  "subtitle": "Non-invasive ventilation på AVA/IMA",
+  "category": "Ventilation",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+    "Ventilation"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "NIV kräver tät klinisk uppföljning. Utebliven förbättring betyder tidig omvärdering och ställningstagande till IVA/intubation.",
+  "source_note": "Arbetsfil för SSKHBG.",
+  "tags": [
+    "NIV",
+    "BiPAP",
+    "CPAP",
+    "hyperkapni",
+    "hypoventilation",
+    "KOL"
+  ],
+  "search_terms": [
+    "NIV",
+    "BiPAP",
+    "CPAP",
+    "hyperkapni",
+    "pH under 7.35",
+    "respiratorisk acidos"
+  ],
+  "summary": {
+    "ingress": "NIV används främst vid hyperkapnisk ventilationssvikt och kan minska andningsarbete, förbättra gasutbyte och förebygga intubation.",
+    "goals": [
+      "Identifiera rätt patient för NIV",
+      "Starta rätt trycknivåer",
+      "Följa blodgas tidigt",
+      "Identifiera NIV-failure i tid"
+    ]
+  },
+  "definition": [
+    "Ventilationsstöd via mask utan intubation, oftast som BiPAP eller CPAP."
+  ],
+  "symtom": [
+    "Dyspné",
+    "Takypné",
+    "Trötthet",
+    "Hyperkapni",
+    "Hypoventilation"
+  ],
+  "status": [
+    "Ökat andningsarbete",
+    "Hög andningsfrekvens",
+    "Eventuell konfusion",
+    "Hypoxi",
+    "Tecken till CO2-retention"
+  ],
+  "diagnostik": [
+    "Blodgas före start",
+    "Ny blodgas efter 30–60 minuter",
+    "Klinisk bedömning av andningsarbete",
+    "Saturation",
+    "Andningsfrekvens"
+  ],
+  "behandling": [
+    "Starta BiPAP vid hyperkapnisk svikt",
+    "CPAP vid utvalda oxygenationsproblem",
+    "Justera IPAP/EPAP utifrån klinik och blodgas",
+    "Behandla bakomliggande orsak samtidigt"
+  ],
+  "omvardnad": [
+    "Lugnt bemötande",
+    "Hjälp patienten tolerera masken",
+    "Kontrollera läckage",
+    "Observera trycksår över näsrygg",
+    "Tät uppföljning första timmen"
+  ],
+  "overvakning": [
+    "AF",
+    "SpO2",
+    "Puls",
+    "Blodtryck",
+    "Blodgas",
+    "Vakenhet"
+  ],
+  "komplikationer": [
+    "NIV-failure",
+    "Trycksår från mask",
+    "Aspirationsrisk",
+    "Försämrad hyperkapni"
+  ],
+  "eskalering": [
+    "Sjunkande pH",
+    "Stigande pCO2",
+    "Tilltagande trötthet",
+    "Sjunkande medvetandegrad",
+    "Otillräcklig effekt trots NIV"
+  ],
+  "referenser": [
+    "Akut internmedicin",
+    "Akutkompendiet"
+  ]
+}

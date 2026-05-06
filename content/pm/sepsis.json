@@ -1,0 +1,24 @@
+{
+  "module_id": "sepsis_pm_auto_001",
+  "type": "pm_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Sepsis",
+  "category": "Infektion",
+  "summary": {
+    "ingress": "Livshotande organdysfunktion orsakad av infektion."
+  },
+  "omvardnad": [
+    "Tät övervakning",
+    "Timdiures",
+    "NEWS"
+  ],
+  "overvakning": [
+    "AF",
+    "SpO2",
+    "Blodtryck"
+  ],
+  "eskalering": [
+    "IVA vid försämring"
+  ]
+}

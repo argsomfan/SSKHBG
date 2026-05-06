@@ -1,0 +1,63 @@
+{
+  "module_id": "pneumoni_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Pneumoni",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Lungmedicin",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "summary": {
+    "ingress": "Pneumoni är en infektion i lungparenkymet som kan ge feber, hosta, dyspné och hypoxi."
+  },
+  "definition": [
+    "Infektion i lungparenkymet med kliniska och ofta radiologiska tecken till inflammation."
+  ],
+  "symtom": [
+    "Feber",
+    "Hosta",
+    "Dyspné",
+    "Bröstsmärta",
+    "Allmänpåverkan"
+  ],
+  "status": [
+    "Takypné",
+    "Sänkt saturation",
+    "Rassel",
+    "Påverkat allmäntillstånd"
+  ],
+  "diagnostik": [
+    "CRP",
+    "Blodstatus",
+    "Blodgas vid påverkan",
+    "Rtg pulm",
+    "Blododling vid svårare infektion"
+  ],
+  "behandling": [
+    "Syrgas vid hypoxi",
+    "Antibiotika enligt ordination",
+    "Vätska vid behov",
+    "Behandla bakomliggande andningssvikt"
+  ],
+  "omvardnad": [
+    "Höjd huvudända",
+    "Andningsobservation",
+    "Vätskebalans",
+    "Stöd vid mobilisering"
+  ],
+  "overvakning": [
+    "AF",
+    "SpO2",
+    "Puls",
+    "Blodtryck",
+    "Temp"
+  ],
+  "eskalering": [
+    "Tilltagande syrgasbehov",
+    "Sjunkande saturation",
+    "Takypné",
+    "Hypotension",
+    "Tecken till sepsis"
+  ]
+}

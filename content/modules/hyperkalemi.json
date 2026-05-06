@@ -1,0 +1,106 @@
+{
+  "module_id": "hyperkalemi_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Hyperkalemi",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Njurmedicin",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+    "Njurmedicin"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "Hyperkalemi kan ge livshotande arytmier. EKG och behandling ska initieras snabbt vid höga nivåer.",
+  "source_note": "Arbetsfil för SSKHBG.",
+  "tags": [
+    "hyperkalemi",
+    "kalium",
+    "arytmi",
+    "EKG",
+    "kalciumglukonat",
+    "insulin"
+  ],
+  "search_terms": [
+    "hyperkalemi",
+    "högt kalium",
+    "EKG hyperkalemi",
+    "kalciumglukonat",
+    "insulin glukos"
+  ],
+  "summary": {
+    "ingress": "Hyperkalemi innebär förhöjt kalium i blodet och kan påverka hjärtats retledningssystem med risk för arytmier.",
+    "goals": [
+      "Identifiera hyperkalemi snabbt",
+      "Bedöma EKG-förändringar",
+      "Initiera akut behandling vid behov",
+      "Identifiera bakomliggande orsak"
+    ]
+  },
+  "definition": [
+    "Hyperkalemi definieras som förhöjt kalium i blodet, ofta >5,0 mmol/L, med ökande risk för arytmier vid högre nivåer."
+  ],
+  "symtom": [
+    "Ofta asymtomatisk",
+    "Svaghet",
+    "Parestesier",
+    "Illamående",
+    "Arytmikänsla"
+  ],
+  "status": [
+    "Arytmier",
+    "Bradykardi",
+    "Eventuellt påverkat allmäntillstånd",
+    "EKG-förändringar"
+  ],
+  "diagnostik": [
+    "Blodprov kalium",
+    "Blodgas",
+    "EKG",
+    "Kreatinin",
+    "Övriga elektrolyter"
+  ],
+  "behandling": [
+    "Kalciumglukonat vid EKG-påverkan",
+    "Insulin + glukos",
+    "Inhalationer (beta-agonist)",
+    "Överväg diuretika",
+    "Dialys vid svår hyperkalemi",
+    "Avsluta kaliumhöjande läkemedel"
+  ],
+  "omvardnad": [
+    "Kontinuerlig EKG-övervakning",
+    "Säkra infarter",
+    "Förbered läkemedel snabbt",
+    "Informera patienten"
+  ],
+  "overvakning": [
+    "EKG",
+    "Puls",
+    "Blodtryck",
+    "Kaliumvärden",
+    "Medvetandegrad"
+  ],
+  "komplikationer": [
+    "Arytmier",
+    "Asystoli",
+    "Ventrikeltakykardi",
+    "Ventrikelflimmer"
+  ],
+  "eskalering": [
+    "Kalium >6,5 mmol/L",
+    "EKG-förändringar",
+    "Arytmier",
+    "Otillräcklig effekt av behandling",
+    "Snabbt stigande kalium"
+  ],
+  "referenser": [
+    "Akut internmedicin",
+    "Akutkompendiet"
+  ]
+}

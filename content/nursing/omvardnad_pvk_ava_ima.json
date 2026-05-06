@@ -1,0 +1,82 @@
+{
+  "module_id": "omvardnad_pvk_ava_ima_nursing_auto_001",
+  "type": "nursing_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Omvårdnad PVK (AVA/IMA)",
+  "category": "Okänd",
+  "summary": {
+    "ingress": "Omvårdnad PVK (AVA/IMA) – importerat från Word."
+  },
+  "syfte": [
+    "Säkerställa fungerande venös infart för vätska, läkemedel och blodprodukter",
+    "Minimera komplikationer såsom infektion och tromboflebit",
+    "Möjliggöra effektiv behandling i akut och intermediär vård"
+  ],
+  "indikationer": [
+    "Intravenös vätsketillförsel",
+    "Intravenös läkemedelsbehandling",
+    "Blod- och blodproduktadministration",
+    "Akut behov av venös infart",
+    "Provtagning (vid behov)"
+  ],
+  "forberedelser": [
+    "Identifiera patient och kontrollera ordination",
+    "Informera patienten om proceduren",
+    "Välj lämplig ven (distalt → proximalt)",
+    "Välj så tunn och kort kateter som möjligt",
+    "Förbered material (PVK, stas, klorhexidin, förband)",
+    "Aseptiskt arbetssätt"
+  ],
+  "genomforande": [
+    "Desinfektera huden enligt rutin",
+    "Lägg PVK med aseptisk teknik",
+    "Släpp stas och spola katetern",
+    "Kontrollera backflöde och funktion",
+    "Fixera PVK och sätt transparent förband",
+    "Märk med datum och tid"
+  ],
+  "observationer": [
+    "Kontroll av insticksställe (rodnad, svullnad, smärta)",
+    "Funktion (flöde, backflöde)",
+    "Förbandets status",
+    "Tecken på infiltration eller extravasering",
+    "Patientens upplevelse (smärta/sveda)"
+  ],
+  "risker_och_forsiktighet": [
+    "Tromboflebit",
+    "Infiltration / extravasering",
+    "Infektion (lokal/systemisk)",
+    "Hematom",
+    "Svårstuckna patienter → ökad risk för komplikationer",
+    "Undvik onödigt grov kateter"
+  ],
+  "patientinformation": [
+    "Informera om syfte med PVK",
+    "Be patienten säga till vid",
+    "Smärt",
+    "Svullnad",
+    "Sveda",
+    "Informera om att armen ska hållas stilla vid behov",
+    "Förklara när PVK ska tas bort"
+  ],
+  "dokumentation": [
+    "Datum och tid för inläggning",
+    "Insticksställe",
+    "PVK-storlek",
+    "Antal stick",
+    "Bedömning av funktion",
+    "Eventuella komplikationer",
+    "Åtgärder vid problem"
+  ],
+  "nar_eskalera": [
+    "Misstänkt extravasering",
+    "Tilltagande smärta eller svullnad",
+    "Rodnad eller infektionstecken",
+    "Upprepade misslyckade försök",
+    "Ingen fungerande infart trots behov"
+  ],
+  "referenser": [
+    "Vårdhandboken – Perifer venkateter"
+  ]
+}

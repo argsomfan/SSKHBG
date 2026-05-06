@@ -1,0 +1,47 @@
+{
+  "module_id": "sepsis_auto_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Sepsis",
+  "category": "Infektion",
+  "summary": {
+    "ingress": "Livshotande organdysfunktion orsakad av infektion."
+  },
+  "definition": [
+    "Livshotande organdysfunktion orsakad av ett dysreglerat immunsvar."
+  ],
+  "symtom": [
+    "Feber",
+    "Takykardi",
+    "Takypné",
+    "Konfusion"
+  ],
+  "status": [
+    "Hypotension",
+    "Påverkad cirkulation"
+  ],
+  "diagnostik": [
+    "Blodgas",
+    "Laktat",
+    "Blododling"
+  ],
+  "behandling": [
+    "Syrgas",
+    "Vätska",
+    "Antibiotika"
+  ],
+  "omvardnad": [
+    "Tät övervakning",
+    "Timdiures",
+    "NEWS"
+  ],
+  "overvakning": [
+    "AF",
+    "SpO2",
+    "Blodtryck"
+  ],
+  "eskalering": [
+    "IVA vid försämring"
+  ]
+}

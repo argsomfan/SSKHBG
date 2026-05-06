@@ -1,0 +1,120 @@
+{
+  "module_id": "septisk_chock_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "Septisk chock",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Infektion",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+    "Infektion"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "Septisk chock är ett livshotande tillstånd. Kräver omedelbar behandling, tät övervakning och tidig kontakt med högre vårdnivå.",
+  "source_note": "Arbetsfil för SSKHBG.",
+  "tags": [
+    "septisk chock",
+    "sepsis",
+    "hypotension",
+    "laktat",
+    "noradrenalin",
+    "vasopressor"
+  ],
+  "search_terms": [
+    "septisk chock",
+    "sepsis hypotension",
+    "laktat",
+    "vasopressor",
+    "noradrenalin",
+    "chock"
+  ],
+  "summary": {
+    "ingress": "Septisk chock är en svår form av sepsis med kvarstående cirkulatorisk påverkan trots vätskebehandling och ofta behov av vasopressor.",
+    "goals": [
+      "Identifiera chock snabbt",
+      "Säkra ABCDE och behandling inom minuter",
+      "Starta vätska och antibiotika omedelbart",
+      "Identifiera behov av vasopressor och högre vårdnivå"
+    ]
+  },
+  "definition": [
+    "Septisk chock är sepsis med kvarstående hypotension och hypoperfusion trots adekvat initial vätskebehandling, ofta med behov av vasopressor."
+  ],
+  "symtom": [
+    "Hypotension",
+    "Takykardi",
+    "Takypné",
+    "Feber eller hypotermi",
+    "Konfusion",
+    "Oliguri",
+    "Kall eller marmorerad periferi"
+  ],
+  "status": [
+    "Lågt blodtryck",
+    "Påverkad perifer cirkulation",
+    "Kapillär återfyllnad förlängd",
+    "Sänkt medvetandegrad",
+    "Minskad urinproduktion",
+    "Eventuell hypoxi"
+  ],
+  "diagnostik": [
+    "ABCDE-bedömning",
+    "Blodgas med laktat",
+    "Blododlingar",
+    "Blodstatus",
+    "CRP",
+    "Kreatinin",
+    "Elektrolyter",
+    "Urinodling",
+    "Rtg/ultraljud/CT utifrån fokus"
+  ],
+  "behandling": [
+    "Syrgas vid behov",
+    "Två grova perifera infarter eller annan säker infart",
+    "Snabb vätsketillförsel enligt ordination",
+    "Antibiotika omedelbart enligt ordination",
+    "Överväg vasopressor, ofta noradrenalin, vid kvarstående hypotension",
+    "Behandla infektionsfokus"
+  ],
+  "omvardnad": [
+    "Tät observation av andning och cirkulation",
+    "Höjd beredskap för snabb försämring",
+    "KAD vid behov för timdiures",
+    "Noggrann vätskebalans",
+    "Lugnt och tydligt bemötande"
+  ],
+  "overvakning": [
+    "AF",
+    "SpO2",
+    "Puls",
+    "Blodtryck",
+    "Medvetandegrad",
+    "Laktat",
+    "Timdiures"
+  ],
+  "komplikationer": [
+    "Multiorgansvikt",
+    "Njursvikt",
+    "Respiratorisk svikt",
+    "DIC/koagulopati",
+    "Död"
+  ],
+  "eskalering": [
+    "Kvarstående hypotension trots vätska",
+    "Stigande laktat",
+    "Sjunkande medvetandegrad",
+    "Oliguri/anuri",
+    "Tilltagande syrgasbehov",
+    "Behov av vasopressor"
+  ],
+  "referenser": [
+    "Akut internmedicin",
+    "Akutkompendiet"
+  ]
+}

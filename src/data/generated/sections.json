@@ -1,0 +1,1358 @@
+[
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "key": "quick_facts",
+    "title": "Snabbfakta",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "ahlr_ava_ima_sv_001",
+    "key": "initial_handlaggning",
+    "title": "Initial handläggning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "dka_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "hyperkalemi_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "hypoglykemi_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "hypokalemi_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "kol_exacerbation_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "lungemboli_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "niv_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "pneumoni_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "respiratorisk_svikt_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "key": "quick_facts",
+    "title": "Snabbfakta",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "sepsis_ava_ima_sv_001",
+    "key": "initial_handlaggning",
+    "title": "Initial handläggning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "septisk_chock_ava_ima_sv_001",
+    "key": "summary",
+    "title": "Sammanfattning",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "acetylcystein",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "acetylcystein",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "acetylcystein",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "acetylcystein",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "acetylcystein",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "actrapid-insulin-human",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "adrenalin",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "adrenalin",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "adrenalin",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "adrenalin",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "adrenalin",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "amiodaron",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "amiodaron",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "amiodaron",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "amiodaron",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "amiodaron",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "atropin",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "atropin",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "atropin",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "atropin",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "atropin",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "betapred-betametason",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "kalciumglukonat",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "diazepam",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "diazepam",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "diazepam",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "diazepam",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "diazepam",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "digoxin",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "digoxin",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "digoxin",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "digoxin",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "digoxin",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "dexmedetomidin",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "ergenyl-valproat",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "esomeprazol",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "esomeprazol",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "esomeprazol",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "esomeprazol",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "esomeprazol",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "flumazenil",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "flumazenil",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "flumazenil",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "flumazenil",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "flumazenil",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "furosemid",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "furosemid",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "furosemid",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "furosemid",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "furosemid",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "glukos",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glukos",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "glukos",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "glukos",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "glukos",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "glykopyrronmonium",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "glypressin-terlipressin",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "isoprenalin",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "isoprenalin",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "isoprenalin",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "isoprenalin",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "isoprenalin",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "levetiracetam",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levetiracetam",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "levetiracetam",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "levetiracetam",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "levetiracetam",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "levosimendan",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "levosimendan",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "levosimendan",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "levosimendan",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "levosimendan",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "midazolam",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "midazolam",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "midazolam",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "midazolam",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "midazolam",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "monofer-jarniiiisomaltos",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "morfin-inj",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "morfin-inj",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "morfin-inj",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "morfin-inj",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "morfin-inj",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "naloxon",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "naloxon",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "naloxon",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "naloxon",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "naloxon",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "natriumbikarbonat",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "nitroglycerin",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "ocplex-pcc",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "ondansetron",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "ondansetron",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "ondansetron",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "ondansetron",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "ondansetron",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "oxycodon-inj-inf",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "paracetamol-iv-10-mg-ml",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "primperan-metoklopramid",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "remdesivir-veklury",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "seloken-metoprolol-inj",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "solu-cortef-hydrokortison",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "solu-medrol-metylprednisolon",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "trandate-labetalol",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "tranexamsyra",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "tiamin-vitamin-b1",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "konakion-vitamin-k1",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "zoledronsyra",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "perfalgan®-paracetamol-10-mg-ml",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "key": "indikation",
+    "title": "Indikation",
+    "sort_order": 1
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "key": "farmakologi",
+    "title": "Farmakologi",
+    "sort_order": 2
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "key": "dosering",
+    "title": "Dosering / Spädning",
+    "sort_order": 3
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "key": "administrering",
+    "title": "Administrering",
+    "sort_order": 4
+  },
+  {
+    "module_slug": "zeltacin-kalciumglukonat-100-mg-ml",
+    "key": "observandum",
+    "title": "Observandum",
+    "sort_order": 5
+  }
+]

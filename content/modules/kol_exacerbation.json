@@ -1,0 +1,105 @@
+{
+  "module_id": "kol_exacerbation_ava_ima_sv_001",
+  "type": "clinical_module",
+  "app": "SSKHBG",
+  "language": "sv-SE",
+  "title": "KOL-exacerbation",
+  "subtitle": "Akut handläggning på AVA/IMA",
+  "category": "Lungmedicin",
+  "version": "1.0",
+  "status": "ready_for_import",
+  "specialty": [
+    "Lungmedicin"
+  ],
+  "audience": [
+    "Sjuksköterska",
+    "AVA/IMA-personal",
+    "SSKHBG användare"
+  ],
+  "warning": "Ge syrgas med försiktighet vid risk för CO2-retention. Följ blodgas tätt vid påverkan.",
+  "source_note": "Arbetsfil för SSKHBG.",
+  "tags": [
+    "KOL",
+    "KOL-exacerbation",
+    "hyperkapni",
+    "NIV",
+    "respiratorisk svikt"
+  ],
+  "search_terms": [
+    "KOL exacerbation",
+    "KOL försämring",
+    "hyperkapni",
+    "NIV",
+    "BiPAP"
+  ],
+  "summary": {
+    "ingress": "KOL-exacerbation är en akut försämring med ökad dyspné, ofta hosta och ökad slemproduktion, ibland med hyperkapni och behov av NIV.",
+    "goals": [
+      "Identifiera svårighetsgrad tidigt",
+      "Behandla hypoxi utan att förvärra CO2-retention",
+      "Starta inhalationer och övrig behandling tidigt",
+      "Identifiera behov av NIV"
+    ]
+  },
+  "definition": [
+    "Akut försämring från patientens habitualtillstånd med ökad dyspné, hosta och/eller ökad slemproduktion."
+  ],
+  "symtom": [
+    "Ökad dyspné",
+    "Hosta",
+    "Ökad slemproduktion",
+    "Pipande andning",
+    "Trötthet"
+  ],
+  "status": [
+    "Takypné",
+    "Förlängt expirium",
+    "Ronki",
+    "Ansträngd andning",
+    "Eventuell sänkt saturation"
+  ],
+  "diagnostik": [
+    "Blodgas vid påverkan",
+    "CRP",
+    "Blodstatus",
+    "Rtg pulm",
+    "EKG"
+  ],
+  "behandling": [
+    "Syrgas försiktigt",
+    "Bronkdilaterande inhalationer",
+    "Steroider enligt ordination",
+    "Antibiotika vid misstänkt infektion",
+    "Överväg NIV vid respiratorisk acidos"
+  ],
+  "omvardnad": [
+    "Höjd huvudända",
+    "Lugnt bemötande",
+    "Andningsobservation",
+    "Stöd vid inhalationer",
+    "Tät klinisk uppföljning"
+  ],
+  "overvakning": [
+    "AF",
+    "SpO2",
+    "Puls",
+    "Blodtryck",
+    "Blodgas"
+  ],
+  "komplikationer": [
+    "Respiratorisk acidos",
+    "CO2-retention",
+    "NIV-failure",
+    "Respiratorisk svikt"
+  ],
+  "eskalering": [
+    "Tilltagande trötthet",
+    "Sjunkande pH",
+    "Stigande pCO2",
+    "Otillräcklig effekt av behandling"
+  ],
+  "referenser": [
+    "Akut internmedicin",
+    "Akutkompendiet"
+  ]
+}
