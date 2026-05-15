@@ -8,49 +8,99 @@ import {
 
 import { Screen } from '../../src/components/Screen';
 import { Colors } from '../../src/theme';
-
 import {
-  calculateDilution
+  calculateC1V1C2V2,
+  type DilutionField
 } from '../../src/utils/calculations';
 
-import {
-  round
-} from '../../src/utils/rounding';
+type FieldConfig = {
+  key: DilutionField;
+  label: string;
+  unitLabel: string;
+  placeholder: string;
+};
+
+const fields: FieldConfig[] = [
+  {
+    key: 'c1',
+    label: 'C1 Ursprunglig styrka',
+    unitLabel: 'samma styrkeenhet som C2',
+    placeholder: 'Ex. 10'
+  },
+  {
+    key: 'v1',
+    label: 'V1 Volym koncentrat',
+    unitLabel: 'ml',
+    placeholder: 'Lämna tom om den ska räknas ut'
+  },
+  {
+    key: 'c2',
+    label: 'C2 Önskad styrka',
+    unitLabel: 'samma styrkeenhet som C1',
+    placeholder: 'Ex. 1'
+  },
+  {
+    key: 'v2',
+    label: 'V2 Slutvolym',
+    unitLabel: 'ml',
+    placeholder: 'Ex. 100'
+  }
+];
+
+const resultLabels: Record<DilutionField, string> = {
+  c1: 'Beräknad C1',
+  v1: 'Beräknad V1',
+  c2: 'Beräknad C2',
+  v2: 'Beräknad V2'
+};
 
 function parseNumber(value: string) {
-  const parsed = Number(
-    value.replace(',', '.')
-  );
+  if (!value.trim()) return null;
+
+  const normalized = value
+    .replace(',', '.')
+    .replace(/[^\d.]/g, '');
+
+  const parsed = Number(normalized);
 
   return Number.isFinite(parsed)
     ? parsed
     : null;
 }
 
+function formatNumber(value: number) {
+  return Number(value.toFixed(4))
+    .toString()
+    .replace('.', ',');
+}
+
+function resultUnit(field: DilutionField) {
+  return field === 'c1' || field === 'c2'
+    ? 'styrkeenhet'
+    : 'ml';
+}
+
 export default function SpadningScreen() {
-  const [dose, setDose] = useState('');
-  const [target, setTarget] = useState('');
+  const [values, setValues] = useState<Record<DilutionField, string>>({
+    c1: '',
+    v1: '',
+    c2: '',
+    v2: ''
+  });
 
-  const result = useMemo(() => {
-    const doseMg = parseNumber(dose);
-    const targetMgMl = parseNumber(target);
+  const result = useMemo(() => calculateC1V1C2V2({
+    c1: parseNumber(values.c1),
+    v1: parseNumber(values.v1),
+    c2: parseNumber(values.c2),
+    v2: parseNumber(values.v2)
+  }), [values]);
 
-    if (
-      doseMg === null ||
-      targetMgMl === null ||
-      targetMgMl <= 0
-    ) {
-      return null;
-    }
-
-    return round(
-      calculateDilution(
-        doseMg,
-        targetMgMl
-      ),
-      2
-    );
-  }, [dose, target]);
+  function updateField(field: DilutionField, value: string) {
+    setValues((current) => ({
+      ...current,
+      [field]: value
+    }));
+  }
 
   return (
     <Screen>
@@ -59,56 +109,72 @@ export default function SpadningScreen() {
       </Text>
 
       <Text style={styles.subtitle}>
-        Beräkna total volym utifrån
-        ordinerad dos och önskad styrka.
+        Fyll i tre värden och lämna det fjärde tomt.
+        Formeln är C1 × V1 = C2 × V2.
       </Text>
 
+      <View style={styles.infoCard}>
+        <Text style={styles.infoTitle}>
+          Grundregel
+        </Text>
+
+        <Text style={styles.infoText}>
+          C1 och C2 måste använda samma styrkeenhet.
+          V1 och V2 anges i samma volymenhet.
+        </Text>
+      </View>
+
       <View style={styles.card}>
-        <Text style={styles.label}>
-          Dos (mg)
-        </Text>
+        {fields.map((field) => (
+          <View key={field.key} style={styles.fieldBlock}>
+            <View style={styles.labelRow}>
+              <Text style={styles.label}>
+                {field.label}
+              </Text>
 
-        <TextInput
-          style={styles.input}
-          keyboardType="decimal-pad"
-          value={dose}
-          onChangeText={setDose}
-          placeholder="Ex. 50"
-          placeholderTextColor={
-            Colors.textSecondary
-          }
-        />
+              <Text style={styles.unitLabel}>
+                {field.unitLabel}
+              </Text>
+            </View>
 
-        <Text style={styles.label}>
-          Önskad styrka (mg/ml)
-        </Text>
-
-        <TextInput
-          style={styles.input}
-          keyboardType="decimal-pad"
-          value={target}
-          onChangeText={setTarget}
-          placeholder="Ex. 2"
-          placeholderTextColor={
-            Colors.textSecondary
-          }
-        />
+            <TextInput
+              style={styles.input}
+              keyboardType="decimal-pad"
+              value={values[field.key]}
+              onChangeText={(value) => updateField(field.key, value)}
+              placeholder={field.placeholder}
+              placeholderTextColor={Colors.textSecondary}
+            />
+          </View>
+        ))}
       </View>
 
       <View style={styles.resultCard}>
         <Text style={styles.resultLabel}>
-          Total volym
+          {result.ok ? resultLabels[result.field] : result.title}
         </Text>
 
         <Text style={styles.resultValue}>
-          {result !== null
-            ? `${result} ml`
-            : '—'}
+          {result.ok
+            ? `${formatNumber(result.value)} ${resultUnit(result.field)}`
+            : '-'}
         </Text>
 
         <Text style={styles.formula}>
-          Volym = Dos / önskad styrka
+          {result.ok ? result.formula : result.message}
         </Text>
+
+        {result.ok && result.additiveVolume !== null ? (
+          <View style={styles.extraResult}>
+            <Text style={styles.extraLabel}>
+              Tillsätt spädningsvätska
+            </Text>
+
+            <Text style={styles.extraValue}>
+              {formatNumber(result.additiveVolume)} ml
+            </Text>
+          </View>
+        ) : null}
       </View>
 
       <View style={styles.warning}>
@@ -117,9 +183,9 @@ export default function SpadningScreen() {
         </Text>
 
         <Text style={styles.warningText}>
-          Kontrollera alltid lokal rutin,
-          kompatibilitet, hållbarhet,
-          infusionstid och ordination.
+          V2 är slutvolymen efter spädning. Kontrollera alltid
+          ordination, lokal rutin, kompatibilitet, hållbarhet
+          och rimlighet innan administrering.
         </Text>
       </View>
     </Screen>
@@ -138,7 +204,30 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 22,
     color: Colors.textSecondary,
-    marginBottom: 22
+    marginBottom: 16
+  },
+
+  infoCard: {
+    backgroundColor: Colors.surfaceLight,
+    borderRadius: 20,
+    padding: 16,
+    marginBottom: 16,
+    borderWidth: 1,
+    borderColor: Colors.border
+  },
+
+  infoTitle: {
+    fontSize: 13,
+    fontWeight: '800',
+    color: Colors.primary,
+    marginBottom: 8,
+    letterSpacing: 1
+  },
+
+  infoText: {
+    fontSize: 14,
+    color: Colors.textPrimary,
+    lineHeight: 21
   },
 
   card: {
@@ -150,12 +239,29 @@ const styles = StyleSheet.create({
     borderColor: Colors.border
   },
 
+  fieldBlock: {
+    marginBottom: 14
+  },
+
+  labelRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    justifyContent: 'space-between',
+    gap: 10,
+    marginBottom: 6
+  },
+
   label: {
+    flex: 1,
     fontSize: 13,
     fontWeight: '800',
-    color: Colors.textSecondary,
-    marginBottom: 6,
-    marginTop: 10
+    color: Colors.textSecondary
+  },
+
+  unitLabel: {
+    fontSize: 12,
+    color: Colors.textTertiary,
+    textAlign: 'right'
   },
 
   input: {
@@ -195,7 +301,28 @@ const styles = StyleSheet.create({
 
   formula: {
     fontSize: 14,
-    color: Colors.textSecondary
+    color: Colors.textSecondary,
+    lineHeight: 20
+  },
+
+  extraResult: {
+    marginTop: 16,
+    paddingTop: 16,
+    borderTopWidth: 1,
+    borderTopColor: Colors.border
+  },
+
+  extraLabel: {
+    fontSize: 13,
+    fontWeight: '800',
+    color: Colors.textSecondary,
+    marginBottom: 4
+  },
+
+  extraValue: {
+    fontSize: 24,
+    fontWeight: '900',
+    color: Colors.textPrimary
   },
 
   warning: {
