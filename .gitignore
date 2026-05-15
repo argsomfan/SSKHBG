@@ -33,6 +33,13 @@ yarn-error.*
 # local env files
 .env*.local
 
+# local workspace/generated artifacts
+/.vscode/
+/app.json.backup
+/assets/icon.png.ai
+/App.xcdatamodeld/
+/Assets.xcassets/
+
 # typescript
 *.tsbuildinfo
 
