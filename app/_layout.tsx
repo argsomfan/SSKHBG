@@ -2,6 +2,7 @@ import { Stack } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 import { initializeDatabase } from '../src/db/seed';
+import { SskhbgConvexProvider } from '../src/convex/SskhbgConvexProvider';
 
 export default function RootLayout() {
   const [ready, setReady] = useState(false);
@@ -28,5 +29,9 @@ export default function RootLayout() {
     );
   }
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <SskhbgConvexProvider>
+      <Stack screenOptions={{ headerShown: false }} />
+    </SskhbgConvexProvider>
+  );
 }

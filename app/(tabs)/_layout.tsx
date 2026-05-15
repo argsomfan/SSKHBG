@@ -50,6 +50,24 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
+        name="kalkylatorer"
+        options={{
+          title: 'Kalkyl',
+          tabBarIcon: ({ color }) => (
+            <Text style={{ color, fontSize: 22, fontWeight: '900' }}>∑</Text>
+          )
+        }}
+      />
+      <Tabs.Screen
+        name="fakta"
+        options={{
+          title: 'Fakta',
+          tabBarIcon: ({ color }) => (
+            <Text style={{ color, fontSize: 22, fontWeight: '900' }}>✎</Text>
+          )
+        }}
+      />
+      <Tabs.Screen
         name="search"
         options={{
           title: 'Sök',
@@ -63,7 +81,6 @@ export default function TabsLayout() {
       <Tabs.Screen name="pm" options={{ href: null }} />
       <Tabs.Screen name="omvardnad" options={{ href: null }} />
       <Tabs.Screen name="cards" options={{ href: null }} />
-      <Tabs.Screen name="kalkylatorer" options={{ href: null }} />
       <Tabs.Screen name="favoriter" options={{ href: null }} />
       <Tabs.Screen name="omvardnad_word" options={{ href: null }} />
     </Tabs>

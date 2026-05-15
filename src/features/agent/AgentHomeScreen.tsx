@@ -101,7 +101,7 @@ export default function HomeScreen() {
       }
     } catch (runError) {
       console.log('AGENT RUN ERROR', runError);
-      setError('Agenten kunde inte läsa lokala källor just nu.');
+      setError('Agenten kunde inte läsa källor just nu.');
     } finally {
       setIsRunning(false);
     }
@@ -109,37 +109,24 @@ export default function HomeScreen() {
 
   return (
     <Screen contentStyle={styles.content}>
-      <PostHeader />
+      <Header agent={agent} isRunning={isRunning} />
 
-      <View style={styles.hero}>
-        <Text style={styles.heroTitle} selectable>
-          RIKTIG AGENTIC AI
-        </Text>
-        <Text style={styles.heroSubtitle} selectable>
-          SSKHBG-agenten planerar, söker i lokala källor, väljer verktyg och
-          lämnar över till människa i loopen.
-        </Text>
-      </View>
-
-      <View style={styles.agentCard}>
-        <View style={styles.agentTopRow}>
+      <View style={styles.commandPanel}>
+        <View style={styles.panelHeader}>
           <View>
-            <Text style={styles.agentEyebrow}>Agentuppdrag</Text>
-            <Text style={styles.agentTitle}>Vad ska agenten lösa?</Text>
+            <Text style={styles.sectionEyebrow}>Klinisk fråga</Text>
+            <Text style={styles.panelTitle}>Vad vill du kontrollera?</Text>
           </View>
-          <View style={styles.liveBadge}>
-            <View style={styles.liveDot} />
-            <Text style={styles.liveText}>
-              {isRunning ? 'Kör' : agent?.backend?.mode === 'ai' ? 'AI' : 'Redo'}
-            </Text>
-          </View>
+          <Pressable style={styles.secondaryButton} onPress={() => router.push('/fakta' as never)}>
+            <Text style={styles.secondaryButtonText}>Fakta</Text>
+          </Pressable>
         </View>
 
         <TextInput
           style={styles.input}
           value={query}
           onChangeText={setQuery}
-          placeholder="Beskriv situation, läkemedel eller PM-fråga"
+          placeholder="Skriv situation, läkemedel, PM eller omvårdnadsfråga"
           placeholderTextColor={Colors.textTertiary}
           multiline
           autoCorrect={false}
@@ -177,19 +164,19 @@ export default function HomeScreen() {
           {isRunning ? (
             <ActivityIndicator color="#fff" />
           ) : (
-            <Text style={styles.runButtonText}>Kör AI-agent</Text>
+            <Text style={styles.runButtonText}>Kör agent</Text>
           )}
         </Pressable>
       </View>
 
-      <AgentDiagram
+      <StatusStrip
         agent={agent}
         counts={counts}
         totalSources={totalSources}
       />
 
       {error ? (
-        <View style={styles.errorCard}>
+        <View style={styles.errorPanel}>
           <Text style={styles.errorText}>{error}</Text>
         </View>
       ) : null}
@@ -197,37 +184,45 @@ export default function HomeScreen() {
       {agent ? (
         <>
           <AgentAnswer agent={agent} />
+          <PlanList plan={agent.plan} />
           <ToolRuns tools={agent.tools} />
           <SourceList sources={agent.sources} />
-          <ActionRow agent={agent} />
-          <Caption agent={agent} />
+          <NextActions agent={agent} />
         </>
       ) : null}
     </Screen>
   );
 }
 
-function PostHeader() {
+function Header({
+  agent,
+  isRunning
+}: {
+  agent: AgentResult | null;
+  isRunning: boolean;
+}) {
+  const statusText = isRunning
+    ? 'Kör verktyg'
+    : agent?.backend?.mode === 'ai'
+      ? 'AI-backend'
+      : 'Fallback redo';
+
   return (
-    <View style={styles.postHeader}>
-      <View style={styles.avatar}>
-        <Text style={styles.avatarText}>SS</Text>
+    <View style={styles.header}>
+      <View>
+        <Text style={styles.appLabel}>SSKHBG</Text>
+        <Text style={styles.title}>Klinisk AI-agent</Text>
+        <Text style={styles.subtitle}>Källbundet beslutsstöd för PM, läkemedel och omvårdnad.</Text>
       </View>
-      <View style={styles.postIdentity}>
-        <View style={styles.nameRow}>
-          <Text style={styles.accountName}>SSKHBG Agent</Text>
-          <View style={styles.verified}>
-            <Text style={styles.verifiedText}>✓</Text>
-          </View>
-        </View>
-        <Text style={styles.audioLine}>lokalt beslutsstöd · agentiskt läge</Text>
+      <View style={styles.statusBadge}>
+        <View style={[styles.statusDot, isRunning && styles.statusDotRunning]} />
+        <Text style={styles.statusText}>{statusText}</Text>
       </View>
-      <Text style={styles.menuDots}>•••</Text>
     </View>
   );
 }
 
-function AgentDiagram({
+function StatusStrip({
   agent,
   counts,
   totalSources
@@ -236,107 +231,30 @@ function AgentDiagram({
   counts: Counts;
   totalSources: number;
 }) {
-  const activeSources = agent?.sources.length ?? 0;
-
   return (
-    <View style={styles.diagram}>
-      <View style={styles.diagramHeader}>
-        <Text style={styles.diagramTitle}>Så arbetar agenten</Text>
-        <Text style={styles.diagramMeta}>
-          {activeSources || totalSources} källor
-        </Text>
-      </View>
-
-      <View style={styles.notAgenticBand}>
-        <Text style={styles.bandTitle}>Inte bara sök</Text>
-        <View style={styles.miniGrid}>
-          <MiniBox title="Chat" detail="svar utan verktyg" muted />
-          <MiniBox title="RAG" detail="hämta text" muted />
-          <MiniBox title="Lista" detail="passiva träffar" muted />
-        </View>
-      </View>
-
-      <View style={styles.agenticBand}>
-        <Text style={styles.agenticTitle}>Det här är Agentic AI</Text>
-        <View style={styles.flowRow}>
-          <FlowNode title="Plan" detail={agent?.intentTitle ?? 'tolka mål'} />
-          <Connector />
-          <FlowNode title="Verktyg" detail="sök · läkemedel · PM" />
-          <Connector />
-          <FlowNode title="Loop" detail="källor + kontroll" />
-        </View>
-
-        <View style={styles.orchestrator}>
-          <View style={styles.orchestratorCore}>
-            <Text style={styles.orchestratorLabel}>Orchestrator</Text>
-            <Text style={styles.orchestratorTitle}>SSKHBG Agent Core</Text>
-            <Text style={styles.orchestratorText}>
-              Planerar och kör verktyg mot lokala källor.
-            </Text>
-          </View>
-          <View style={styles.toolColumn}>
-            <ToolPill label={`${counts.modules} diagnoser`} />
-            <ToolPill label={`${counts.medications} läkemedel`} />
-            <ToolPill label={`${counts.pm + counts.nursing} PM/omvårdnad`} />
-          </View>
-        </View>
-      </View>
+    <View style={styles.statusStrip}>
+      <Metric label="Källor" value={String(agent?.sources.length || totalSources)} />
+      <Metric label="Läkemedel" value={String(counts.medications)} />
+      <Metric label="Verktyg" value={String(agent?.tools.length ?? 5)} />
     </View>
   );
 }
 
-function MiniBox({
-  title,
-  detail,
-  muted = false
-}: {
-  title: string;
-  detail: string;
-  muted?: boolean;
-}) {
+function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <View style={[styles.miniBox, muted && styles.miniBoxMuted]}>
-      <Text style={styles.miniBoxTitle}>{title}</Text>
-      <Text style={styles.miniBoxDetail}>{detail}</Text>
-    </View>
-  );
-}
-
-function FlowNode({ title, detail }: { title: string; detail: string }) {
-  return (
-    <View style={styles.flowNode}>
-      <Text style={styles.flowTitle}>{title}</Text>
-      <Text style={styles.flowDetail} numberOfLines={2}>
-        {detail}
-      </Text>
-    </View>
-  );
-}
-
-function Connector() {
-  return (
-    <View style={styles.connector}>
-      <View style={styles.connectorLine} />
-      <Text style={styles.connectorArrow}>›</Text>
-    </View>
-  );
-}
-
-function ToolPill({ label }: { label: string }) {
-  return (
-    <View style={styles.toolPill}>
-      <View style={styles.toolPillDot} />
-      <Text style={styles.toolPillText}>{label}</Text>
+    <View style={styles.metric}>
+      <Text style={styles.metricValue}>{value}</Text>
+      <Text style={styles.metricLabel}>{label}</Text>
     </View>
   );
 }
 
 function AgentAnswer({ agent }: { agent: AgentResult }) {
   return (
-    <View style={styles.answerCard}>
-      <View style={styles.answerTopRow}>
+    <View style={styles.panel}>
+      <View style={styles.panelHeader}>
         <View>
-          <Text style={styles.answerLabel}>Agentens svar</Text>
+          <Text style={styles.sectionEyebrow}>Svar</Text>
           <Text style={styles.answerTitle}>{agent.responseTitle}</Text>
         </View>
         <Text style={styles.timeStamp}>{agent.generatedAt}</Text>
@@ -344,53 +262,79 @@ function AgentAnswer({ agent }: { agent: AgentResult }) {
 
       <Text style={styles.answerSummary}>{agent.responseSummary}</Text>
 
-      <View style={styles.confidenceRow}>
-        <Text style={styles.confidenceText}>{agent.confidenceLabel}</Text>
-        <Text style={styles.confidenceText}>{agent.sources.length} källor</Text>
-        <Text
-          style={[
-            styles.confidenceText,
-            agent.backend?.mode === 'ai' && styles.aiConfidenceText
-          ]}
-        >
-          {agent.backend?.mode === 'ai' ? 'AI-backend' : 'Fallback'}
-        </Text>
+      <View style={styles.tagRow}>
+        <Tag label={agent.confidenceLabel} tone="green" />
+        <Tag label={`${agent.sources.length} källor`} />
+        <Tag label={agent.backend?.mode === 'ai' ? 'AI-backend' : 'Fallback'} tone="red" />
       </View>
 
       {agent.reasoning ? (
         <View style={styles.reasoningBox}>
-          <Text style={styles.reasoningLabel}>Agentens resonemang</Text>
+          <Text style={styles.reasoningLabel}>Backend</Text>
           <Text style={styles.reasoningText}>{agent.reasoning}</Text>
         </View>
       ) : null}
+    </View>
+  );
+}
 
-      <View style={styles.planList}>
-        {agent.plan.map((step) => (
-          <PlanStep key={step.title} step={step} />
-        ))}
+function Tag({
+  label,
+  tone = 'neutral'
+}: {
+  label: string;
+  tone?: 'neutral' | 'green' | 'red';
+}) {
+  return (
+    <View
+      style={[
+        styles.tag,
+        tone === 'green' && styles.tagGreen,
+        tone === 'red' && styles.tagRed
+      ]}
+    >
+      <Text
+        style={[
+          styles.tagText,
+          tone === 'green' && styles.tagTextGreen,
+          tone === 'red' && styles.tagTextRed
+        ]}
+      >
+        {label}
+      </Text>
+    </View>
+  );
+}
+
+function PlanList({ plan }: { plan: AgentPlanStep[] }) {
+  return (
+    <View style={styles.panel}>
+      <View style={styles.panelHeader}>
+        <Text style={styles.panelTitle}>Plan</Text>
+        <Text style={styles.sectionHint}>agentens arbetsgång</Text>
       </View>
 
-      <View style={styles.guardrailBox}>
-        {agent.guardrails.map((item) => (
-          <Text key={item} style={styles.guardrailText}>
-            {item}
-          </Text>
+      <View style={styles.planList}>
+        {plan.map((step, index) => (
+          <PlanStep key={`${step.title}-${index}`} step={step} index={index} />
         ))}
       </View>
     </View>
   );
 }
 
-function PlanStep({ step }: { step: AgentPlanStep }) {
+function PlanStep({ step, index }: { step: AgentPlanStep; index: number }) {
   return (
     <View style={styles.planStep}>
       <View
         style={[
-          styles.planDot,
-          step.status === 'säkring' && styles.planDotSafety,
-          step.status === 'nästa' && styles.planDotNext
+          styles.stepNumber,
+          step.status === 'säkring' && styles.stepNumberSafety,
+          step.status === 'nästa' && styles.stepNumberNext
         ]}
-      />
+      >
+        <Text style={styles.stepNumberText}>{index + 1}</Text>
+      </View>
       <View style={styles.planTextBlock}>
         <Text style={styles.planTitle}>{step.title}</Text>
         <Text style={styles.planDetail}>{step.detail}</Text>
@@ -401,19 +345,19 @@ function PlanStep({ step }: { step: AgentPlanStep }) {
 
 function ToolRuns({ tools }: { tools: AgentToolRun[] }) {
   return (
-    <View style={styles.section}>
-      <View style={styles.sectionHeader}>
-        <Text style={styles.sectionTitle}>Verktyg som körs</Text>
-        <Text style={styles.sectionHint}>agent-loop</Text>
+    <View style={styles.panel}>
+      <View style={styles.panelHeader}>
+        <Text style={styles.panelTitle}>Verktyg</Text>
+        <Text style={styles.sectionHint}>körda kontroller</Text>
       </View>
 
-      {tools.map((tool) => (
-        <View key={tool.name} style={styles.toolRun}>
+      {tools.map((tool, index) => (
+        <View key={`${tool.name}-${index}`} style={styles.toolRun}>
           <View
             style={[
-              styles.toolRunStatus,
-              tool.status === 'säkring' && styles.toolRunSafety,
-              tool.status === 'nästa' && styles.toolRunNext
+              styles.toolStatus,
+              tool.status === 'säkring' && styles.toolStatusSafety,
+              tool.status === 'nästa' && styles.toolStatusNext
             ]}
           />
           <View style={styles.toolRunText}>
@@ -428,28 +372,28 @@ function ToolRuns({ tools }: { tools: AgentToolRun[] }) {
 
 function SourceList({ sources }: { sources: AgentSource[] }) {
   return (
-    <View style={styles.section}>
-      <View style={styles.sectionHeader}>
-        <Text style={styles.sectionTitle}>Källor agenten hittade</Text>
+    <View style={styles.panel}>
+      <View style={styles.panelHeader}>
+        <Text style={styles.panelTitle}>Källor</Text>
         <Pressable onPress={() => router.push('/search' as never)}>
-          <Text style={styles.sectionAction}>Sök allt</Text>
+          <Text style={styles.linkText}>Sök allt</Text>
         </Pressable>
       </View>
 
       {sources.length === 0 ? (
-        <View style={styles.emptySources}>
-          <Text style={styles.emptyTitle}>Inga lokala träffar</Text>
-          <Text style={styles.emptyText}>Agenten behöver mer kontext.</Text>
+        <View style={styles.emptyState}>
+          <Text style={styles.emptyTitle}>Inga träffar</Text>
+          <Text style={styles.emptyText}>Lägg till fakta eller skriv en mer specifik fråga.</Text>
         </View>
       ) : (
         sources.slice(0, 5).map((source) => (
           <Pressable
             key={`${source.kind}-${source.id}`}
-            style={styles.sourceCard}
+            style={styles.sourceRow}
             onPress={() => router.push(source.route as never)}
           >
-            <View style={styles.sourceKind}>
-              <Text style={styles.sourceKindText}>{source.kind}</Text>
+            <View style={styles.sourceBadge}>
+              <Text style={styles.sourceBadgeText}>{source.kind}</Text>
             </View>
             <View style={styles.sourceText}>
               <Text style={styles.sourceTitle} numberOfLines={2}>
@@ -464,7 +408,7 @@ function SourceList({ sources }: { sources: AgentSource[] }) {
                 </Text>
               )}
             </View>
-            <Text style={styles.sourceArrow}>›</Text>
+            <Text style={styles.chevron}>›</Text>
           </Pressable>
         ))
       )}
@@ -472,25 +416,16 @@ function SourceList({ sources }: { sources: AgentSource[] }) {
   );
 }
 
-function ActionRow({ agent }: { agent: AgentResult }) {
+function NextActions({ agent }: { agent: AgentResult }) {
   return (
-    <View style={styles.socialRow}>
-      <Text style={styles.socialItem}>♡ {agent.sources.length}</Text>
-      <Text style={styles.socialItem}>◌ {agent.tools.length}</Text>
-      <Text style={styles.socialItem}>↻ {agent.plan.length}</Text>
-      <Text style={styles.socialItem}>⌁</Text>
-      <Text style={styles.bookmark}>□</Text>
-    </View>
-  );
-}
-
-function Caption({ agent }: { agent: AgentResult }) {
-  return (
-    <View style={styles.captionBlock}>
-      <Text style={styles.captionText}>
-        <Text style={styles.captionName}>SSKHBG Agent </Text>
-        {agent.nextActions.join(' · ')}
-      </Text>
+    <View style={styles.panel}>
+      <Text style={styles.panelTitle}>Nästa steg</Text>
+      {agent.nextActions.map((action, index) => (
+        <View key={`${action}-${index}`} style={styles.nextRow}>
+          <Text style={styles.nextBullet}>•</Text>
+          <Text style={styles.nextText}>{action}</Text>
+        </View>
+      ))}
     </View>
   );
 }
@@ -498,134 +433,109 @@ function Caption({ agent }: { agent: AgentResult }) {
 const styles = StyleSheet.create({
   content: {
     gap: 14,
-    paddingHorizontal: 0,
-    paddingTop: 8
-  },
-  postHeader: {
-    alignItems: 'center',
-    borderBottomColor: Colors.border,
-    borderBottomWidth: 1,
-    flexDirection: 'row',
-    gap: 12,
     paddingHorizontal: 16,
-    paddingBottom: 12
+    paddingTop: 18
   },
-  avatar: {
-    alignItems: 'center',
-    backgroundColor: Colors.agentSoft,
-    borderColor: Colors.agent,
-    borderRadius: 24,
-    borderWidth: 1,
-    height: 48,
-    justifyContent: 'center',
-    width: 48
-  },
-  avatarText: {
-    color: Colors.agentText,
-    fontSize: 16,
-    fontWeight: '900'
-  },
-  postIdentity: {
-    flex: 1
-  },
-  nameRow: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: 6
-  },
-  accountName: {
-    color: Colors.textPrimary,
-    fontSize: 24,
-    fontWeight: '900',
-    letterSpacing: 0
-  },
-  verified: {
-    alignItems: 'center',
-    backgroundColor: '#2b83d3',
-    borderRadius: 9,
-    height: 18,
-    justifyContent: 'center',
-    width: 18
-  },
-  verifiedText: {
-    color: '#fff',
-    fontSize: 12,
-    fontWeight: '900',
-    lineHeight: 14
-  },
-  audioLine: {
-    color: Colors.textPrimary,
-    fontSize: 15,
-    marginTop: 2
-  },
-  menuDots: {
-    color: Colors.textPrimary,
-    fontSize: 21,
-    fontWeight: '900',
-    letterSpacing: 1
-  },
-  hero: {
-    paddingHorizontal: 16,
-    paddingTop: 8
-  },
-  heroTitle: {
-    color: Colors.textPrimary,
-    fontSize: 33,
-    fontWeight: '900',
-    letterSpacing: 0,
-    lineHeight: 37
-  },
-  heroSubtitle: {
-    color: Colors.textSecondary,
-    fontSize: 15,
-    lineHeight: 21,
-    paddingTop: 6
-  },
-  agentCard: {
-    backgroundColor: Colors.surface,
-    borderColor: Colors.borderStrong,
-    borderRadius: 8,
-    borderWidth: 1,
-    gap: 12,
-    marginHorizontal: 16,
-    padding: 14
-  },
-  agentTopRow: {
+  header: {
     alignItems: 'flex-start',
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    gap: 10
+    gap: 12,
+    justifyContent: 'space-between'
   },
-  agentEyebrow: {
+  appLabel: {
     color: Colors.primary,
     fontSize: 12,
     fontWeight: '900',
     textTransform: 'uppercase'
   },
-  agentTitle: {
+  title: {
+    color: Colors.textPrimary,
+    fontSize: 30,
+    fontWeight: '900',
+    lineHeight: 34
+  },
+  subtitle: {
+    color: Colors.textSecondary,
+    fontSize: 14,
+    lineHeight: 20,
+    marginTop: 4,
+    maxWidth: 560
+  },
+  statusBadge: {
+    alignItems: 'center',
+    backgroundColor: Colors.surfaceLight,
+    borderColor: Colors.border,
+    borderRadius: 8,
+    borderWidth: 1,
+    flexDirection: 'row',
+    gap: 7,
+    paddingHorizontal: 10,
+    paddingVertical: 8
+  },
+  statusDot: {
+    backgroundColor: Colors.success,
+    borderRadius: 5,
+    height: 10,
+    width: 10
+  },
+  statusDotRunning: {
+    backgroundColor: Colors.warning
+  },
+  statusText: {
+    color: Colors.textPrimary,
+    fontSize: 12,
+    fontWeight: '900'
+  },
+  commandPanel: {
+    backgroundColor: Colors.surface,
+    borderColor: Colors.borderStrong,
+    borderRadius: 8,
+    borderWidth: 1,
+    gap: 12,
+    padding: 14
+  },
+  panel: {
+    backgroundColor: Colors.surface,
+    borderColor: Colors.border,
+    borderRadius: 8,
+    borderWidth: 1,
+    gap: 12,
+    padding: 14
+  },
+  panelHeader: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: 10,
+    justifyContent: 'space-between'
+  },
+  sectionEyebrow: {
+    color: Colors.primary,
+    fontSize: 11,
+    fontWeight: '900',
+    textTransform: 'uppercase'
+  },
+  panelTitle: {
     color: Colors.textPrimary,
     fontSize: 20,
     fontWeight: '900',
-    marginTop: 2
+    lineHeight: 24
   },
-  liveBadge: {
-    alignItems: 'center',
-    backgroundColor: Colors.agentSoft,
-    borderRadius: 999,
-    flexDirection: 'row',
-    gap: 6,
-    paddingHorizontal: 9,
-    paddingVertical: 6
-  },
-  liveDot: {
-    backgroundColor: Colors.agent,
-    borderRadius: 4,
-    height: 8,
-    width: 8
-  },
-  liveText: {
-    color: Colors.agentText,
+  sectionHint: {
+    color: Colors.textSecondary,
     fontSize: 12,
+    fontWeight: '800'
+  },
+  secondaryButton: {
+    backgroundColor: Colors.surfaceLight,
+    borderColor: Colors.border,
+    borderRadius: 8,
+    borderWidth: 1,
+    paddingHorizontal: 12,
+    paddingVertical: 8
+  },
+  secondaryButtonText: {
+    color: Colors.textPrimary,
+    fontSize: 13,
     fontWeight: '900'
   },
   input: {
@@ -635,10 +545,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     color: Colors.textPrimary,
     fontSize: 16,
-    lineHeight: 21,
-    minHeight: 82,
+    lineHeight: 22,
+    minHeight: 104,
     paddingHorizontal: 12,
-    paddingVertical: 10,
+    paddingVertical: 11,
     textAlignVertical: 'top'
   },
   promptRow: {
@@ -652,7 +562,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderWidth: 1,
     maxWidth: '48%',
-    minHeight: 46,
+    minHeight: 44,
     paddingHorizontal: 10,
     paddingVertical: 8
   },
@@ -664,7 +574,7 @@ const styles = StyleSheet.create({
     color: Colors.textSecondary,
     fontSize: 12,
     fontWeight: '800',
-    lineHeight: 15
+    lineHeight: 16
   },
   promptTextActive: {
     color: Colors.primary
@@ -673,204 +583,50 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: Colors.primary,
     borderRadius: 8,
-    minHeight: 48,
     justifyContent: 'center',
+    minHeight: 48,
     paddingHorizontal: 14,
     paddingVertical: 12
   },
   runButtonDisabled: {
-    opacity: 0.72
+    opacity: 0.7
   },
   runButtonText: {
     color: '#fff',
     fontSize: 16,
     fontWeight: '900'
   },
-  diagram: {
-    borderColor: Colors.borderStrong,
-    borderRadius: 8,
-    borderWidth: 1,
-    gap: 10,
-    marginHorizontal: 16,
-    padding: 10
-  },
-  diagramHeader: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
-  diagramTitle: {
-    color: Colors.textPrimary,
-    fontSize: 19,
-    fontWeight: '900'
-  },
-  diagramMeta: {
-    color: Colors.textSecondary,
-    fontSize: 12,
-    fontVariant: ['tabular-nums'],
-    fontWeight: '800'
-  },
-  notAgenticBand: {
-    borderColor: Colors.border,
-    borderRadius: 8,
-    borderWidth: 1,
-    gap: 8,
-    padding: 10
-  },
-  bandTitle: {
-    color: Colors.danger,
-    fontSize: 13,
-    fontWeight: '900',
-    textAlign: 'center'
-  },
-  miniGrid: {
-    flexDirection: 'row',
-    gap: 6
-  },
-  miniBox: {
-    backgroundColor: Colors.surface,
-    borderColor: Colors.border,
-    borderRadius: 8,
-    borderWidth: 1,
-    flex: 1,
-    minHeight: 58,
-    padding: 8
-  },
-  miniBoxMuted: {
-    backgroundColor: Colors.surfaceMuted
-  },
-  miniBoxTitle: {
-    color: Colors.textPrimary,
-    fontSize: 13,
-    fontWeight: '900',
-    textAlign: 'center'
-  },
-  miniBoxDetail: {
-    color: Colors.textSecondary,
-    fontSize: 10,
-    lineHeight: 13,
-    marginTop: 4,
-    textAlign: 'center'
-  },
-  agenticBand: {
-    backgroundColor: Colors.agentCanvas,
-    borderColor: Colors.agentBorder,
-    borderRadius: 8,
-    borderWidth: 1,
-    gap: 10,
-    padding: 10
-  },
-  agenticTitle: {
-    color: Colors.agentText,
-    fontSize: 15,
-    fontWeight: '900',
-    textAlign: 'center'
-  },
-  flowRow: {
-    alignItems: 'center',
-    flexDirection: 'row'
-  },
-  flowNode: {
-    backgroundColor: '#fff',
-    borderColor: Colors.agentBorder,
-    borderRadius: 8,
-    borderWidth: 1,
-    flex: 1,
-    minHeight: 62,
-    padding: 8
-  },
-  flowTitle: {
-    color: Colors.textPrimary,
-    fontSize: 13,
-    fontWeight: '900',
-    textAlign: 'center'
-  },
-  flowDetail: {
-    color: Colors.textSecondary,
-    fontSize: 10,
-    lineHeight: 13,
-    marginTop: 4,
-    textAlign: 'center'
-  },
-  connector: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 21
-  },
-  connectorLine: {
-    backgroundColor: Colors.agent,
-    height: 2,
-    position: 'absolute',
-    width: 18
-  },
-  connectorArrow: {
-    color: Colors.agentText,
-    fontSize: 18,
-    fontWeight: '900'
-  },
-  orchestrator: {
+  statusStrip: {
     flexDirection: 'row',
     gap: 8
   },
-  orchestratorCore: {
-    backgroundColor: '#fff',
-    borderColor: Colors.agentBorder,
+  metric: {
+    backgroundColor: Colors.surfaceLight,
+    borderColor: Colors.border,
     borderRadius: 8,
     borderWidth: 1,
     flex: 1,
-    padding: 10
+    minHeight: 70,
+    paddingHorizontal: 12,
+    paddingVertical: 10
   },
-  orchestratorLabel: {
-    color: Colors.agentText,
-    fontSize: 11,
-    fontWeight: '900',
-    textTransform: 'uppercase'
-  },
-  orchestratorTitle: {
+  metricValue: {
     color: Colors.textPrimary,
-    fontSize: 16,
-    fontWeight: '900',
-    marginTop: 3
+    fontSize: 24,
+    fontVariant: ['tabular-nums'],
+    fontWeight: '900'
   },
-  orchestratorText: {
+  metricLabel: {
     color: Colors.textSecondary,
     fontSize: 12,
-    lineHeight: 16,
-    marginTop: 4
+    fontWeight: '800',
+    marginTop: 2
   },
-  toolColumn: {
-    flex: 1,
-    gap: 6
-  },
-  toolPill: {
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    borderColor: Colors.agentBorder,
-    borderRadius: 8,
-    borderWidth: 1,
-    flexDirection: 'row',
-    gap: 6,
-    minHeight: 35,
-    paddingHorizontal: 8
-  },
-  toolPillDot: {
-    backgroundColor: Colors.agent,
-    borderRadius: 4,
-    height: 8,
-    width: 8
-  },
-  toolPillText: {
-    color: Colors.textPrimary,
-    flex: 1,
-    fontSize: 11,
-    fontWeight: '800'
-  },
-  errorCard: {
+  errorPanel: {
     backgroundColor: Colors.primarySoft,
     borderColor: Colors.primary,
     borderRadius: 8,
     borderWidth: 1,
-    marginHorizontal: 16,
     padding: 12
   },
   errorText: {
@@ -878,31 +634,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '800'
   },
-  answerCard: {
-    backgroundColor: Colors.surface,
-    borderColor: Colors.borderStrong,
-    borderRadius: 8,
-    borderWidth: 1,
-    gap: 12,
-    marginHorizontal: 16,
-    padding: 14
-  },
-  answerTopRow: {
-    alignItems: 'flex-start',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    gap: 10
-  },
-  answerLabel: {
-    color: Colors.primary,
-    fontSize: 12,
-    fontWeight: '900',
-    textTransform: 'uppercase'
-  },
   answerTitle: {
     color: Colors.textPrimary,
     fontSize: 22,
     fontWeight: '900',
+    lineHeight: 27,
     marginTop: 2
   },
   timeStamp: {
@@ -916,22 +652,32 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 23
   },
-  confidenceRow: {
-    flexWrap: 'wrap',
+  tagRow: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: 8
   },
-  confidenceText: {
-    backgroundColor: Colors.agentSoft,
+  tag: {
+    backgroundColor: Colors.surfaceMuted,
     borderRadius: 8,
-    color: Colors.agentText,
-    fontSize: 12,
-    fontWeight: '900',
     paddingHorizontal: 9,
     paddingVertical: 6
   },
-  aiConfidenceText: {
-    backgroundColor: Colors.primarySoft,
+  tagGreen: {
+    backgroundColor: Colors.agentSoft
+  },
+  tagRed: {
+    backgroundColor: Colors.primarySoft
+  },
+  tagText: {
+    color: Colors.textSecondary,
+    fontSize: 12,
+    fontWeight: '900'
+  },
+  tagTextGreen: {
+    color: Colors.agentText
+  },
+  tagTextRed: {
     color: Colors.primary
   },
   reasoningBox: {
@@ -954,24 +700,31 @@ const styles = StyleSheet.create({
     lineHeight: 18
   },
   planList: {
-    gap: 10
+    gap: 12
   },
   planStep: {
     flexDirection: 'row',
     gap: 10
   },
-  planDot: {
+  stepNumber: {
+    alignItems: 'center',
     backgroundColor: Colors.agent,
-    borderRadius: 6,
-    height: 12,
-    marginTop: 4,
-    width: 12
+    borderRadius: 8,
+    height: 26,
+    justifyContent: 'center',
+    marginTop: 1,
+    width: 26
   },
-  planDotSafety: {
+  stepNumberSafety: {
     backgroundColor: Colors.primary
   },
-  planDotNext: {
+  stepNumberNext: {
     backgroundColor: Colors.warning
+  },
+  stepNumberText: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: '900'
   },
   planTextBlock: {
     flex: 1,
@@ -987,65 +740,25 @@ const styles = StyleSheet.create({
     fontSize: 13,
     lineHeight: 18
   },
-  guardrailBox: {
-    backgroundColor: Colors.surfaceLight,
-    borderColor: Colors.border,
-    borderRadius: 8,
-    borderWidth: 1,
-    gap: 6,
-    padding: 10
-  },
-  guardrailText: {
-    color: Colors.textSecondary,
-    fontSize: 12,
-    fontWeight: '800',
-    lineHeight: 17
-  },
-  section: {
-    gap: 10,
-    marginHorizontal: 16
-  },
-  sectionHeader: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
-  sectionTitle: {
-    color: Colors.textPrimary,
-    fontSize: 19,
-    fontWeight: '900'
-  },
-  sectionHint: {
-    color: Colors.textSecondary,
-    fontSize: 12,
-    fontWeight: '800'
-  },
-  sectionAction: {
-    color: Colors.primary,
-    fontSize: 13,
-    fontWeight: '900'
-  },
   toolRun: {
     alignItems: 'flex-start',
-    backgroundColor: Colors.surface,
-    borderColor: Colors.border,
-    borderRadius: 8,
-    borderWidth: 1,
+    borderTopColor: Colors.border,
+    borderTopWidth: 1,
     flexDirection: 'row',
     gap: 10,
-    padding: 12
+    paddingTop: 10
   },
-  toolRunStatus: {
+  toolStatus: {
     backgroundColor: Colors.agent,
     borderRadius: 5,
     height: 10,
     marginTop: 5,
     width: 10
   },
-  toolRunSafety: {
+  toolStatusSafety: {
     backgroundColor: Colors.primary
   },
-  toolRunNext: {
+  toolStatusNext: {
     backgroundColor: Colors.warning
   },
   toolRunText: {
@@ -1062,13 +775,12 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     marginTop: 2
   },
-  emptySources: {
-    alignItems: 'center',
-    backgroundColor: Colors.surface,
+  emptyState: {
+    backgroundColor: Colors.surfaceLight,
     borderColor: Colors.border,
     borderRadius: 8,
     borderWidth: 1,
-    padding: 18
+    padding: 14
   },
   emptyTitle: {
     color: Colors.textPrimary,
@@ -1078,25 +790,24 @@ const styles = StyleSheet.create({
   emptyText: {
     color: Colors.textSecondary,
     fontSize: 13,
+    lineHeight: 18,
     marginTop: 3
   },
-  sourceCard: {
+  sourceRow: {
     alignItems: 'flex-start',
-    backgroundColor: Colors.surface,
-    borderColor: Colors.border,
-    borderRadius: 8,
-    borderWidth: 1,
+    borderTopColor: Colors.border,
+    borderTopWidth: 1,
     flexDirection: 'row',
     gap: 10,
-    padding: 12
+    paddingTop: 10
   },
-  sourceKind: {
+  sourceBadge: {
     backgroundColor: Colors.primarySoft,
     borderRadius: 8,
     paddingHorizontal: 8,
     paddingVertical: 5
   },
-  sourceKindText: {
+  sourceBadgeText: {
     color: Colors.primary,
     fontSize: 11,
     fontWeight: '900'
@@ -1122,41 +833,31 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     marginTop: 5
   },
-  sourceArrow: {
-    color: Colors.textPrimary,
+  chevron: {
+    color: Colors.textSecondary,
     fontSize: 24,
     fontWeight: '300',
     marginTop: 4
   },
-  socialRow: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: 18,
-    marginHorizontal: 16,
-    paddingTop: 2
-  },
-  socialItem: {
-    color: Colors.textPrimary,
-    fontSize: 26,
+  linkText: {
+    color: Colors.primary,
+    fontSize: 13,
     fontWeight: '900'
   },
-  bookmark: {
+  nextRow: {
+    flexDirection: 'row',
+    gap: 8
+  },
+  nextBullet: {
+    color: Colors.primary,
+    fontSize: 18,
+    fontWeight: '900',
+    lineHeight: 20
+  },
+  nextText: {
     color: Colors.textPrimary,
     flex: 1,
-    fontSize: 27,
-    fontWeight: '900',
-    textAlign: 'right'
-  },
-  captionBlock: {
-    marginHorizontal: 16,
-    paddingBottom: 12
-  },
-  captionText: {
-    color: Colors.textPrimary,
-    fontSize: 18,
-    lineHeight: 25
-  },
-  captionName: {
-    fontWeight: '900'
+    fontSize: 14,
+    lineHeight: 20
   }
 });

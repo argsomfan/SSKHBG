@@ -1,10 +1,27 @@
-import { AgentPlanStep, AgentResult, AgentToolRun, runSskhbgAgent } from './sskhbgAgent';
+import {
+  AgentPlanStep,
+  AgentResult,
+  AgentSource,
+  AgentSourceKind,
+  AgentToolRun,
+  runSskhbgAgent
+} from './sskhbgAgent';
 
 type BackendToolRun = {
   name?: string;
   title?: string;
   detail: string;
   status: AgentToolRun['status'];
+};
+
+type BackendSource = {
+  id?: string;
+  kind?: string;
+  title?: string;
+  subtitle?: string;
+  body?: string;
+  route?: string;
+  score?: number;
 };
 
 type BackendAgentResponse = {
@@ -14,10 +31,20 @@ type BackendAgentResponse = {
   confidenceLabel?: string;
   plan?: AgentPlanStep[];
   tools?: BackendToolRun[];
+  sources?: BackendSource[];
   nextActions?: string[];
   guardrails?: string[];
   backend?: AgentResult['backend'];
 };
+
+const sourceKinds: AgentSourceKind[] = [
+  'Diagnos',
+  'PM',
+  'Omvårdnad',
+  'Läkemedel',
+  'Snabbkort',
+  'Fakta'
+];
 
 function getAgentEndpoint() {
   const siteUrl = process.env.EXPO_PUBLIC_CONVEX_SITE_URL;
@@ -51,6 +78,29 @@ function normalizeBackendTools(tools: BackendToolRun[] | undefined) {
     detail: tool.detail,
     status: tool.status
   }));
+}
+
+function normalizeBackendSources(sources: BackendSource[] | undefined): AgentSource[] {
+  return (sources ?? [])
+    .map((source, index) => {
+      const kind = sourceKinds.includes(source.kind as AgentSourceKind)
+        ? source.kind as AgentSourceKind
+        : 'Fakta';
+
+      return {
+        id: source.id || `backend-${index}`,
+        kind,
+        title: source.title || 'Convex-fakta',
+        subtitle: source.subtitle || 'Publicerad faktakälla',
+        body: source.body || '',
+        route: source.route || '/fakta',
+        score:
+          typeof source.score === 'number' && Number.isFinite(source.score)
+            ? source.score
+            : 0
+      };
+    })
+    .filter((source) => Boolean(source.title));
 }
 
 export async function runSskhbgAiAgent(rawQuery: string): Promise<AgentResult> {
@@ -91,6 +141,7 @@ export async function runSskhbgAiAgent(rawQuery: string): Promise<AgentResult> {
 
     const backendResult = await response.json() as BackendAgentResponse;
     const backendTools = normalizeBackendTools(backendResult.tools);
+    const backendSources = normalizeBackendSources(backendResult.sources);
 
     return {
       ...localResult,
@@ -102,6 +153,7 @@ export async function runSskhbgAiAgent(rawQuery: string): Promise<AgentResult> {
         backendResult.confidenceLabel || localResult.confidenceLabel,
       plan: backendResult.plan?.length ? backendResult.plan : localResult.plan,
       tools: backendTools.length ? backendTools : localResult.tools,
+      sources: backendSources.length ? backendSources : localResult.sources,
       nextActions: backendResult.nextActions?.length
         ? backendResult.nextActions
         : localResult.nextActions,

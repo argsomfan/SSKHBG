@@ -5,7 +5,8 @@ export type AgentSourceKind =
   | 'PM'
   | 'Omvårdnad'
   | 'Läkemedel'
-  | 'Snabbkort';
+  | 'Snabbkort'
+  | 'Fakta';
 
 export type AgentSource = {
   id: string;
@@ -202,7 +203,7 @@ function buildTools(query: string, counts: Record<AgentSourceKind, number>): Age
     },
     {
       name: 'SSKHBG Search',
-      detail: `${counts.Diagnos + counts.PM + counts.Omvårdnad + counts.Snabbkort} kliniska källor genomsökta.`,
+      detail: `${counts.Diagnos + counts.PM + counts.Omvårdnad + counts.Snabbkort + counts.Fakta} kliniska källor genomsökta.`,
       status: 'klar'
     },
     {
@@ -340,7 +341,8 @@ async function loadSources() {
       PM: 0,
       Omvårdnad: 0,
       Läkemedel: 0,
-      Snabbkort: 0
+      Snabbkort: 0,
+      Fakta: 0
     }
   );
 

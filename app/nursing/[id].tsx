@@ -1,120 +1,125 @@
 import { useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
+
+import { Screen } from '../../src/components/Screen';
+import { Colors } from '../../src/theme';
 import { getDb } from '../../src/db/database';
 
+type NursingModule = {
+  id: string;
+  title: string;
+  summary: string;
+};
+
 type NursingSection = {
+  id: number;
+  module_id: string;
   title: string;
   content: string;
   sort_order: number;
 };
 
-type NursingModule = {
-  id: string;
-  title: string;
-  category: string;
-  summary: string;
-};
-
 export default function NursingDetailScreen() {
-  const { id } = useLocalSearchParams<{ id: string }>();
-  const [moduleData, setModuleData] = useState<NursingModule | null>(null);
+  const params = useLocalSearchParams();
+  const moduleId = String(params.id ?? '');
+
+  const [module, setModule] = useState<NursingModule | null>(null);
   const [sections, setSections] = useState<NursingSection[]>([]);
 
   useEffect(() => {
     async function load() {
-      if (!id) return;
-
       const db = await getDb();
 
-      const mod = await db.getFirstAsync(
-        `SELECT id, title, category, summary
+      const row = await db.getFirstAsync<NursingModule>(
+        `SELECT id, title, summary
          FROM nursing_modules
-         WHERE id = ?
-         LIMIT 1`,
-        [id]
-      ) as NursingModule | null;
+         WHERE id = ?`,
+        [moduleId]
+      );
 
-      const rows = await db.getAllAsync(
-        `SELECT title, content, sort_order
+      const sectionRows = await db.getAllAsync<NursingSection>(
+        `SELECT id, module_id, title, content, sort_order
          FROM nursing_sections
          WHERE module_id = ?
          ORDER BY sort_order ASC`,
-        [id]
-      ) as NursingSection[];
+        [moduleId]
+      );
 
-      setModuleData(mod);
-      setSections(rows);
+      setModule(row ?? null);
+      setSections(sectionRows);
     }
 
-    load().catch((e) => {
-      console.log('NURSING DETAIL ERROR', e);
-    });
-  }, [id]);
+    if (moduleId) {
+      load().catch((e) => {
+        console.log('NURSING DETAIL ERROR', e);
+      });
+    }
+  }, [moduleId]);
 
-  if (!moduleData) {
+  if (!module) {
     return (
-      <View style={styles.center}>
-        <Text>Laddar...</Text>
-      </View>
+      <Screen>
+        <Text style={styles.loading}>Laddar omvårdnad...</Text>
+      </Screen>
     );
   }
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
-      <Text style={styles.title}>{moduleData.title}</Text>
-      <Text style={styles.category}>{moduleData.category}</Text>
-      <Text style={styles.summary}>{moduleData.summary}</Text>
+    <Screen>
+      <Text style={styles.title}>{module.title}</Text>
 
-      {sections.map((section, index) => (
-        <View key={index} style={styles.card}>
-          <Text style={styles.cardTitle}>{section.title}</Text>
-          <Text style={styles.cardText}>{section.content}</Text>
+      {!!module.summary && (
+        <Text style={styles.summary}>{module.summary}</Text>
+      )}
+
+      {sections.map((section) => (
+        <View key={section.id} style={styles.section}>
+          <Text style={styles.sectionTitle}>{section.title}</Text>
+          <Text style={styles.sectionContent}>{section.content}</Text>
         </View>
       ))}
-    </ScrollView>
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#f3f3f3' },
-  content: { padding: 16, paddingTop: 60, paddingBottom: 40 },
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  loading: {
+    fontSize: 16,
+    color: Colors.textSecondary
+  },
 
   title: {
-    fontSize: 28,
-    fontWeight: '700',
-    marginBottom: 4
-  },
-
-  category: {
-    fontSize: 15,
-    color: '#666',
-    marginBottom: 8
-  },
-
-  summary: {
-    fontSize: 15,
-    color: '#222',
-    marginBottom: 16
-  },
-
-  card: {
-    backgroundColor: '#fff',
-    borderRadius: 16,
-    padding: 16,
+    fontSize: 34,
+    fontWeight: '800',
+    color: Colors.textPrimary,
     marginBottom: 12
   },
 
-  cardTitle: {
-    fontSize: 18,
-    fontWeight: '700',
-    marginBottom: 6
+  summary: {
+    fontSize: 16,
+    lineHeight: 24,
+    color: Colors.textSecondary,
+    marginBottom: 24
   },
 
-  cardText: {
+  section: {
+    backgroundColor: Colors.surface,
+    borderRadius: 20,
+    padding: 18,
+    marginBottom: 16
+  },
+
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: '800',
+    color: Colors.primary,
+    marginBottom: 12
+  },
+
+  sectionContent: {
     fontSize: 15,
-    lineHeight: 22,
-    color: '#222'
+    lineHeight: 24,
+    color: Colors.textPrimary
   }
 });

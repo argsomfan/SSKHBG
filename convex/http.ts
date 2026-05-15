@@ -1,26 +1,18 @@
 import { httpRouter } from "convex/server";
 import { httpAction } from "./_generated/server";
+import { api } from "./_generated/api";
+import {
+  AgentToolLayer,
+  ClientSource,
+  ClientStep,
+  runAgentToolLayer,
+} from "./agentTools";
 
 type AgentStatus = "klar" | "nästa" | "säkring";
 
-type ClientSource = {
-  id: string;
-  kind: string;
-  title: string;
-  subtitle: string;
-  body: string;
-  route: string;
-  score: number;
-};
-
-type ClientStep = {
-  title: string;
-  detail: string;
-  status: AgentStatus;
-};
-
 type AgentRequest = {
   query: string;
+  toolLayer?: AgentToolLayer;
   localAgent?: {
     responseTitle?: string;
     responseSummary?: string;
@@ -218,10 +210,13 @@ function buildPrompt(request: AgentRequest) {
       retrievedSources: compactSources,
       localPlan: request.localAgent?.plan ?? [],
       localTools: request.localAgent?.tools ?? [],
+      toolLayer: request.toolLayer?.toolContext ?? null,
+      executedTools: request.toolLayer?.tools ?? [],
       requiredBehavior: [
         "Svara på svenska.",
         "Använd bara de skickade SSKHBG-källorna och säg när underlaget är otillräckligt.",
         "Var kliniskt försiktig: ge beslutsstöd, inte ordination.",
+        "Utgå från executedTools som faktiskt körda verktyg. Hitta inte på extra verktygskörningar.",
         "Visa agentisk planering: uppdrag, verktyg, källor, nästa steg och människa-i-loopen.",
         "Hitta inte på lokala PM, doser eller källor som inte finns i underlaget.",
       ],
@@ -242,8 +237,13 @@ function fallbackPayload(request: AgentRequest, message: string): AiAgentPayload
     responseTitle: request.localAgent?.responseTitle || "Backend-agent väntar",
     responseSummary: request.localAgent?.responseSummary || summary,
     reasoning: message,
-    confidenceLabel: request.localAgent?.confidenceLabel || "Lokal fallback",
-    plan: request.localAgent?.plan?.length
+    confidenceLabel:
+      request.toolLayer?.confidenceLabel ||
+      request.localAgent?.confidenceLabel ||
+      "Lokal fallback",
+    plan: request.toolLayer?.plan?.length
+      ? request.toolLayer.plan
+      : request.localAgent?.plan?.length
       ? request.localAgent.plan
       : [
           {
@@ -258,6 +258,7 @@ function fallbackPayload(request: AgentRequest, message: string): AiAgentPayload
           },
         ],
     tools: [
+      ...(request.toolLayer?.tools ?? []),
       ...(request.localAgent?.tools ?? []),
       {
         title: "OpenAI Backend",
@@ -265,15 +266,58 @@ function fallbackPayload(request: AgentRequest, message: string): AiAgentPayload
         status: "säkring",
       },
     ],
-    nextActions: request.localAgent?.nextActions?.length
+    nextActions: request.toolLayer?.nextActions?.length
+      ? request.toolLayer.nextActions
+      : request.localAgent?.nextActions?.length
       ? request.localAgent.nextActions
       : ["Konfigurera OPENAI_API_KEY i Convex", "Kör frågan igen"],
-    guardrails: request.localAgent?.guardrails?.length
+    guardrails: request.toolLayer?.guardrails?.length
+      ? request.toolLayer.guardrails
+      : request.localAgent?.guardrails?.length
       ? request.localAgent.guardrails
       : [
           "Beslutsstöd, inte ordination.",
           "Kontrollera alltid patientdata och lokala rutiner.",
         ],
+  };
+}
+
+function mergeSteps(primary: ClientStep[], secondary: ClientStep[], maxItems: number) {
+  const seen = new Set<string>();
+
+  return [...primary, ...secondary]
+    .filter((step) => {
+      const key = step.title.toLocaleLowerCase("sv-SE");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return Boolean(step.title && step.detail);
+    })
+    .slice(0, maxItems);
+}
+
+function mergeStrings(primary: string[], secondary: string[], maxItems: number) {
+  const seen = new Set<string>();
+
+  return [...primary, ...secondary]
+    .filter((item) => {
+      const key = item.toLocaleLowerCase("sv-SE");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return Boolean(item);
+    })
+    .slice(0, maxItems);
+}
+
+function applyToolLayer(payload: AiAgentPayload, toolLayer: AgentToolLayer | undefined) {
+  if (!toolLayer) return payload;
+
+  return {
+    ...payload,
+    confidenceLabel: toolLayer.confidenceLabel || payload.confidenceLabel,
+    plan: mergeSteps(toolLayer.plan, payload.plan, 6),
+    tools: mergeSteps(toolLayer.tools, payload.tools, 8),
+    nextActions: mergeStrings(toolLayer.nextActions, payload.nextActions, 5),
+    guardrails: mergeStrings(toolLayer.guardrails, payload.guardrails, 6),
   };
 }
 
@@ -377,7 +421,7 @@ http.route({
 http.route({
   path: "/api/agent",
   method: "POST",
-  handler: httpAction(async (_ctx, req) => {
+  handler: httpAction(async (ctx, req) => {
     const rawBody = await req.text();
     if (rawBody.length > 100_000) {
       return jsonResponse({ error: "För stor agentförfrågan." }, 413);
@@ -394,11 +438,41 @@ http.route({
       return jsonResponse({ error: "Fråga saknas." }, 400);
     }
 
+    try {
+      const facts = await ctx.runQuery(api.facts.searchForAgent, {
+        query: request.query,
+        limit: 6,
+      });
+      const toolLayer = runAgentToolLayer({
+        query: request.query,
+        localSources: request.sources,
+        facts,
+      });
+      request = {
+        ...request,
+        sources: toolLayer.sources,
+        toolLayer,
+      };
+    } catch (error) {
+      console.log("FACT SEARCH ERROR", error);
+      const toolLayer = runAgentToolLayer({
+        query: request.query,
+        localSources: request.sources,
+        facts: [],
+      });
+      request = {
+        ...request,
+        sources: toolLayer.sources,
+        toolLayer,
+      };
+    }
+
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
       const message = "OPENAI_API_KEY saknas i Convex miljövariabler.";
       return jsonResponse({
         ...fallbackPayload(request, message),
+        sources: request.sources,
         backend: {
           mode: "fallback",
           configured: false,
@@ -409,8 +483,10 @@ http.route({
 
     try {
       const { model, payload } = await callOpenAi(request, apiKey);
+      const enrichedPayload = applyToolLayer(payload, request.toolLayer);
       return jsonResponse({
-        ...payload,
+        ...enrichedPayload,
+        sources: request.sources,
         backend: {
           mode: "ai",
           configured: true,
@@ -425,6 +501,7 @@ http.route({
           : "Backend-agenten kunde inte skapa AI-svar.";
       return jsonResponse({
         ...fallbackPayload(request, message),
+        sources: request.sources,
         backend: {
           mode: "fallback",
           configured: true,
