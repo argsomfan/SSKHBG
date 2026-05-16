@@ -245,7 +245,7 @@ function fallbackPayload(request: AgentRequest, message: string): AiAgentPayload
   const first = request.sources[0];
   const second = request.sources[1];
   const summary = first
-    ? `Jag hittade ${first.title}${second ? ` och ${second.title}` : ""}. Backend-agenten behöver OpenAI-konfiguration för att formulera ett AI-svar, så jag visar den lokala agentplanen tills dess.`
+    ? `Jag hittade ${first.title}${second ? ` och ${second.title}` : ""}. Backend-agenten nåddes, men AI-svaret kunde inte skapas just nu, så jag visar den lokala agentplanen tills dess.`
     : "Backend-agenten är nådd, men inga lokala källor skickades med frågan.";
 
   return {
@@ -295,6 +295,75 @@ function fallbackPayload(request: AgentRequest, message: string): AiAgentPayload
           "Kontrollera alltid patientdata och lokala rutiner.",
         ],
   };
+}
+
+function openAiErrorMessage(status: number, data: unknown) {
+  const dataRecord = isRecord(data) ? data : {};
+  const error = dataRecord.error;
+  const errorRecord = isRecord(error) ? error : {};
+  const rawMessage =
+    cleanString(errorRecord.message, 500) ||
+    cleanString(error, 500) ||
+    `OpenAI svarade med ${status}`;
+  const type = cleanString(errorRecord.type, 80);
+  const code = cleanString(errorRecord.code, 80);
+  const suffix = [type, code].filter(Boolean).join("/");
+
+  if (status === 429) {
+    return [
+      `OpenAI svarade med 429${suffix ? ` (${suffix})` : ""}.`,
+      "Convex-nyckeln är satt, men OpenAI-projektet stoppas av quota, billing, rate-limit eller modellkapacitet.",
+      rawMessage,
+    ].join(" ");
+  }
+
+  if (status === 401) {
+    return [
+      "OpenAI svarade med 401.",
+      "OPENAI_API_KEY i Convex är ogiltig, saknar åtkomst eller pekar på fel projekt.",
+      rawMessage,
+    ].join(" ");
+  }
+
+  if (status === 403) {
+    return [
+      "OpenAI svarade med 403.",
+      "Nyckeln är igenkänd, men projektet saknar åtkomst till vald modell eller funktion.",
+      rawMessage,
+    ].join(" ");
+  }
+
+  return `${rawMessage}${suffix ? ` (${suffix})` : ""}`;
+}
+
+function openAiFailureActions(message: string) {
+  if (message.includes("OpenAI svarade med 429")) {
+    return [
+      "OPENAI_API_KEY är satt: kontrollera quota, billing och rate-limit i OpenAI-projektet",
+      "Byt vid behov OPENAI_MODEL i Convex till en modell projektet har kapacitet för",
+      "Kör npx convex dev --once efter ändrade Convex-miljövariabler",
+    ];
+  }
+
+  if (message.includes("OpenAI svarade med 401")) {
+    return [
+      "Sätt om OPENAI_API_KEY i Convex utan att klistra nyckeln i chatten",
+      "Kör npx convex dev --once efter ändringen",
+    ];
+  }
+
+  if (message.includes("OpenAI svarade med 403")) {
+    return [
+      "Kontrollera att OpenAI-projektet har åtkomst till vald OPENAI_MODEL och web_search",
+      "Byt OPENAI_MODEL i Convex om modellen inte är tillgänglig för projektet",
+      "Kör npx convex dev --once efter ändringen",
+    ];
+  }
+
+  return [
+    "Kontrollera OpenAI-status, vald modell och Convex-miljövariabler",
+    "Kör frågan igen efter åtgärd",
+  ];
 }
 
 function mergeSteps(primary: ClientStep[], secondary: ClientStep[], maxItems: number) {
@@ -596,14 +665,7 @@ async function callOpenAi(request: AgentRequest, apiKey: string) {
   const data: unknown = await response.json();
 
   if (!response.ok) {
-    const errorRecord = data && typeof data === "object"
-      ? data as Record<string, unknown>
-      : {};
-    throw new Error(
-      typeof errorRecord.error === "string"
-        ? errorRecord.error
-        : `OpenAI svarade med ${response.status}`,
-    );
+    throw new Error(openAiErrorMessage(response.status, data));
   }
 
   const outputText = extractOutputText(data);
@@ -682,8 +744,14 @@ http.route({
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
       const message = "OPENAI_API_KEY saknas i Convex miljövariabler.";
+      const fallback = fallbackPayload(request, message);
       return jsonResponse({
-        ...fallbackPayload(request, message),
+        ...fallback,
+        nextActions: [
+          "Sätt OPENAI_API_KEY i Convex utan att klistra nyckeln i chatten",
+          "Kör npx convex dev --once efter ändringen",
+          "Kör frågan igen",
+        ],
         sources: request.sources,
         backend: {
           mode: "fallback",
@@ -720,8 +788,10 @@ http.route({
         error instanceof Error
           ? error.message
           : "Backend-agenten kunde inte skapa AI-svar.";
+      const fallback = fallbackPayload(request, message);
       return jsonResponse({
-        ...fallbackPayload(request, message),
+        ...fallback,
+        nextActions: openAiFailureActions(message),
         sources: request.sources,
         backend: {
           mode: "fallback",
