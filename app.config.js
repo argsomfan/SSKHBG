@@ -16,6 +16,7 @@ export default {
     ios: {
       supportsTablet: true,
       bundleIdentifier: "com.nicklas.sskhbg",
+      buildNumber: "16",
       infoPlist: {
         ITSAppUsesNonExemptEncryption: false
       }
