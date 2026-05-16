@@ -1,21 +1,22 @@
 import { Tabs } from 'expo-router';
-import { Text } from 'react-native';
+import { Image, Text } from 'react-native';
 import { Colors } from '../../src/theme';
+import { BrandImages } from '../../src/theme/brand';
 
 export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: Colors.primary,
-        tabBarInactiveTintColor: '#777',
+        tabBarActiveTintColor: Colors.chrome,
+        tabBarInactiveTintColor: Colors.textTertiary,
         tabBarLabelStyle: {
           fontSize: 11,
           fontWeight: '800'
         },
         tabBarStyle: {
           backgroundColor: Colors.surface,
-          borderTopColor: Colors.border,
+          borderTopColor: Colors.borderStrong,
           height: 82,
           paddingBottom: 18,
           paddingTop: 8
@@ -26,8 +27,16 @@ export default function TabsLayout() {
         name="index"
         options={{
           title: 'Agent',
-          tabBarIcon: ({ color }) => (
-            <Text style={{ color, fontSize: 22, fontWeight: '900' }}>⌂</Text>
+          tabBarIcon: ({ focused }) => (
+            <Image
+              source={BrandImages.icon}
+              resizeMode="contain"
+              style={{
+                height: 24,
+                opacity: focused ? 1 : 0.48,
+                width: 24
+              }}
+            />
           )
         }}
       />

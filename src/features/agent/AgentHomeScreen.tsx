@@ -11,6 +11,7 @@ import {
 import { router } from 'expo-router';
 
 import { Screen } from '../../components/Screen';
+import { BrandMark } from '../../components/BrandMark';
 import { runSskhbgAiAgent } from '../../agent/aiBackend';
 import {
   AgentPlanStep,
@@ -163,7 +164,7 @@ export default function HomeScreen() {
           disabled={isRunning}
         >
           {isRunning ? (
-            <ActivityIndicator color="#fff" />
+            <ActivityIndicator color={Colors.onPrimary} />
           ) : (
             <Text style={styles.runButtonText}>Kör agent</Text>
           )}
@@ -210,10 +211,18 @@ function Header({
 
   return (
     <View style={styles.header}>
-      <View>
-        <Text style={styles.appLabel}>SSKHBG</Text>
-        <Text style={styles.title}>Klinisk AI-agent</Text>
-        <Text style={styles.subtitle}>Källbundet beslutsstöd för PM, läkemedel och omvårdnad.</Text>
+      <View style={styles.brandLockup}>
+        <View style={styles.logoPlate}>
+          <BrandMark size={62} />
+        </View>
+        <View style={styles.headerCopy}>
+          <View style={styles.brandLine}>
+            <Text style={styles.appLabel}>BASE</Text>
+            <Text style={styles.contextLabel}>SSKHBG</Text>
+          </View>
+          <Text style={styles.title}>Kliniskt hjälpmedel</Text>
+          <Text style={styles.subtitle}>Källbundet beslutsstöd för PM, läkemedel och omvårdnad.</Text>
+        </View>
       </View>
       <View style={styles.statusBadge}>
         <View style={[styles.statusDot, isRunning && styles.statusDotRunning]} />
@@ -451,20 +460,52 @@ const styles = StyleSheet.create({
   header: {
     alignItems: 'flex-start',
     flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: 12,
     justifyContent: 'space-between'
   },
+  brandLockup: {
+    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'row',
+    gap: 12,
+    minWidth: 250
+  },
+  logoPlate: {
+    alignItems: 'center',
+    backgroundColor: Colors.surface,
+    borderColor: Colors.borderStrong,
+    borderRadius: 8,
+    borderWidth: 1,
+    height: 70,
+    justifyContent: 'center',
+    width: 70
+  },
+  headerCopy: {
+    flex: 1
+  },
+  brandLine: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: 8
+  },
   appLabel: {
-    color: Colors.primary,
+    color: Colors.chrome,
     fontSize: 12,
+    fontWeight: '900',
+    textTransform: 'uppercase'
+  },
+  contextLabel: {
+    color: Colors.textTertiary,
+    fontSize: 11,
     fontWeight: '900',
     textTransform: 'uppercase'
   },
   title: {
     color: Colors.textPrimary,
-    fontSize: 30,
+    fontSize: 28,
     fontWeight: '900',
-    lineHeight: 34
+    lineHeight: 32
   },
   subtitle: {
     color: Colors.textSecondary,
@@ -604,7 +645,7 @@ const styles = StyleSheet.create({
     opacity: 0.7
   },
   runButtonText: {
-    color: '#fff',
+    color: Colors.onPrimary,
     fontSize: 16,
     fontWeight: '900'
   },
@@ -734,7 +775,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.warning
   },
   stepNumberText: {
-    color: '#fff',
+    color: Colors.onPrimary,
     fontSize: 12,
     fontWeight: '900'
   },

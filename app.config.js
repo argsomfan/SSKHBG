@@ -10,7 +10,7 @@ export default {
     splash: {
       image: "./assets/splash-icon.png",
       resizeMode: "contain",
-      backgroundColor: "#0f1115"
+      backgroundColor: "#050607"
     },
     plugins: ["expo-router", "expo-sqlite"],
     ios: {

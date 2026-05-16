@@ -298,7 +298,7 @@ export default function FactsAdminScreen() {
             disabled={isSaving}
           >
             {isSaving ? (
-              <ActivityIndicator color="#fff" />
+              <ActivityIndicator color={Colors.onPrimary} />
             ) : (
               <Text style={styles.saveButtonText}>Spara</Text>
             )}
@@ -457,8 +457,8 @@ const styles = StyleSheet.create({
     paddingVertical: 8
   },
   filterChipActive: {
-    backgroundColor: Colors.textPrimary,
-    borderColor: Colors.textPrimary
+    backgroundColor: Colors.primary,
+    borderColor: Colors.chrome
   },
   filterText: {
     color: Colors.textSecondary,
@@ -466,7 +466,7 @@ const styles = StyleSheet.create({
     fontWeight: '800'
   },
   filterTextActive: {
-    color: '#fff'
+    color: Colors.onPrimary
   },
   panel: {
     backgroundColor: Colors.surface,
@@ -518,7 +518,7 @@ const styles = StyleSheet.create({
     fontWeight: '900'
   },
   segmentTextActive: {
-    color: '#fff'
+    color: Colors.onPrimary
   },
   statusSegment: {
     borderColor: Colors.border,
@@ -571,14 +571,14 @@ const styles = StyleSheet.create({
   },
   saveButton: {
     alignItems: 'center',
-    backgroundColor: Colors.textPrimary,
+    backgroundColor: Colors.primary,
     borderRadius: 8,
     flex: 1,
     justifyContent: 'center',
     minHeight: 48
   },
   saveButtonText: {
-    color: '#fff',
+    color: Colors.onPrimary,
     fontSize: 15,
     fontWeight: '900'
   },
@@ -591,7 +591,7 @@ const styles = StyleSheet.create({
     minHeight: 48
   },
   publishButtonText: {
-    color: '#fff',
+    color: Colors.onPrimary,
     fontSize: 15,
     fontWeight: '900'
   },

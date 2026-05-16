@@ -309,13 +309,13 @@ const styles = StyleSheet.create({
     lineHeight: 23
   },
   riskBadge: {
-    backgroundColor: '#ffe5e5',
+    backgroundColor: Colors.dangerSoft,
     borderRadius: 8,
     paddingHorizontal: 8,
     paddingVertical: 4
   },
   riskBadgeText: {
-    color: Colors.primary,
+    color: Colors.dangerText,
     fontSize: 12,
     fontWeight: '900'
   },

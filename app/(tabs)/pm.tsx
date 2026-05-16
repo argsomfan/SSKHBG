@@ -116,14 +116,11 @@ const styles = StyleSheet.create({
 
   card: {
     backgroundColor: Colors.surface,
+    borderColor: Colors.border,
     borderRadius: 18,
+    borderWidth: 1,
     padding: 18,
-    marginBottom: 14,
-    shadowColor: '#000',
-    shadowOpacity: 0.06,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 3
+    marginBottom: 14
   },
 
   cardTitle: {
@@ -142,14 +139,14 @@ const styles = StyleSheet.create({
 
   badge: {
     alignSelf: 'flex-start',
-    backgroundColor: '#ffe5e5',
+    backgroundColor: Colors.dangerSoft,
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 20
   },
 
   badgeText: {
-    color: Colors.primary,
+    color: Colors.dangerText,
     fontWeight: '700',
     fontSize: 12
   }

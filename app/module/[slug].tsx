@@ -3,6 +3,7 @@ import { useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { getModuleBySlug } from '../../src/db/queries';
 import { BackButton } from '../../src/components/BackButton';
+import { Colors } from '../../src/theme';
 
 export default function ModuleDetailScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
@@ -20,7 +21,7 @@ export default function ModuleDetailScreen() {
   if (!moduleData) {
     return (
       <View style={styles.center}>
-        <Text>Laddar...</Text>
+        <Text style={styles.loading}>Laddar...</Text>
       </View>
     );
   }
@@ -48,18 +49,32 @@ export default function ModuleDetailScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#f3f3f3' },
+  container: { flex: 1, backgroundColor: Colors.background },
   content: { padding: 16, paddingTop: 60, paddingBottom: 40 },
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  title: { fontSize: 30, fontWeight: '700', marginBottom: 8 },
-  summary: { fontSize: 16, color: '#555', marginBottom: 18 },
+  center: {
+    alignItems: 'center',
+    backgroundColor: Colors.background,
+    flex: 1,
+    justifyContent: 'center'
+  },
+  loading: { color: Colors.textSecondary, fontSize: 16 },
+  title: {
+    color: Colors.textPrimary,
+    fontSize: 30,
+    fontWeight: '700',
+    marginBottom: 8
+  },
+  summary: { fontSize: 16, color: Colors.textSecondary, marginBottom: 18 },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.surface,
+    borderColor: Colors.border,
     borderRadius: 16,
+    borderWidth: 1,
     padding: 16,
     marginBottom: 12
   },
   cardTitle: {
+    color: Colors.textPrimary,
     fontSize: 20,
     fontWeight: '700',
     marginBottom: 8
@@ -67,7 +82,7 @@ const styles = StyleSheet.create({
   cardText: {
     fontSize: 16,
     lineHeight: 24,
-    color: '#222',
+    color: Colors.textPrimary,
     marginBottom: 6
   }
 });

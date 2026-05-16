@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { FlatList, Pressable, SafeAreaView, StyleSheet, Text } from 'react-native';
 import { router } from 'expo-router';
 import { getDb } from '../../src/db/database';
+import { Colors } from '../../src/theme';
 
 type NursingItem = {
   id: string;
@@ -33,10 +34,10 @@ export default function OmvardnadWordScreen() {
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Omvårdnad PM ({data.length})</Text>
       {data.length === 0 ? (
-  <Text style={{ marginBottom: 12, color: '#666' }}>
-    Inga omvårdnads-PM hittades i databasen.
-  </Text>
-) : null}
+        <Text style={styles.emptyText}>
+          Inga omvårdnads-PM hittades i databasen.
+        </Text>
+      ) : null}
 
       <FlatList
         data={data}
@@ -59,34 +60,42 @@ export default function OmvardnadWordScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f3f3f3',
+    backgroundColor: Colors.background,
     paddingHorizontal: 20,
     paddingTop: 60
   },
   title: {
+    color: Colors.textPrimary,
     fontSize: 28,
     fontWeight: '700',
     marginBottom: 16,
     marginTop: 28
   },
+  emptyText: {
+    color: Colors.textSecondary,
+    marginBottom: 12
+  },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.surface,
+    borderColor: Colors.border,
+    borderWidth: 1,
     padding: 16,
     borderRadius: 14,
     marginBottom: 12
   },
   cardTitle: {
+    color: Colors.textPrimary,
     fontSize: 20,
     fontWeight: '700',
     marginBottom: 4
   },
   cardCategory: {
     fontSize: 14,
-    color: '#666',
+    color: Colors.textSecondary,
     marginBottom: 6
   },
   cardSummary: {
     fontSize: 15,
-    color: '#222'
+    color: Colors.textPrimary
   }
 });

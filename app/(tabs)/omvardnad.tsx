@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { getDb } from '../../src/db/database';
+import { Colors } from '../../src/theme';
 
 type Block = {
   title: string;
@@ -81,29 +82,34 @@ export default function OmvardnadScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#f3f3f3' },
+  container: { flex: 1, backgroundColor: Colors.background },
   content: { padding: 16, paddingTop: 60, paddingBottom: 40 },
 
   title: {
+    color: Colors.textPrimary,
     fontSize: 30,
     fontWeight: '700',
     marginBottom: 18
   },
 
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.surface,
+    borderColor: Colors.border,
     borderRadius: 16,
+    borderWidth: 1,
     padding: 16,
     marginBottom: 12
   },
 
   cardTitle: {
+    color: Colors.textPrimary,
     fontSize: 20,
     fontWeight: '700',
     marginBottom: 10
   },
 
   cardText: {
+    color: Colors.textPrimary,
     fontSize: 16,
     lineHeight: 24,
     marginBottom: 6

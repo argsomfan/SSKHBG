@@ -128,8 +128,8 @@ const styles = StyleSheet.create({
 
   riskBadge: {
     alignSelf: 'flex-start',
-    backgroundColor: '#ffe5e5',
-    color: Colors.primary,
+    backgroundColor: Colors.dangerSoft,
+    color: Colors.dangerText,
     fontWeight: '800',
     paddingHorizontal: 12,
     paddingVertical: 6,

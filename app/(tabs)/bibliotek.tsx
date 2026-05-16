@@ -160,7 +160,9 @@ const styles = StyleSheet.create({
   searchCard: {
     alignItems: 'center',
     backgroundColor: Colors.primary,
+    borderColor: Colors.borderStrong,
     borderRadius: 8,
+    borderWidth: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 14
@@ -171,17 +173,17 @@ const styles = StyleSheet.create({
     paddingRight: 12
   },
   searchTitle: {
-    color: '#ffffff',
+    color: Colors.onPrimary,
     fontSize: 19,
     fontWeight: '900'
   },
   searchSubtitle: {
-    color: '#fff4f4',
+    color: Colors.chrome,
     fontSize: 14,
     lineHeight: 19
   },
   arrow: {
-    color: '#ffffff',
+    color: Colors.onPrimary,
     fontSize: 30,
     fontWeight: '300'
   },
