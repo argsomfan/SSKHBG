@@ -43,7 +43,8 @@ const sourceKinds: AgentSourceKind[] = [
   'Omvårdnad',
   'Läkemedel',
   'Snabbkort',
-  'Fakta'
+  'Fakta',
+  'Webb'
 ];
 
 function getAgentEndpoint() {
@@ -86,14 +87,21 @@ function normalizeBackendSources(sources: BackendSource[] | undefined): AgentSou
       const kind = sourceKinds.includes(source.kind as AgentSourceKind)
         ? source.kind as AgentSourceKind
         : 'Fakta';
+      const route =
+        source.route ||
+        (kind === 'Webb' && source.subtitle?.startsWith('http')
+          ? source.subtitle
+          : '/fakta');
 
       return {
         id: source.id || `backend-${index}`,
         kind,
         title: source.title || 'Convex-fakta',
-        subtitle: source.subtitle || 'Publicerad faktakälla',
+        subtitle:
+          source.subtitle ||
+          (kind === 'Webb' ? 'Citerad webbkälla' : 'Publicerad faktakälla'),
         body: source.body || '',
-        route: source.route || '/fakta',
+        route,
         score:
           typeof source.score === 'number' && Number.isFinite(source.score)
             ? source.score

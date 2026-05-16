@@ -6,7 +6,8 @@ export type AgentSourceKind =
   | 'Omvårdnad'
   | 'Läkemedel'
   | 'Snabbkort'
-  | 'Fakta';
+  | 'Fakta'
+  | 'Webb';
 
 export type AgentSource = {
   id: string;
@@ -342,7 +343,8 @@ async function loadSources() {
       Omvårdnad: 0,
       Läkemedel: 0,
       Snabbkort: 0,
-      Fakta: 0
+      Fakta: 0,
+      Webb: 0
     }
   );
 

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
   ActivityIndicator,
+  Linking,
   Pressable,
   StyleSheet,
   Text,
@@ -371,6 +372,17 @@ function ToolRuns({ tools }: { tools: AgentToolRun[] }) {
 }
 
 function SourceList({ sources }: { sources: AgentSource[] }) {
+  function openSource(source: AgentSource) {
+    if (/^https?:\/\//i.test(source.route)) {
+      Linking.openURL(source.route).catch((linkError) => {
+        console.log('SOURCE LINK ERROR', linkError);
+      });
+      return;
+    }
+
+    router.push(source.route as never);
+  }
+
   return (
     <View style={styles.panel}>
       <View style={styles.panelHeader}>
@@ -386,11 +398,11 @@ function SourceList({ sources }: { sources: AgentSource[] }) {
           <Text style={styles.emptyText}>Lägg till fakta eller skriv en mer specifik fråga.</Text>
         </View>
       ) : (
-        sources.slice(0, 5).map((source) => (
+        sources.slice(0, 7).map((source) => (
           <Pressable
             key={`${source.kind}-${source.id}`}
             style={styles.sourceRow}
-            onPress={() => router.push(source.route as never)}
+            onPress={() => openSource(source)}
           >
             <View style={styles.sourceBadge}>
               <Text style={styles.sourceBadgeText}>{source.kind}</Text>

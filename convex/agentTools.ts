@@ -18,6 +18,12 @@ export type ClientStep = {
   status: AgentStatus;
 };
 
+export type WebSearchPlan = {
+  enabled: boolean;
+  query: string;
+  reason: string;
+};
+
 export type AgentToolLayer = {
   intent: string;
   confidenceLabel: string;
@@ -38,6 +44,7 @@ export type AgentToolLayer = {
       title: string;
       subtitle: string;
     }>;
+    webSearch: WebSearchPlan;
     safetyChecks: string[];
   };
 };
@@ -149,6 +156,25 @@ function calculatorRoutes(query: string) {
   return routes.slice(0, 3);
 }
 
+function webSearchPlan(query: string): WebSearchPlan {
+  const trimmedQuery = query.trim();
+
+  if (!trimmedQuery) {
+    return {
+      enabled: false,
+      query: "",
+      reason: "Väntar på en klinisk fråga innan webbsökning kan användas.",
+    };
+  }
+
+  return {
+    enabled: true,
+    query: trimmedQuery,
+    reason:
+      "Webbsökning kan komplettera SSKHBG-källor med citerade, externa källor när aktuell information behövs.",
+  };
+}
+
 function safetyChecks(query: string) {
   const checks = [
     "Visa källor och låt ansvarig kliniker bekräfta före åtgärd.",
@@ -199,6 +225,7 @@ export function runAgentToolLayer(args: {
   const sources = mergeSources(remoteSources, args.localSources);
   const calculators = calculatorRoutes(args.query);
   const checks = safetyChecks(args.query);
+  const webSearch = webSearchPlan(args.query);
   const medicationHits = sources.filter((source) => source.kind === "Läkemedel");
   const medicationIntent = includesAny(args.query, ["lakemedel", "läkemedel", "dos", "spadning", "spädning", "antibiotika", "infusion"]);
   const topSources = sources.slice(0, 4).map((source) => ({
@@ -242,6 +269,11 @@ export function runAgentToolLayer(args: {
       status: calculators.length > 0 ? "klar" : "nästa",
     },
     {
+      title: "Web Search",
+      detail: webSearch.reason,
+      status: webSearch.enabled ? "nästa" : "säkring",
+    },
+    {
       title: "Safety Gate",
       detail: `${checks.length} säkerhetskontroller kopplades till svaret.`,
       status: "säkring",
@@ -266,7 +298,7 @@ export function runAgentToolLayer(args: {
       title: "Sammanväga källor",
       detail:
         sources.length > 0
-          ? `${sources.length} källor finns i agentens arbetsminne.`
+          ? `${sources.length} SSKHBG-källor finns i agentens arbetsminne.`
           : "Inga säkra källor hittades ännu.",
       status: sources.length > 0 ? "klar" : "nästa",
     },
@@ -280,8 +312,9 @@ export function runAgentToolLayer(args: {
   const nextActions = [
     sources[0] ? `Öppna och kontrollera ${sources[0].title}` : "Lägg till eller publicera relevant fakta",
     calculators[0] ? `Använd ${calculators[0].title} vid behov` : "Ställ följdfråga om patientdata saknas",
+    webSearch.enabled ? "Granska eventuella webbkällor med datum, avsändare och lokal relevans" : "",
     "Bekräfta mot lokal rutin och ansvarig kliniker",
-  ];
+  ].filter(Boolean);
 
   return {
     intent,
@@ -300,6 +333,7 @@ export function runAgentToolLayer(args: {
       selectedIntent: intent,
       calculators,
       topSources,
+      webSearch,
       safetyChecks: checks,
     },
   };

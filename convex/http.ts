@@ -36,6 +36,20 @@ type AiAgentPayload = {
   guardrails: string[];
 };
 
+type OpenAiWebTool = {
+  type: "web_search";
+  user_location: {
+    type: "approximate";
+    country: string;
+    city: string;
+    region: string;
+    timezone: string;
+  };
+  filters?: {
+    allowed_domains: string[];
+  };
+};
+
 const http = httpRouter();
 
 const corsHeaders = {
@@ -160,7 +174,7 @@ function cleanSources(value: unknown): ClientSource[] {
         title: cleanString(record.title, 140),
         subtitle: cleanString(record.subtitle, 160),
         body: cleanString(record.body, 700),
-        route: cleanString(record.route, 120),
+        route: cleanString(record.route, 500),
         score:
           typeof record.score === "number" && Number.isFinite(record.score)
             ? record.score
@@ -214,7 +228,8 @@ function buildPrompt(request: AgentRequest) {
       executedTools: request.toolLayer?.tools ?? [],
       requiredBehavior: [
         "Svara på svenska.",
-        "Använd bara de skickade SSKHBG-källorna och säg när underlaget är otillräckligt.",
+        "Prioritera skickade SSKHBG-källor och säg när underlaget är otillräckligt.",
+        "Om webbsökning används: använd den som kompletterande källa, visa citerade webbkällor och låt inte webben ersätta lokala PM.",
         "Var kliniskt försiktig: ge beslutsstöd, inte ordination.",
         "Utgå från executedTools som faktiskt körda verktyg. Hitta inte på extra verktygskörningar.",
         "Visa agentisk planering: uppdrag, verktyg, källor, nästa steg och människa-i-loopen.",
@@ -308,6 +323,21 @@ function mergeStrings(primary: string[], secondary: string[], maxItems: number) 
     .slice(0, maxItems);
 }
 
+function mergeSources(primary: ClientSource[], secondary: ClientSource[], maxItems: number) {
+  const seen = new Set<string>();
+
+  return [...primary, ...secondary]
+    .filter((source) => {
+      const key = (source.route || `${source.kind}:${source.title}`)
+        .toLocaleLowerCase("sv-SE");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return Boolean(source.id && source.title);
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, maxItems);
+}
+
 function applyToolLayer(payload: AiAgentPayload, toolLayer: AgentToolLayer | undefined) {
   if (!toolLayer) return payload;
 
@@ -318,6 +348,33 @@ function applyToolLayer(payload: AiAgentPayload, toolLayer: AgentToolLayer | und
     tools: mergeSteps(toolLayer.tools, payload.tools, 8),
     nextActions: mergeStrings(toolLayer.nextActions, payload.nextActions, 5),
     guardrails: mergeStrings(toolLayer.guardrails, payload.guardrails, 6),
+  };
+}
+
+function applyWebSearchResult(
+  payload: AiAgentPayload,
+  webSources: ClientSource[],
+  attempted: boolean,
+) {
+  if (!attempted) return payload;
+
+  const webTool: ClientStep = {
+    title: "Web Search",
+    detail:
+      webSources.length > 0
+        ? `${webSources.length} citerade webbkällor lades till som kompletterande källor.`
+        : "Webbsökning var tillgänglig, men OpenAI returnerade inga citerade webbkällor.",
+    status: webSources.length > 0 ? "klar" : "nästa",
+  };
+
+  const webGuardrails = [
+    "Webbkällor är kompletterande: kontrollera datum, avsändare och lokal relevans före klinisk användning.",
+  ];
+
+  return {
+    ...payload,
+    tools: mergeSteps([webTool], payload.tools, 8),
+    guardrails: mergeStrings(webGuardrails, payload.guardrails, 6),
   };
 }
 
@@ -348,39 +405,192 @@ function extractOutputText(value: unknown) {
   return chunks.join("\n").trim();
 }
 
+const defaultWebDomains = [
+  "1177.se",
+  "fass.se",
+  "folkhalsomyndigheten.se",
+  "internetmedicin.se",
+  "janusinfo.se",
+  "lakemedelsverket.se",
+  "pubmed.ncbi.nlm.nih.gov",
+  "sbu.se",
+  "socialstyrelsen.se",
+  "vardhandboken.se",
+  "who.int",
+];
+
+function parseAllowedWebDomains(): string[] {
+  const configuredDomains = cleanString(
+    process.env.AGENT_WEB_SEARCH_ALLOWED_DOMAINS,
+    2000,
+  );
+  if (configuredDomains === "all") return [];
+
+  const rawDomains = configuredDomains || defaultWebDomains.join(",");
+  const domains = rawDomains
+    .split(",")
+    .map((domain: string) =>
+      domain.trim().replace(/^https?:\/\//, "").replace(/\/.*$/, ""),
+    )
+    .filter(Boolean);
+
+  return Array.from(new Set(domains)).slice(0, 100);
+}
+
+function shouldUseWebSearch(request: AgentRequest) {
+  if (process.env.AGENT_WEB_SEARCH_ENABLED === "false") return false;
+  return Boolean(request.toolLayer?.toolContext.webSearch.enabled);
+}
+
+function buildWebSearchTool(): OpenAiWebTool {
+  const allowedDomains = parseAllowedWebDomains();
+  const tool: OpenAiWebTool = {
+    type: "web_search",
+    user_location: {
+      type: "approximate",
+      country: "SE",
+      city: "Helsingborg",
+      region: "Skåne",
+      timezone: "Europe/Stockholm",
+    },
+  };
+
+  if (allowedDomains.length > 0) {
+    tool.filters = {
+      allowed_domains: allowedDomains,
+    };
+  }
+
+  return tool;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value && typeof value === "object" && !Array.isArray(value));
+}
+
+function titleFromUrl(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
+
+function webSourceId(url: string, index: number) {
+  const compactUrl = url.replace(/[^a-z0-9]+/gi, "-").slice(0, 52);
+  return `web:${index}:${compactUrl}`;
+}
+
+function addWebCandidate(
+  candidates: Array<{ url: string; title: string; body: string }>,
+  record: Record<string, unknown>,
+) {
+  const url = cleanString(record.url, 500);
+  if (!/^https?:\/\//i.test(url)) return;
+
+  const title =
+    cleanString(record.title, 140) ||
+    cleanString(record.name, 140) ||
+    titleFromUrl(url);
+  const body =
+    cleanString(record.text, 700) ||
+    cleanString(record.snippet, 700) ||
+    cleanString(record.summary, 700) ||
+    cleanString(record.description, 700) ||
+    url;
+
+  candidates.push({ url, title, body });
+}
+
+function extractWebSources(value: unknown): ClientSource[] {
+  const candidates: Array<{ url: string; title: string; body: string }> = [];
+
+  function visit(item: unknown) {
+    if (Array.isArray(item)) {
+      for (const child of item) visit(child);
+      return;
+    }
+
+    if (!isRecord(item)) return;
+
+    const type = cleanString(item.type, 80);
+    if (
+      type === "url_citation" ||
+      type === "source" ||
+      (typeof item.url === "string" && ("title" in item || "snippet" in item))
+    ) {
+      addWebCandidate(candidates, item);
+    }
+
+    for (const child of Object.values(item)) {
+      visit(child);
+    }
+  }
+
+  visit(value);
+
+  const seen = new Set<string>();
+  return candidates
+    .filter((candidate) => {
+      const key = candidate.url.toLocaleLowerCase("sv-SE");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, 6)
+    .map((candidate, index) => ({
+      id: webSourceId(candidate.url, index),
+      kind: "Webb",
+      title: candidate.title,
+      subtitle: candidate.url,
+      body: candidate.body,
+      route: candidate.url,
+      score: 116 - index,
+    }));
+}
+
 async function callOpenAi(request: AgentRequest, apiKey: string) {
   const model = process.env.OPENAI_MODEL || "gpt-5.4-mini";
+  const useWebSearch = shouldUseWebSearch(request);
+  const requestBody: Record<string, unknown> = {
+    model,
+    instructions:
+      "Du är SSKHBG Agent, ett kliniskt beslutsstöd för AVA/IMA. Du ska vara agentisk, källbunden, försiktig och tydlig med människa-i-loopen. Du får inte ersätta kliniskt ansvar, ordinera behandling eller hitta på doser/källor.",
+    input: [
+      {
+        role: "user",
+        content: [
+          {
+            type: "input_text",
+            text: buildPrompt(request),
+          },
+        ],
+      },
+    ],
+    text: {
+      format: {
+        type: "json_schema",
+        name: "sskhbg_agent_response",
+        strict: true,
+        schema: agentResponseSchema,
+      },
+    },
+    max_output_tokens: 1600,
+  };
+
+  if (useWebSearch) {
+    requestBody.tools = [buildWebSearchTool()];
+    requestBody.tool_choice = "auto";
+    requestBody.include = ["web_search_call.action.sources"];
+  }
+
   const response = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      model,
-      instructions:
-        "Du är SSKHBG Agent, ett kliniskt beslutsstöd för AVA/IMA. Du ska vara agentisk, källbunden, försiktig och tydlig med människa-i-loopen. Du får inte ersätta kliniskt ansvar, ordinera behandling eller hitta på doser/källor.",
-      input: [
-        {
-          role: "user",
-          content: [
-            {
-              type: "input_text",
-              text: buildPrompt(request),
-            },
-          ],
-        },
-      ],
-      text: {
-        format: {
-          type: "json_schema",
-          name: "sskhbg_agent_response",
-          strict: true,
-          schema: agentResponseSchema,
-        },
-      },
-      max_output_tokens: 1600,
-    }),
+    body: JSON.stringify(requestBody),
   });
 
   const data: unknown = await response.json();
@@ -404,6 +614,8 @@ async function callOpenAi(request: AgentRequest, apiKey: string) {
   return {
     model,
     payload: JSON.parse(outputText) as AiAgentPayload,
+    webSources: useWebSearch ? extractWebSources(data) : [],
+    webSearchAttempted: useWebSearch,
   };
 }
 
@@ -482,11 +694,20 @@ http.route({
     }
 
     try {
-      const { model, payload } = await callOpenAi(request, apiKey);
-      const enrichedPayload = applyToolLayer(payload, request.toolLayer);
+      const { model, payload, webSources, webSearchAttempted } = await callOpenAi(
+        request,
+        apiKey,
+      );
+      const enrichedPayload = applyWebSearchResult(
+        applyToolLayer(payload, request.toolLayer),
+        webSources,
+        webSearchAttempted,
+      );
+      const responseSources = mergeSources(request.sources, webSources, 12);
+
       return jsonResponse({
         ...enrichedPayload,
-        sources: request.sources,
+        sources: responseSources,
         backend: {
           mode: "ai",
           configured: true,
