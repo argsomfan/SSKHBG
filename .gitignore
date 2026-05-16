@@ -39,6 +39,7 @@ yarn-error.*
 /assets/icon.png.ai
 /App.xcdatamodeld/
 /Assets.xcassets/
+/content/generated/
 
 # typescript
 *.tsbuildinfo

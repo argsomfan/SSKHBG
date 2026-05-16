@@ -22,10 +22,13 @@ export default defineSchema({
     body: v.string(),
     source: v.string(),
     searchText: v.string(),
+    importKey: v.optional(v.string()),
+    importedAt: v.optional(v.number()),
     createdAt: v.number(),
     updatedAt: v.number(),
     publishedAt: v.union(v.number(), v.null()),
   })
+    .index("by_importKey", ["importKey"])
     .index("by_updatedAt", ["updatedAt"])
     .index("by_kind_and_updatedAt", ["kind", "updatedAt"])
     .index("by_status_and_updatedAt", ["status", "updatedAt"])
