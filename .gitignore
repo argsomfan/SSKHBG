@@ -37,9 +37,12 @@ yarn-error.*
 /.vscode/
 /app.json.backup
 /assets/icon.png.ai
+/assets/db/*.db
+/assets/db/*_backup_*.db
 /App.xcdatamodeld/
 /Assets.xcassets/
 /content/generated/
+/database/*_backup_*.db
 
 # typescript
 *.tsbuildinfo

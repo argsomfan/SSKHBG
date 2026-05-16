@@ -163,12 +163,13 @@ async function seedTextSections(
   item: ContentRecord
 ) {
   const entries = sectionEntries(item);
+  const parentColumn = tableName === 'pm_sections' ? 'pm_id' : 'nursing_id';
 
   for (let index = 0; index < entries.length; index += 1) {
     const [key, values] = entries[index];
     await db.runAsync(
       `
-      INSERT INTO ${tableName} (module_id, title, content, sort_order)
+      INSERT INTO ${tableName} (${parentColumn}, heading, content, sort_order)
       VALUES (?, ?, ?, ?)
       `,
       [
@@ -248,8 +249,8 @@ export async function initializeDatabase() {
 
     CREATE TABLE IF NOT EXISTS pm_sections (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      module_id TEXT,
-      title TEXT,
+      pm_id TEXT,
+      heading TEXT,
       content TEXT,
       sort_order INTEGER
     );
@@ -263,8 +264,8 @@ export async function initializeDatabase() {
 
     CREATE TABLE IF NOT EXISTS nursing_sections (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      module_id TEXT,
-      title TEXT,
+      nursing_id TEXT,
+      heading TEXT,
       content TEXT,
       sort_order INTEGER
     );

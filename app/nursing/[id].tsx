@@ -14,8 +14,8 @@ type NursingModule = {
 
 type NursingSection = {
   id: number;
-  module_id: string;
-  title: string;
+  nursing_id: string;
+  heading: string;
   content: string;
   sort_order: number;
 };
@@ -39,9 +39,9 @@ export default function NursingDetailScreen() {
       );
 
       const sectionRows = await db.getAllAsync<NursingSection>(
-        `SELECT id, module_id, title, content, sort_order
+        `SELECT id, nursing_id, heading, content, sort_order
          FROM nursing_sections
-         WHERE module_id = ?
+         WHERE nursing_id = ?
          ORDER BY sort_order ASC`,
         [moduleId]
       );
@@ -75,7 +75,7 @@ export default function NursingDetailScreen() {
 
       {sections.map((section) => (
         <View key={section.id} style={styles.section}>
-          <Text style={styles.sectionTitle}>{section.title}</Text>
+          <Text style={styles.sectionTitle}>{section.heading}</Text>
           <Text style={styles.sectionContent}>{section.content}</Text>
         </View>
       ))}

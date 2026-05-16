@@ -21,8 +21,8 @@ type PMModule = {
 
 type PMSection = {
   id: number;
-  module_id: string;
-  title: string;
+  pm_id: string;
+  heading: string;
   content: string;
   sort_order: number;
 };
@@ -55,7 +55,7 @@ export default function PMDetailScreen() {
         `
         SELECT *
         FROM pm_sections
-        WHERE module_id = ?
+        WHERE pm_id = ?
         ORDER BY sort_order ASC
         `,
         [pmId]
@@ -137,7 +137,7 @@ export default function PMDetailScreen() {
             style={styles.section}
           >
             <Text style={styles.sectionTitle}>
-              {section.title}
+              {section.heading}
             </Text>
 
             <Text style={styles.sectionContent}>
