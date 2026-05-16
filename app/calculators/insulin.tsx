@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { Screen } from '../../src/components/Screen';
+import { BackButton } from '../../src/components/BackButton';
 import { Colors } from '../../src/theme';
 
 function parseNumber(value: string) {
@@ -38,6 +39,8 @@ export default function InsulinCalculatorScreen() {
 
   return (
     <Screen>
+      <BackButton fallbackPath="/kalkylatorer" />
+
       <Text style={styles.title}>Insulin</Text>
 
       <Text style={styles.subtitle}>

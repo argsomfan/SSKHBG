@@ -2,6 +2,7 @@ import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { getModuleBySlug } from '../../src/db/queries';
+import { BackButton } from '../../src/components/BackButton';
 
 export default function ModuleDetailScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
@@ -26,6 +27,8 @@ export default function ModuleDetailScreen() {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <BackButton fallbackPath="/diagnoser" />
+
       <Text style={styles.title}>{moduleData.title}</Text>
       <Text style={styles.summary}>{moduleData.summary}</Text>
 

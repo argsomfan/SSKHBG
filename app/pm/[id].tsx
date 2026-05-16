@@ -10,6 +10,7 @@ import {
 import { useLocalSearchParams } from 'expo-router';
 
 import { Screen } from '../../src/components/Screen';
+import { BackButton } from '../../src/components/BackButton';
 import { Colors } from '../../src/theme';
 import { getDb } from '../../src/db/database';
 
@@ -85,6 +86,8 @@ export default function PMDetailScreen() {
       <ScrollView
         showsVerticalScrollIndicator={false}
       >
+        <BackButton fallbackPath="/pm" />
+
         <Text style={styles.title}>
           {pm.title}
         </Text>

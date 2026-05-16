@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams } from 'expo-router';
+import { BackButton } from '../../src/components/BackButton';
 import { Colors } from '../../src/theme';
 import { getDb } from '../../src/db/database';
 
@@ -69,6 +70,8 @@ export default function LakemedelDetailScreen() {
   return (
     <SafeAreaView style={styles.safe}>
       <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+        <BackButton fallbackPath="/lakemedel" />
+
         <Text style={styles.title}>{drug.name}</Text>
         <Text style={styles.subtitle}>{drug.group_name}</Text>
 

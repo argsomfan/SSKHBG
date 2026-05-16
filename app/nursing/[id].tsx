@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 
 import { Screen } from '../../src/components/Screen';
+import { BackButton } from '../../src/components/BackButton';
 import { Colors } from '../../src/theme';
 import { getDb } from '../../src/db/database';
 
@@ -67,6 +68,8 @@ export default function NursingDetailScreen() {
 
   return (
     <Screen>
+      <BackButton fallbackPath="/omvardnad" />
+
       <Text style={styles.title}>{module.title}</Text>
 
       {!!module.summary && (

@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 
 import { Screen } from '../../src/components/Screen';
+import { BackButton } from '../../src/components/BackButton';
 import { Colors } from '../../src/theme';
 import {
   calculateC1V1C2V2,
@@ -104,6 +105,8 @@ export default function SpadningScreen() {
 
   return (
     <Screen>
+      <BackButton fallbackPath="/kalkylatorer" />
+
       <Text style={styles.title}>
         Spädning
       </Text>
